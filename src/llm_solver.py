@@ -258,7 +258,6 @@ class CreativeSolver(LLMSolver):
         
         try:
             if self.model_name.startswith("gemini"):
-                # Set a longer timeout and higher temperature for creative exploration
                 response = self.client.generate_content(
                     prompt, 
                     generation_config={"temperature": 0.7, "max_output_tokens": 2048}
