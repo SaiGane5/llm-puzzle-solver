@@ -1,0 +1,1 @@
+{"problem_id":"034","initial_string":"GVVCCTJYRTZD","transitions":[{"src":"CTJYR","tgt":""},{"src":"GVV","tgt":""},{"src":"T","tgt":""},{"src":"C","tgt":""},{"src":"ZD","tgt":""}]}

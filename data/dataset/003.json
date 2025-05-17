@@ -1,0 +1,1 @@
+{"problem_id":"003","initial_string":"GAPOUZSWA","transitions":[{"src":"ZSW","tgt":""},{"src":"GAP","tgt":""},{"src":"OU","tgt":""},{"src":"A","tgt":""}]}

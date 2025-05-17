@@ -1,0 +1,1 @@
+{"problem_id":"042","initial_string":"GRXTILCASNJKPMNIOUGU","transitions":[{"src":"PMNIOUGU","tgt":""},{"src":"ILC","tgt":""},{"src":"GRXT","tgt":""},{"src":"ASNJK","tgt":""}]}

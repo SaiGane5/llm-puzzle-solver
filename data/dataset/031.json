@@ -1,0 +1,1 @@
+{"problem_id":"031","initial_string":"KKSGHQ","transitions":[{"src":"G","tgt":""},{"src":"KKS","tgt":""},{"src":"Q","tgt":""},{"src":"H","tgt":""}]}

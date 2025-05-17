@@ -1,0 +1,1 @@
+{"problem_id":"097","initial_string":"RJMKFOBDETJMEGWWHJV","transitions":[{"src":"KFOBDE","tgt":""},{"src":"TJMEGW","tgt":""},{"src":"M","tgt":""},{"src":"RJ","tgt":""},{"src":"WHJ","tgt":""},{"src":"V","tgt":""}]}

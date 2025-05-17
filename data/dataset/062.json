@@ -1,0 +1,1 @@
+{"problem_id":"062","initial_string":"UMFPQUEKSRAHQMW","transitions":[{"src":"QUEKS","tgt":""},{"src":"HQMW","tgt":""},{"src":"UMF","tgt":""},{"src":"P","tgt":""},{"src":"RA","tgt":""}]}

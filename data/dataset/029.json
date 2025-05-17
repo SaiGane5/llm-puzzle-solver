@@ -1,0 +1,1 @@
+{"problem_id":"029","initial_string":"QRPQISEW","transitions":[{"src":"P","tgt":""},{"src":"Q","tgt":""},{"src":"QR","tgt":""},{"src":"ISEW","tgt":""}]}

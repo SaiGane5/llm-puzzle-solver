@@ -1,0 +1,6837 @@
+{
+  "comparative": {
+    "methods": [
+      "baseline",
+      "zero_shot",
+      "few_shot",
+      "cot",
+      "creative"
+    ],
+    "success_rates": {
+      "baseline": 1.0,
+      "zero_shot": 0.25,
+      "few_shot": 0.0,
+      "cot": 0.0,
+      "creative": 0.0
+    },
+    "avg_solution_lengths": {
+      "baseline": 4.84,
+      "zero_shot": 4.44,
+      "few_shot": 0,
+      "cot": 0,
+      "creative": 0
+    },
+    "unique_solutions": {
+      "baseline": [
+        "058",
+        "028",
+        "057",
+        "082",
+        "035",
+        "068",
+        "000",
+        "095",
+        "042",
+        "054",
+        "098",
+        "014",
+        "076",
+        "048",
+        "041",
+        "034",
+        "072",
+        "001",
+        "040",
+        "059",
+        "080",
+        "060",
+        "050",
+        "077",
+        "003",
+        "067",
+        "026",
+        "006",
+        "074",
+        "065",
+        "021",
+        "016",
+        "096",
+        "015",
+        "044",
+        "081",
+        "043",
+        "010",
+        "017",
+        "083",
+        "051",
+        "086",
+        "029",
+        "002",
+        "052",
+        "091",
+        "062",
+        "078",
+        "055",
+        "036",
+        "069",
+        "019",
+        "073",
+        "038",
+        "099",
+        "063",
+        "005",
+        "087",
+        "088",
+        "079",
+        "094",
+        "097",
+        "020",
+        "047",
+        "037",
+        "018",
+        "039",
+        "084",
+        "013",
+        "056",
+        "023",
+        "022",
+        "064",
+        "025",
+        "075"
+      ],
+      "zero_shot": [],
+      "few_shot": [],
+      "cot": [],
+      "creative": []
+    },
+    "complexity_metrics": {
+      "baseline": {
+        "avg_efficiency": 3.195162698412698
+      },
+      "zero_shot": {
+        "avg_efficiency": 3.395047619047619
+      }
+    }
+  },
+  "detailed": {
+    "baseline": {
+      "total_problems": 100,
+      "solved_problems": 100,
+      "unsolved_problems": 0,
+      "unsolved_ids": [],
+      "success_rate": 1.0,
+      "avg_solution_length": 4.84,
+      "detailed_results": {
+        "050": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 7,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "YX -> ",
+              "before": "EYNRIFDMFPYXDFCIJCNV",
+              "after": "EYNRIFDMFPDFCIJCNV"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "EY -> ",
+              "before": "EYNRIFDMFPDFCIJCNV",
+              "after": "NRIFDMFPDFCIJCNV"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "NRIF -> ",
+              "before": "NRIFDMFPDFCIJCNV",
+              "after": "DMFPDFCIJCNV"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "DF -> ",
+              "before": "DMFPDFCIJCNV",
+              "after": "DMFPCIJCNV"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "CNV -> ",
+              "before": "DMFPCIJCNV",
+              "after": "DMFPCIJ"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "DMFP -> ",
+              "before": "DMFPCIJ",
+              "after": "CIJ"
+            },
+            {
+              "step": 7,
+              "transition_idx": 6,
+              "transition": "CIJ -> ",
+              "before": "CIJ",
+              "after": ""
+            }
+          ]
+        },
+        "007": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 3,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "TMRZ -> ",
+              "before": "CXCQGDTMRZ",
+              "after": "CXCQGD"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "QGD -> ",
+              "before": "CXCQGD",
+              "after": "CXC"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "CXC -> ",
+              "before": "CXC",
+              "after": ""
+            }
+          ]
+        },
+        "011": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 3,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "N -> ",
+              "before": "AVNXCAZ",
+              "after": "AVXCAZ"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "XCAZ -> ",
+              "before": "AVXCAZ",
+              "after": "AV"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "AV -> ",
+              "before": "AV",
+              "after": ""
+            }
+          ]
+        },
+        "046": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 1,
+              "transition": "CTVCRJ -> ",
+              "before": "WSPSBAGEFECTVCRJ",
+              "after": "WSPSBAGEFE"
+            },
+            {
+              "step": 2,
+              "transition_idx": 2,
+              "transition": "AGEF -> ",
+              "before": "WSPSBAGEFE",
+              "after": "WSPSBE"
+            },
+            {
+              "step": 3,
+              "transition_idx": 0,
+              "transition": "E -> ",
+              "before": "WSPSBE",
+              "after": "WSPSB"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "WSPSB -> ",
+              "before": "WSPSB",
+              "after": ""
+            }
+          ]
+        },
+        "085": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 7,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "EB -> ",
+              "before": "UELLNQRIXIDJBPEBZFEGXPTYN",
+              "after": "UELLNQRIXIDJBPZFEGXPTYN"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "DJBP -> ",
+              "before": "UELLNQRIXIDJBPZFEGXPTYN",
+              "after": "UELLNQRIXIZFEGXPTYN"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "ZFEGX -> ",
+              "before": "UELLNQRIXIZFEGXPTYN",
+              "after": "UELLNQRIXIPTYN"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "LNQ -> ",
+              "before": "UELLNQRIXIPTYN",
+              "after": "UELRIXIPTYN"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "RIXI -> ",
+              "before": "UELRIXIPTYN",
+              "after": "UELPTYN"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "PTYN -> ",
+              "before": "UELPTYN",
+              "after": "UEL"
+            },
+            {
+              "step": 7,
+              "transition_idx": 6,
+              "transition": "UEL -> ",
+              "before": "UEL",
+              "after": ""
+            }
+          ]
+        },
+        "093": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "Q -> ",
+              "before": "QPPYLFXVQUBGTQERXZPQLQMJE",
+              "after": "PPYLFXVQUBGTQERXZPQLQMJE"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "GTQERXZ -> ",
+              "before": "PPYLFXVQUBGTQERXZPQLQMJE",
+              "after": "PPYLFXVQUBPQLQMJE"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "XVQUB -> ",
+              "before": "PPYLFXVQUBPQLQMJE",
+              "after": "PPYLFPQLQMJE"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "PQLQMJE -> ",
+              "before": "PPYLFPQLQMJE",
+              "after": "PPYLF"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "PPYLF -> ",
+              "before": "PPYLF",
+              "after": ""
+            }
+          ]
+        },
+        "031": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "G -> ",
+              "before": "KKSGHQ",
+              "after": "KKSHQ"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "KKS -> ",
+              "before": "KKSHQ",
+              "after": "HQ"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "Q -> ",
+              "before": "HQ",
+              "after": "H"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "H -> ",
+              "before": "H",
+              "after": ""
+            }
+          ]
+        },
+        "066": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "OJFFF -> ",
+              "before": "OJFFFCPXNPOLZQVU",
+              "after": "CPXNPOLZQVU"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "U -> ",
+              "before": "CPXNPOLZQVU",
+              "after": "CPXNPOLZQV"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "CP -> ",
+              "before": "CPXNPOLZQV",
+              "after": "XNPOLZQV"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "XNPOLZ -> ",
+              "before": "XNPOLZQV",
+              "after": "QV"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "QV -> ",
+              "before": "QV",
+              "after": ""
+            }
+          ]
+        },
+        "089": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 1,
+              "transition": "CNHTHSX -> ",
+              "before": "CNHTHSXBQOIONJSLXI",
+              "after": "BQOIONJSLXI"
+            },
+            {
+              "step": 2,
+              "transition_idx": 2,
+              "transition": "SLX -> ",
+              "before": "BQOIONJSLXI",
+              "after": "BQOIONJI"
+            },
+            {
+              "step": 3,
+              "transition_idx": 3,
+              "transition": "BQOIONJ -> ",
+              "before": "BQOIONJI",
+              "after": "I"
+            },
+            {
+              "step": 4,
+              "transition_idx": 0,
+              "transition": "I -> ",
+              "before": "I",
+              "after": ""
+            }
+          ]
+        },
+        "070": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "VJBKOXT -> ",
+              "before": "VJBKOXTAMADVKFXQDL",
+              "after": "AMADVKFXQDL"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "KFX -> ",
+              "before": "AMADVKFXQDL",
+              "after": "AMADVQDL"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "AMADV -> ",
+              "before": "AMADVQDL",
+              "after": "QDL"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "QDL -> ",
+              "before": "QDL",
+              "after": ""
+            }
+          ]
+        },
+        "027": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "M -> ",
+              "before": "DFFUNJAM",
+              "after": "DFFUNJA"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "DFF -> ",
+              "before": "DFFUNJA",
+              "after": "UNJA"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "NJA -> ",
+              "before": "UNJA",
+              "after": "U"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "U -> ",
+              "before": "U",
+              "after": ""
+            }
+          ]
+        },
+        "026": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "RY -> ",
+              "before": "RYVBAWV",
+              "after": "VBAWV"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "AWV -> ",
+              "before": "VBAWV",
+              "after": "VB"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "B -> ",
+              "before": "VB",
+              "after": "V"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "V -> ",
+              "before": "V",
+              "after": ""
+            }
+          ]
+        },
+        "071": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 7,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "M -> ",
+              "before": "STKKJDOUWDSJMWJEGPRGLQJQAKPXMG",
+              "after": "STKKJDOUWDSJWJEGPRGLQJQAKPXMG"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "STKKJD -> ",
+              "before": "STKKJDOUWDSJWJEGPRGLQJQAKPXMG",
+              "after": "OUWDSJWJEGPRGLQJQAKPXMG"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "OUW -> ",
+              "before": "OUWDSJWJEGPRGLQJQAKPXMG",
+              "after": "DSJWJEGPRGLQJQAKPXMG"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "QJQAKPXMG -> ",
+              "before": "DSJWJEGPRGLQJQAKPXMG",
+              "after": "DSJWJEGPRGL"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "DSJ -> ",
+              "before": "DSJWJEGPRGL",
+              "after": "WJEGPRGL"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "PRGL -> ",
+              "before": "WJEGPRGL",
+              "after": "WJEG"
+            },
+            {
+              "step": 7,
+              "transition_idx": 6,
+              "transition": "WJEG -> ",
+              "before": "WJEG",
+              "after": ""
+            }
+          ]
+        },
+        "067": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 8,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "BLTM -> ",
+              "before": "BLTMLIKOEHEKUQXRUHMZWZVZ",
+              "after": "LIKOEHEKUQXRUHMZWZVZ"
+            },
+            {
+              "step": 2,
+              "transition_idx": 2,
+              "transition": "XR -> ",
+              "before": "LIKOEHEKUQXRUHMZWZVZ",
+              "after": "LIKOEHEKUQUHMZWZVZ"
+            },
+            {
+              "step": 3,
+              "transition_idx": 3,
+              "transition": "UHMZWZ -> ",
+              "before": "LIKOEHEKUQUHMZWZVZ",
+              "after": "LIKOEHEKUQVZ"
+            },
+            {
+              "step": 4,
+              "transition_idx": 1,
+              "transition": "Z -> ",
+              "before": "LIKOEHEKUQVZ",
+              "after": "LIKOEHEKUQV"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "Q -> ",
+              "before": "LIKOEHEKUQV",
+              "after": "LIKOEHEKUV"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "LIKOEHE -> ",
+              "before": "LIKOEHEKUV",
+              "after": "KUV"
+            },
+            {
+              "step": 7,
+              "transition_idx": 6,
+              "transition": "V -> ",
+              "before": "KUV",
+              "after": "KU"
+            },
+            {
+              "step": 8,
+              "transition_idx": 7,
+              "transition": "KU -> ",
+              "before": "KU",
+              "after": ""
+            }
+          ]
+        },
+        "088": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 7,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "GUU -> ",
+              "before": "TIIEHZDWFBOABKFDLGUUCFZX",
+              "after": "TIIEHZDWFBOABKFDLCFZX"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "A -> ",
+              "before": "TIIEHZDWFBOABKFDLCFZX",
+              "after": "TIIEHZDWFBOBKFDLCFZX"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "WFBO -> ",
+              "before": "TIIEHZDWFBOBKFDLCFZX",
+              "after": "TIIEHZDBKFDLCFZX"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "BKFDL -> ",
+              "before": "TIIEHZDBKFDLCFZX",
+              "after": "TIIEHZDCFZX"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "TI -> ",
+              "before": "TIIEHZDCFZX",
+              "after": "IEHZDCFZX"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "CFZX -> ",
+              "before": "IEHZDCFZX",
+              "after": "IEHZD"
+            },
+            {
+              "step": 7,
+              "transition_idx": 6,
+              "transition": "IEHZD -> ",
+              "before": "IEHZD",
+              "after": ""
+            }
+          ]
+        },
+        "030": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 2,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "TK -> ",
+              "before": "TKTOWWN",
+              "after": "TOWWN"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "TOWWN -> ",
+              "before": "TOWWN",
+              "after": ""
+            }
+          ]
+        },
+        "092": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "WBM -> ",
+              "before": "QAWBMHITHPXERKIEMIESY",
+              "after": "QAHITHPXERKIEMIESY"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "HITHPX -> ",
+              "before": "QAHITHPXERKIEMIESY",
+              "after": "QAERKIEMIESY"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "ERKIEM -> ",
+              "before": "QAERKIEMIESY",
+              "after": "QAIESY"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "QA -> ",
+              "before": "QAIESY",
+              "after": "IESY"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "IESY -> ",
+              "before": "IESY",
+              "after": ""
+            }
+          ]
+        },
+        "084": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 6,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "WIRZ -> ",
+              "before": "WWJLOXRIIWKCNGAYWIRZKRLYB",
+              "after": "WWJLOXRIIWKCNGAYKRLYB"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "I -> ",
+              "before": "WWJLOXRIIWKCNGAYKRLYB",
+              "after": "WWJLOXRIWKCNGAYKRLYB"
+            },
+            {
+              "step": 3,
+              "transition_idx": 1,
+              "transition": "I -> ",
+              "before": "WWJLOXRIWKCNGAYKRLYB",
+              "after": "WWJLOXRWKCNGAYKRLYB"
+            },
+            {
+              "step": 4,
+              "transition_idx": 2,
+              "transition": "WKCNGAY -> ",
+              "before": "WWJLOXRWKCNGAYKRLYB",
+              "after": "WWJLOXRKRLYB"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "KRLYB -> ",
+              "before": "WWJLOXRKRLYB",
+              "after": "WWJLOXR"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "WWJLOXR -> ",
+              "before": "WWJLOXR",
+              "after": ""
+            }
+          ]
+        },
+        "047": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "SJ -> ",
+              "before": "SJVSJPYRRLDSUYBDKVC",
+              "after": "VSJPYRRLDSUYBDKVC"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "VSJPY -> ",
+              "before": "VSJPYRRLDSUYBDKVC",
+              "after": "RRLDSUYBDKVC"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "SUYBDKVC -> ",
+              "before": "RRLDSUYBDKVC",
+              "after": "RRLD"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "RRLD -> ",
+              "before": "RRLD",
+              "after": ""
+            }
+          ]
+        },
+        "010": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 3,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "KNJ -> ",
+              "before": "KNJJFFF",
+              "after": "JFFF"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "FFF -> ",
+              "before": "JFFF",
+              "after": "J"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "J -> ",
+              "before": "J",
+              "after": ""
+            }
+          ]
+        },
+        "006": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 2,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "FA -> ",
+              "before": "OCCFA",
+              "after": "OCC"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "OCC -> ",
+              "before": "OCC",
+              "after": ""
+            }
+          ]
+        },
+        "051": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "SOCGZVGRP -> ",
+              "before": "IFFBEQBASOCGZVGRP",
+              "after": "IFFBEQBA"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "A -> ",
+              "before": "IFFBEQBA",
+              "after": "IFFBEQB"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "IFF -> ",
+              "before": "IFFBEQB",
+              "after": "BEQB"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "BEQB -> ",
+              "before": "BEQB",
+              "after": ""
+            }
+          ]
+        },
+        "037": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 6,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "MT -> ",
+              "before": "CFKVPDKMTXIYBO",
+              "after": "CFKVPDKXIYBO"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "IYB -> ",
+              "before": "CFKVPDKXIYBO",
+              "after": "CFKVPDKXO"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "KVPDK -> ",
+              "before": "CFKVPDKXO",
+              "after": "CFXO"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "CF -> ",
+              "before": "CFXO",
+              "after": "XO"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "O -> ",
+              "before": "XO",
+              "after": "X"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "X -> ",
+              "before": "X",
+              "after": ""
+            }
+          ]
+        },
+        "060": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "XAK -> ",
+              "before": "FRKXAKEONMDRUF",
+              "after": "FRKEONMDRUF"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "EO -> ",
+              "before": "FRKEONMDRUF",
+              "after": "FRKNMDRUF"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "NM -> ",
+              "before": "FRKNMDRUF",
+              "after": "FRKDRUF"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "DRUF -> ",
+              "before": "FRKDRUF",
+              "after": "FRK"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "FRK -> ",
+              "before": "FRK",
+              "after": ""
+            }
+          ]
+        },
+        "076": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 8,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "VOBRXH -> ",
+              "before": "AVOBRXHDDLESRHZQWPIDVREKDCXTL",
+              "after": "ADDLESRHZQWPIDVREKDCXTL"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "RHZQWPI -> ",
+              "before": "ADDLESRHZQWPIDVREKDCXTL",
+              "after": "ADDLESDVREKDCXTL"
+            },
+            {
+              "step": 3,
+              "transition_idx": 3,
+              "transition": "XT -> ",
+              "before": "ADDLESDVREKDCXTL",
+              "after": "ADDLESDVREKDCL"
+            },
+            {
+              "step": 4,
+              "transition_idx": 5,
+              "transition": "VREKDC -> ",
+              "before": "ADDLESDVREKDCL",
+              "after": "ADDLESDL"
+            },
+            {
+              "step": 5,
+              "transition_idx": 6,
+              "transition": "A -> ",
+              "before": "ADDLESDL",
+              "after": "DDLESDL"
+            },
+            {
+              "step": 6,
+              "transition_idx": 7,
+              "transition": "DDLES -> ",
+              "before": "DDLESDL",
+              "after": "DL"
+            },
+            {
+              "step": 7,
+              "transition_idx": 2,
+              "transition": "L -> ",
+              "before": "DL",
+              "after": "D"
+            },
+            {
+              "step": 8,
+              "transition_idx": 4,
+              "transition": "D -> ",
+              "before": "D",
+              "after": ""
+            }
+          ]
+        },
+        "099": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "JIORYY -> ",
+              "before": "HAQTYDZZYNOJIORYY",
+              "after": "HAQTYDZZYNO"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "H -> ",
+              "before": "HAQTYDZZYNO",
+              "after": "AQTYDZZYNO"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "O -> ",
+              "before": "AQTYDZZYNO",
+              "after": "AQTYDZZYN"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "TYDZZYN -> ",
+              "before": "AQTYDZZYN",
+              "after": "AQ"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "AQ -> ",
+              "before": "AQ",
+              "after": ""
+            }
+          ]
+        },
+        "021": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 3,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "R -> ",
+              "before": "RTXFTETA",
+              "after": "TXFTETA"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "TX -> ",
+              "before": "TXFTETA",
+              "after": "FTETA"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "FTETA -> ",
+              "before": "FTETA",
+              "after": ""
+            }
+          ]
+        },
+        "056": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "HA -> ",
+              "before": "HAQJBLBUNFVBS",
+              "after": "QJBLBUNFVBS"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "F -> ",
+              "before": "QJBLBUNFVBS",
+              "after": "QJBLBUNVBS"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "BLBUN -> ",
+              "before": "QJBLBUNVBS",
+              "after": "QJVBS"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "QJ -> ",
+              "before": "QJVBS",
+              "after": "VBS"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "VBS -> ",
+              "before": "VBS",
+              "after": ""
+            }
+          ]
+        },
+        "001": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 2,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "POTV -> ",
+              "before": "QSPPOTV",
+              "after": "QSP"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "QSP -> ",
+              "before": "QSP",
+              "after": ""
+            }
+          ]
+        },
+        "017": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "H -> ",
+              "before": "WJIHCE",
+              "after": "WJICE"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "C -> ",
+              "before": "WJICE",
+              "after": "WJIE"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "WJI -> ",
+              "before": "WJIE",
+              "after": "E"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "E -> ",
+              "before": "E",
+              "after": ""
+            }
+          ]
+        },
+        "040": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 2,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "BMPXP -> ",
+              "before": "BMPXPBMIKU",
+              "after": "BMIKU"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "BMIKU -> ",
+              "before": "BMIKU",
+              "after": ""
+            }
+          ]
+        },
+        "083": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 7,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "DKNGK -> ",
+              "before": "SNWYNDMNGQCPPDKNGKODN",
+              "after": "SNWYNDMNGQCPPODN"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "QCPP -> ",
+              "before": "SNWYNDMNGQCPPODN",
+              "after": "SNWYNDMNGODN"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "SNWYN -> ",
+              "before": "SNWYNDMNGODN",
+              "after": "DMNGODN"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "DN -> ",
+              "before": "DMNGODN",
+              "after": "DMNGO"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "DM -> ",
+              "before": "DMNGO",
+              "after": "NGO"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "O -> ",
+              "before": "NGO",
+              "after": "NG"
+            },
+            {
+              "step": 7,
+              "transition_idx": 6,
+              "transition": "NG -> ",
+              "before": "NG",
+              "after": ""
+            }
+          ]
+        },
+        "095": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "YQA -> ",
+              "before": "YQAATOOLQEYSBDTYRO",
+              "after": "ATOOLQEYSBDTYRO"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "QEYS -> ",
+              "before": "ATOOLQEYSBDTYRO",
+              "after": "ATOOLBDTYRO"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "BDTYR -> ",
+              "before": "ATOOLBDTYRO",
+              "after": "ATOOLO"
+            },
+            {
+              "step": 4,
+              "transition_idx": 4,
+              "transition": "ATOOL -> ",
+              "before": "ATOOLO",
+              "after": "O"
+            },
+            {
+              "step": 5,
+              "transition_idx": 3,
+              "transition": "O -> ",
+              "before": "O",
+              "after": ""
+            }
+          ]
+        },
+        "094": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 7,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "NBW -> ",
+              "before": "EKNOQAKMWVEBDHQZGSKNBW",
+              "after": "EKNOQAKMWVEBDHQZGSK"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "QZGS -> ",
+              "before": "EKNOQAKMWVEBDHQZGSK",
+              "after": "EKNOQAKMWVEBDHK"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "BDH -> ",
+              "before": "EKNOQAKMWVEBDHK",
+              "after": "EKNOQAKMWVEK"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "EKNOQ -> ",
+              "before": "EKNOQAKMWVEK",
+              "after": "AKMWVEK"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "MWVE -> ",
+              "before": "AKMWVEK",
+              "after": "AKK"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "AK -> ",
+              "before": "AKK",
+              "after": "K"
+            },
+            {
+              "step": 7,
+              "transition_idx": 6,
+              "transition": "K -> ",
+              "before": "K",
+              "after": ""
+            }
+          ]
+        },
+        "082": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 6,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "C -> ",
+              "before": "HPQBFAVWWWENNFPC",
+              "after": "HPQBFAVWWWENNFP"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "PQ -> ",
+              "before": "HPQBFAVWWWENNFP",
+              "after": "HBFAVWWWENNFP"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "H -> ",
+              "before": "HBFAVWWWENNFP",
+              "after": "BFAVWWWENNFP"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "NNFP -> ",
+              "before": "BFAVWWWENNFP",
+              "after": "BFAVWWWE"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "BFAV -> ",
+              "before": "BFAVWWWE",
+              "after": "WWWE"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "WWWE -> ",
+              "before": "WWWE",
+              "after": ""
+            }
+          ]
+        },
+        "041": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "NBE -> ",
+              "before": "XXBALENBEBJCFJMACE",
+              "after": "XXBALEBJCFJMACE"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "LE -> ",
+              "before": "XXBALEBJCFJMACE",
+              "after": "XXBABJCFJMACE"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "XXBA -> ",
+              "before": "XXBABJCFJMACE",
+              "after": "BJCFJMACE"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "JMACE -> ",
+              "before": "BJCFJMACE",
+              "after": "BJCF"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "BJCF -> ",
+              "before": "BJCF",
+              "after": ""
+            }
+          ]
+        },
+        "016": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "NI -> ",
+              "before": "PUUTNI",
+              "after": "PUUT"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "PU -> ",
+              "before": "PUUT",
+              "after": "UT"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "U -> ",
+              "before": "UT",
+              "after": "T"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "T -> ",
+              "before": "T",
+              "after": ""
+            }
+          ]
+        },
+        "000": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 2,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "SXS -> ",
+              "before": "FVHSXS",
+              "after": "FVH"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "FVH -> ",
+              "before": "FVH",
+              "after": ""
+            }
+          ]
+        },
+        "057": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "QZ -> ",
+              "before": "EKGMQZZDWKBX",
+              "after": "EKGMZDWKBX"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "ZDWK -> ",
+              "before": "EKGMZDWKBX",
+              "after": "EKGMBX"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "EKGM -> ",
+              "before": "EKGMBX",
+              "after": "BX"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "X -> ",
+              "before": "BX",
+              "after": "B"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "B -> ",
+              "before": "B",
+              "after": ""
+            }
+          ]
+        },
+        "020": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 2,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "BV -> ",
+              "before": "BVVTXQAHL",
+              "after": "VTXQAHL"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "VTXQAHL -> ",
+              "before": "VTXQAHL",
+              "after": ""
+            }
+          ]
+        },
+        "077": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 9,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "Z -> ",
+              "before": "ZRHILGCJYFPWSCSBPZGIXYCV",
+              "after": "RHILGCJYFPWSCSBPZGIXYCV"
+            },
+            {
+              "step": 2,
+              "transition_idx": 0,
+              "transition": "Z -> ",
+              "before": "RHILGCJYFPWSCSBPZGIXYCV",
+              "after": "RHILGCJYFPWSCSBPGIXYCV"
+            },
+            {
+              "step": 3,
+              "transition_idx": 1,
+              "transition": "CJ -> ",
+              "before": "RHILGCJYFPWSCSBPGIXYCV",
+              "after": "RHILGYFPWSCSBPGIXYCV"
+            },
+            {
+              "step": 4,
+              "transition_idx": 2,
+              "transition": "YFPW -> ",
+              "before": "RHILGYFPWSCSBPGIXYCV",
+              "after": "RHILGSCSBPGIXYCV"
+            },
+            {
+              "step": 5,
+              "transition_idx": 3,
+              "transition": "S -> ",
+              "before": "RHILGSCSBPGIXYCV",
+              "after": "RHILGCSBPGIXYCV"
+            },
+            {
+              "step": 6,
+              "transition_idx": 4,
+              "transition": "ILG -> ",
+              "before": "RHILGCSBPGIXYCV",
+              "after": "RHCSBPGIXYCV"
+            },
+            {
+              "step": 7,
+              "transition_idx": 6,
+              "transition": "RH -> ",
+              "before": "RHCSBPGIXYCV",
+              "after": "CSBPGIXYCV"
+            },
+            {
+              "step": 8,
+              "transition_idx": 7,
+              "transition": "CSBP -> ",
+              "before": "CSBPGIXYCV",
+              "after": "GIXYCV"
+            },
+            {
+              "step": 9,
+              "transition_idx": 8,
+              "transition": "GIXYCV -> ",
+              "before": "GIXYCV",
+              "after": ""
+            }
+          ]
+        },
+        "098": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 6,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "PSN -> ",
+              "before": "LFAOLEHXBLXRPSNLGYYLB",
+              "after": "LFAOLEHXBLXRLGYYLB"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "HXBLXR -> ",
+              "before": "LFAOLEHXBLXRLGYYLB",
+              "after": "LFAOLELGYYLB"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "LF -> ",
+              "before": "LFAOLELGYYLB",
+              "after": "AOLELGYYLB"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "LGYYL -> ",
+              "before": "AOLELGYYLB",
+              "after": "AOLEB"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "B -> ",
+              "before": "AOLEB",
+              "after": "AOLE"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "AOLE -> ",
+              "before": "AOLE",
+              "after": ""
+            }
+          ]
+        },
+        "061": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 6,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "I -> ",
+              "before": "JUZLNAVKRANYIMTONHLF",
+              "after": "JUZLNAVKRANYMTONHLF"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "ANY -> ",
+              "before": "JUZLNAVKRANYMTONHLF",
+              "after": "JUZLNAVKRMTONHLF"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "MTONH -> ",
+              "before": "JUZLNAVKRMTONHLF",
+              "after": "JUZLNAVKRLF"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "LF -> ",
+              "before": "JUZLNAVKRLF",
+              "after": "JUZLNAVKR"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "JUZL -> ",
+              "before": "JUZLNAVKR",
+              "after": "NAVKR"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "NAVKR -> ",
+              "before": "NAVKR",
+              "after": ""
+            }
+          ]
+        },
+        "036": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "GPLIJ -> ",
+              "before": "GPLIJCBBAYJKZQXXMW",
+              "after": "CBBAYJKZQXXMW"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "KZQXX -> ",
+              "before": "CBBAYJKZQXXMW",
+              "after": "CBBAYJMW"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "MW -> ",
+              "before": "CBBAYJMW",
+              "after": "CBBAYJ"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "C -> ",
+              "before": "CBBAYJ",
+              "after": "BBAYJ"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "BBAYJ -> ",
+              "before": "BBAYJ",
+              "after": ""
+            }
+          ]
+        },
+        "023": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 3,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "C -> ",
+              "before": "TPXCLXGAOT",
+              "after": "TPXLXGAOT"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "LXGAOT -> ",
+              "before": "TPXLXGAOT",
+              "after": "TPX"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "TPX -> ",
+              "before": "TPX",
+              "after": ""
+            }
+          ]
+        },
+        "074": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 7,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "HRL -> ",
+              "before": "NKLBMZZEONHRLWUTDSULNDEAJQB",
+              "after": "NKLBMZZEONWUTDSULNDEAJQB"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "KLBM -> ",
+              "before": "NKLBMZZEONWUTDSULNDEAJQB",
+              "after": "NZZEONWUTDSULNDEAJQB"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "ZZEON -> ",
+              "before": "NZZEONWUTDSULNDEAJQB",
+              "after": "NWUTDSULNDEAJQB"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "JQB -> ",
+              "before": "NWUTDSULNDEAJQB",
+              "after": "NWUTDSULNDEA"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "N -> ",
+              "before": "NWUTDSULNDEA",
+              "after": "WUTDSULNDEA"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "WUTDSU -> ",
+              "before": "WUTDSULNDEA",
+              "after": "LNDEA"
+            },
+            {
+              "step": 7,
+              "transition_idx": 6,
+              "transition": "LNDEA -> ",
+              "before": "LNDEA",
+              "after": ""
+            }
+          ]
+        },
+        "062": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "QUEKS -> ",
+              "before": "UMFPQUEKSRAHQMW",
+              "after": "UMFPRAHQMW"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "HQMW -> ",
+              "before": "UMFPRAHQMW",
+              "after": "UMFPRA"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "UMF -> ",
+              "before": "UMFPRA",
+              "after": "PRA"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "P -> ",
+              "before": "PRA",
+              "after": "RA"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "RA -> ",
+              "before": "RA",
+              "after": ""
+            }
+          ]
+        },
+        "035": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "FCGRTGJ -> ",
+              "before": "HFRBIORSFDXUFCGRTGJ",
+              "after": "HFRBIORSFDXU"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "IORS -> ",
+              "before": "HFRBIORSFDXU",
+              "after": "HFRBFDXU"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "U -> ",
+              "before": "HFRBFDXU",
+              "after": "HFRBFDX"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "HFRB -> ",
+              "before": "HFRBFDX",
+              "after": "FDX"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "FDX -> ",
+              "before": "FDX",
+              "after": ""
+            }
+          ]
+        },
+        "019": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 2,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "PCEYFX -> ",
+              "before": "IPCEYFX",
+              "after": "I"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "I -> ",
+              "before": "I",
+              "after": ""
+            }
+          ]
+        },
+        "058": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 1,
+              "transition": "WU -> ",
+              "before": "YTFTFSLKKCYWU",
+              "after": "YTFTFSLKKCY"
+            },
+            {
+              "step": 2,
+              "transition_idx": 2,
+              "transition": "C -> ",
+              "before": "YTFTFSLKKCY",
+              "after": "YTFTFSLKKY"
+            },
+            {
+              "step": 3,
+              "transition_idx": 3,
+              "transition": "SLKK -> ",
+              "before": "YTFTFSLKKY",
+              "after": "YTFTFY"
+            },
+            {
+              "step": 4,
+              "transition_idx": 4,
+              "transition": "YTFTF -> ",
+              "before": "YTFTFY",
+              "after": "Y"
+            },
+            {
+              "step": 5,
+              "transition_idx": 0,
+              "transition": "Y -> ",
+              "before": "Y",
+              "after": ""
+            }
+          ]
+        },
+        "097": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 6,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "KFOBDE -> ",
+              "before": "RJMKFOBDETJMEGWWHJV",
+              "after": "RJMTJMEGWWHJV"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "TJMEGW -> ",
+              "before": "RJMTJMEGWWHJV",
+              "after": "RJMWHJV"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "M -> ",
+              "before": "RJMWHJV",
+              "after": "RJWHJV"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "RJ -> ",
+              "before": "RJWHJV",
+              "after": "WHJV"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "WHJ -> ",
+              "before": "WHJV",
+              "after": "V"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "V -> ",
+              "before": "V",
+              "after": ""
+            }
+          ]
+        },
+        "078": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 7,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "A -> ",
+              "before": "DMIRTRUXUTIEBYAOSGRIHUFRHAKM",
+              "after": "DMIRTRUXUTIEBYOSGRIHUFRHAKM"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "AKM -> ",
+              "before": "DMIRTRUXUTIEBYOSGRIHUFRHAKM",
+              "after": "DMIRTRUXUTIEBYOSGRIHUFRH"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "OSGRI -> ",
+              "before": "DMIRTRUXUTIEBYOSGRIHUFRH",
+              "after": "DMIRTRUXUTIEBYHUFRH"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "HUFRH -> ",
+              "before": "DMIRTRUXUTIEBYHUFRH",
+              "after": "DMIRTRUXUTIEBY"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "DMI -> ",
+              "before": "DMIRTRUXUTIEBY",
+              "after": "RTRUXUTIEBY"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "RTRUXU -> ",
+              "before": "RTRUXUTIEBY",
+              "after": "TIEBY"
+            },
+            {
+              "step": 7,
+              "transition_idx": 6,
+              "transition": "TIEBY -> ",
+              "before": "TIEBY",
+              "after": ""
+            }
+          ]
+        },
+        "081": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 7,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "AYHKI -> ",
+              "before": "UWEJCZGLTFIPTWBIOZAYHKIGHNN",
+              "after": "UWEJCZGLTFIPTWBIOZGHNN"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "UWEJCZG -> ",
+              "before": "UWEJCZGLTFIPTWBIOZGHNN",
+              "after": "LTFIPTWBIOZGHNN"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "LTFI -> ",
+              "before": "LTFIPTWBIOZGHNN",
+              "after": "PTWBIOZGHNN"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "PTWBIO -> ",
+              "before": "PTWBIOZGHNN",
+              "after": "ZGHNN"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "NN -> ",
+              "before": "ZGHNN",
+              "after": "ZGH"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "Z -> ",
+              "before": "ZGH",
+              "after": "GH"
+            },
+            {
+              "step": 7,
+              "transition_idx": 6,
+              "transition": "GH -> ",
+              "before": "GH",
+              "after": ""
+            }
+          ]
+        },
+        "039": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 1,
+              "transition": "IC -> ",
+              "before": "ZNMICNIJCU",
+              "after": "ZNMNIJCU"
+            },
+            {
+              "step": 2,
+              "transition_idx": 2,
+              "transition": "U -> ",
+              "before": "ZNMNIJCU",
+              "after": "ZNMNIJC"
+            },
+            {
+              "step": 3,
+              "transition_idx": 3,
+              "transition": "IJC -> ",
+              "before": "ZNMNIJC",
+              "after": "ZNMN"
+            },
+            {
+              "step": 4,
+              "transition_idx": 4,
+              "transition": "ZNM -> ",
+              "before": "ZNMN",
+              "after": "N"
+            },
+            {
+              "step": 5,
+              "transition_idx": 0,
+              "transition": "N -> ",
+              "before": "N",
+              "after": ""
+            }
+          ]
+        },
+        "042": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "PMNIOUGU -> ",
+              "before": "GRXTILCASNJKPMNIOUGU",
+              "after": "GRXTILCASNJK"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "ILC -> ",
+              "before": "GRXTILCASNJK",
+              "after": "GRXTASNJK"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "GRXT -> ",
+              "before": "GRXTASNJK",
+              "after": "ASNJK"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "ASNJK -> ",
+              "before": "ASNJK",
+              "after": ""
+            }
+          ]
+        },
+        "015": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 3,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "LQXB -> ",
+              "before": "DBXJSLQXB",
+              "after": "DBXJS"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "JS -> ",
+              "before": "DBXJS",
+              "after": "DBX"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "DBX -> ",
+              "before": "DBX",
+              "after": ""
+            }
+          ]
+        },
+        "003": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "ZSW -> ",
+              "before": "GAPOUZSWA",
+              "after": "GAPOUA"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "GAP -> ",
+              "before": "GAPOUA",
+              "after": "OUA"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "OU -> ",
+              "before": "OUA",
+              "after": "A"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "A -> ",
+              "before": "A",
+              "after": ""
+            }
+          ]
+        },
+        "054": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "QNDN -> ",
+              "before": "UHYLKLYTVAPFQNDN",
+              "after": "UHYLKLYTVAPF"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "APF -> ",
+              "before": "UHYLKLYTVAPF",
+              "after": "UHYLKLYTV"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "UHYL -> ",
+              "before": "UHYLKLYTV",
+              "after": "KLYTV"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "KLYTV -> ",
+              "before": "KLYTV",
+              "after": ""
+            }
+          ]
+        },
+        "055": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "LW -> ",
+              "before": "LWWPCSJXVLC",
+              "after": "WPCSJXVLC"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "WPCS -> ",
+              "before": "WPCSJXVLC",
+              "after": "JXVLC"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "C -> ",
+              "before": "JXVLC",
+              "after": "JXVL"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "L -> ",
+              "before": "JXVL",
+              "after": "JXV"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "JXV -> ",
+              "before": "JXV",
+              "after": ""
+            }
+          ]
+        },
+        "002": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 3,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "U -> ",
+              "before": "UJUFTS",
+              "after": "JUFTS"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "FTS -> ",
+              "before": "JUFTS",
+              "after": "JU"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "JU -> ",
+              "before": "JU",
+              "after": ""
+            }
+          ]
+        },
+        "014": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 2,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "N -> ",
+              "before": "NPJGRIRNNC",
+              "after": "PJGRIRNNC"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "PJGRIRNNC -> ",
+              "before": "PJGRIRNNC",
+              "after": ""
+            }
+          ]
+        },
+        "043": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "UPORW -> ",
+              "before": "ETNQRJGCFUPORWC",
+              "after": "ETNQRJGCFC"
+            },
+            {
+              "step": 2,
+              "transition_idx": 2,
+              "transition": "JGCF -> ",
+              "before": "ETNQRJGCFC",
+              "after": "ETNQRC"
+            },
+            {
+              "step": 3,
+              "transition_idx": 1,
+              "transition": "C -> ",
+              "before": "ETNQRC",
+              "after": "ETNQR"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "ETNQR -> ",
+              "before": "ETNQR",
+              "after": ""
+            }
+          ]
+        },
+        "038": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "PR -> ",
+              "before": "HLEYLIIIIWLBSWPR",
+              "after": "HLEYLIIIIWLBSW"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "LBSW -> ",
+              "before": "HLEYLIIIIWLBSW",
+              "after": "HLEYLIIIIW"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "HLE -> ",
+              "before": "HLEYLIIIIW",
+              "after": "YLIIIIW"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "YLII -> ",
+              "before": "YLIIIIW",
+              "after": "IIW"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "IIW -> ",
+              "before": "IIW",
+              "after": ""
+            }
+          ]
+        },
+        "080": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 7,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "NBLXJB -> ",
+              "before": "NBLXJBSSSBULOYXYHQBS",
+              "after": "SSSBULOYXYHQBS"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "S -> ",
+              "before": "SSSBULOYXYHQBS",
+              "after": "SSBULOYXYHQBS"
+            },
+            {
+              "step": 3,
+              "transition_idx": 1,
+              "transition": "S -> ",
+              "before": "SSBULOYXYHQBS",
+              "after": "SBULOYXYHQBS"
+            },
+            {
+              "step": 4,
+              "transition_idx": 2,
+              "transition": "LO -> ",
+              "before": "SBULOYXYHQBS",
+              "after": "SBUYXYHQBS"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "SBU -> ",
+              "before": "SBUYXYHQBS",
+              "after": "YXYHQBS"
+            },
+            {
+              "step": 6,
+              "transition_idx": 1,
+              "transition": "S -> ",
+              "before": "YXYHQBS",
+              "after": "YXYHQB"
+            },
+            {
+              "step": 7,
+              "transition_idx": 5,
+              "transition": "YXYHQB -> ",
+              "before": "YXYHQB",
+              "after": ""
+            }
+          ]
+        },
+        "096": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 6,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "DPQBSCZ -> ",
+              "before": "FAOJTGJDPQBSCZBJBJLRMDDBLNCH",
+              "after": "FAOJTGJBJBJLRMDDBLNCH"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "BJBJL -> ",
+              "before": "FAOJTGJBJBJLRMDDBLNCH",
+              "after": "FAOJTGJRMDDBLNCH"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "FAOJTGJ -> ",
+              "before": "FAOJTGJRMDDBLNCH",
+              "after": "RMDDBLNCH"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "RM -> ",
+              "before": "RMDDBLNCH",
+              "after": "DDBLNCH"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "D -> ",
+              "before": "DDBLNCH",
+              "after": "DBLNCH"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "DBLNCH -> ",
+              "before": "DBLNCH",
+              "after": ""
+            }
+          ]
+        },
+        "079": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 8,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "FV -> ",
+              "before": "BBLOVMLOFVUMRRMTWJODRNRC",
+              "after": "BBLOVMLOUMRRMTWJODRNRC"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "JODRN -> ",
+              "before": "BBLOVMLOUMRRMTWJODRNRC",
+              "after": "BBLOVMLOUMRRMTWRC"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "UMRR -> ",
+              "before": "BBLOVMLOUMRRMTWRC",
+              "after": "BBLOVMLOMTWRC"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "BBL -> ",
+              "before": "BBLOVMLOMTWRC",
+              "after": "OVMLOMTWRC"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "C -> ",
+              "before": "OVMLOMTWRC",
+              "after": "OVMLOMTWR"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "OVMLO -> ",
+              "before": "OVMLOMTWR",
+              "after": "MTWR"
+            },
+            {
+              "step": 7,
+              "transition_idx": 6,
+              "transition": "MTW -> ",
+              "before": "MTWR",
+              "after": "R"
+            },
+            {
+              "step": 8,
+              "transition_idx": 7,
+              "transition": "R -> ",
+              "before": "R",
+              "after": ""
+            }
+          ]
+        },
+        "059": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "WKQ -> ",
+              "before": "BWAOAZMWKQ",
+              "after": "BWAOAZM"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "OA -> ",
+              "before": "BWAOAZM",
+              "after": "BWAZM"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "BWA -> ",
+              "before": "BWAZM",
+              "after": "ZM"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "ZM -> ",
+              "before": "ZM",
+              "after": ""
+            }
+          ]
+        },
+        "018": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 3,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "WEA -> ",
+              "before": "RPZBWEA",
+              "after": "RPZB"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "B -> ",
+              "before": "RPZB",
+              "after": "RPZ"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "RPZ -> ",
+              "before": "RPZ",
+              "after": ""
+            }
+          ]
+        },
+        "034": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "CTJYR -> ",
+              "before": "GVVCCTJYRTZD",
+              "after": "GVVCTZD"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "GVV -> ",
+              "before": "GVVCTZD",
+              "after": "CTZD"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "T -> ",
+              "before": "CTZD",
+              "after": "CZD"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "C -> ",
+              "before": "CZD",
+              "after": "ZD"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "ZD -> ",
+              "before": "ZD",
+              "after": ""
+            }
+          ]
+        },
+        "063": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 7,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "IDLG -> ",
+              "before": "VPJQRWTIDLGLCG",
+              "after": "VPJQRWTLCG"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "WT -> ",
+              "before": "VPJQRWTLCG",
+              "after": "VPJQRLCG"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "LC -> ",
+              "before": "VPJQRLCG",
+              "after": "VPJQRG"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "VP -> ",
+              "before": "VPJQRG",
+              "after": "JQRG"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "J -> ",
+              "before": "JQRG",
+              "after": "QRG"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "G -> ",
+              "before": "QRG",
+              "after": "QR"
+            },
+            {
+              "step": 7,
+              "transition_idx": 6,
+              "transition": "QR -> ",
+              "before": "QR",
+              "after": ""
+            }
+          ]
+        },
+        "075": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "LKDDC -> ",
+              "before": "CKEKSNBCNKOTLKDDCNJF",
+              "after": "CKEKSNBCNKOTNJF"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "BCNKOT -> ",
+              "before": "CKEKSNBCNKOTNJF",
+              "after": "CKEKSNNJF"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "CKEKSN -> ",
+              "before": "CKEKSNNJF",
+              "after": "NJF"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "NJF -> ",
+              "before": "NJF",
+              "after": ""
+            }
+          ]
+        },
+        "022": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 3,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "CQC -> ",
+              "before": "CQCETR",
+              "after": "ETR"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "TR -> ",
+              "before": "ETR",
+              "after": "E"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "E -> ",
+              "before": "E",
+              "after": ""
+            }
+          ]
+        },
+        "029": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "P -> ",
+              "before": "QRPQISEW",
+              "after": "QRQISEW"
+            },
+            {
+              "step": 2,
+              "transition_idx": 2,
+              "transition": "QR -> ",
+              "before": "QRQISEW",
+              "after": "QISEW"
+            },
+            {
+              "step": 3,
+              "transition_idx": 1,
+              "transition": "Q -> ",
+              "before": "QISEW",
+              "after": "ISEW"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "ISEW -> ",
+              "before": "ISEW",
+              "after": ""
+            }
+          ]
+        },
+        "091": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "OTNKTFF -> ",
+              "before": "OTNKTFFKTVFEORUOKZEIW",
+              "after": "KTVFEORUOKZEIW"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "W -> ",
+              "before": "KTVFEORUOKZEIW",
+              "after": "KTVFEORUOKZEI"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "KTVFE -> ",
+              "before": "KTVFEORUOKZEI",
+              "after": "ORUOKZEI"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "EI -> ",
+              "before": "ORUOKZEI",
+              "after": "ORUOKZ"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "ORUOKZ -> ",
+              "before": "ORUOKZ",
+              "after": ""
+            }
+          ]
+        },
+        "087": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 6,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 1,
+              "transition": "PGILPC -> ",
+              "before": "FKABFCETWNIYPGILPCEB",
+              "after": "FKABFCETWNIYEB"
+            },
+            {
+              "step": 2,
+              "transition_idx": 3,
+              "transition": "NIY -> ",
+              "before": "FKABFCETWNIYEB",
+              "after": "FKABFCETWEB"
+            },
+            {
+              "step": 3,
+              "transition_idx": 4,
+              "transition": "ABFCETW -> ",
+              "before": "FKABFCETWEB",
+              "after": "FKEB"
+            },
+            {
+              "step": 4,
+              "transition_idx": 0,
+              "transition": "B -> ",
+              "before": "FKEB",
+              "after": "FKE"
+            },
+            {
+              "step": 5,
+              "transition_idx": 2,
+              "transition": "E -> ",
+              "before": "FKE",
+              "after": "FK"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "FK -> ",
+              "before": "FK",
+              "after": ""
+            }
+          ]
+        },
+        "068": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 9,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "YL -> ",
+              "before": "EMNYILZKUYHKEOEQGOPMQZBYL",
+              "after": "EMNYILZKUYHKEOEQGOPMQZB"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "Z -> ",
+              "before": "EMNYILZKUYHKEOEQGOPMQZB",
+              "after": "EMNYILKUYHKEOEQGOPMQZB"
+            },
+            {
+              "step": 3,
+              "transition_idx": 3,
+              "transition": "HKEOEQ -> ",
+              "before": "EMNYILKUYHKEOEQGOPMQZB",
+              "after": "EMNYILKUYGOPMQZB"
+            },
+            {
+              "step": 4,
+              "transition_idx": 4,
+              "transition": "G -> ",
+              "before": "EMNYILKUYGOPMQZB",
+              "after": "EMNYILKUYOPMQZB"
+            },
+            {
+              "step": 5,
+              "transition_idx": 5,
+              "transition": "KU -> ",
+              "before": "EMNYILKUYOPMQZB",
+              "after": "EMNYILYOPMQZB"
+            },
+            {
+              "step": 6,
+              "transition_idx": 6,
+              "transition": "QZB -> ",
+              "before": "EMNYILYOPMQZB",
+              "after": "EMNYILYOPM"
+            },
+            {
+              "step": 7,
+              "transition_idx": 7,
+              "transition": "OPM -> ",
+              "before": "EMNYILYOPM",
+              "after": "EMNYILY"
+            },
+            {
+              "step": 8,
+              "transition_idx": 8,
+              "transition": "EMNYIL -> ",
+              "before": "EMNYILY",
+              "after": "Y"
+            },
+            {
+              "step": 9,
+              "transition_idx": 2,
+              "transition": "Y -> ",
+              "before": "Y",
+              "after": ""
+            }
+          ]
+        },
+        "044": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "DDLQZA -> ",
+              "before": "DBRBOUHVCRPDQZDDLQZA",
+              "after": "DBRBOUHVCRPDQZ"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "O -> ",
+              "before": "DBRBOUHVCRPDQZ",
+              "after": "DBRBUHVCRPDQZ"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "UHVCR -> ",
+              "before": "DBRBUHVCRPDQZ",
+              "after": "DBRBPDQZ"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "PDQZ -> ",
+              "before": "DBRBPDQZ",
+              "after": "DBRB"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "DBRB -> ",
+              "before": "DBRB",
+              "after": ""
+            }
+          ]
+        },
+        "013": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "RUX -> ",
+              "before": "BRUXPUBWPC",
+              "after": "BPUBWPC"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "B -> ",
+              "before": "BPUBWPC",
+              "after": "PUBWPC"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "UBWPC -> ",
+              "before": "PUBWPC",
+              "after": "P"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "P -> ",
+              "before": "P",
+              "after": ""
+            }
+          ]
+        },
+        "005": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 3,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "M -> ",
+              "before": "UGZUM",
+              "after": "UGZU"
+            },
+            {
+              "step": 2,
+              "transition_idx": 2,
+              "transition": "UGZ -> ",
+              "before": "UGZU",
+              "after": "U"
+            },
+            {
+              "step": 3,
+              "transition_idx": 1,
+              "transition": "U -> ",
+              "before": "U",
+              "after": ""
+            }
+          ]
+        },
+        "052": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "XX -> ",
+              "before": "XXFMSQDGGJOPIOQTS",
+              "after": "FMSQDGGJOPIOQTS"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "SQ -> ",
+              "before": "FMSQDGGJOPIOQTS",
+              "after": "FMDGGJOPIOQTS"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "FM -> ",
+              "before": "FMDGGJOPIOQTS",
+              "after": "DGGJOPIOQTS"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "GJOPIOQTS -> ",
+              "before": "DGGJOPIOQTS",
+              "after": "DG"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "DG -> ",
+              "before": "DG",
+              "after": ""
+            }
+          ]
+        },
+        "025": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 3,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "XMCYV -> ",
+              "before": "NYBMOXMCYV",
+              "after": "NYBMO"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "NYB -> ",
+              "before": "NYBMO",
+              "after": "MO"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "MO -> ",
+              "before": "MO",
+              "after": ""
+            }
+          ]
+        },
+        "072": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 9,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "YRJE -> ",
+              "before": "EZFWOMEYHPEHITQTNPNIEOYRJEDV",
+              "after": "EZFWOMEYHPEHITQTNPNIEODV"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "NP -> ",
+              "before": "EZFWOMEYHPEHITQTNPNIEODV",
+              "after": "EZFWOMEYHPEHITQTNIEODV"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "EZFWOM -> ",
+              "before": "EZFWOMEYHPEHITQTNIEODV",
+              "after": "EYHPEHITQTNIEODV"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "NI -> ",
+              "before": "EYHPEHITQTNIEODV",
+              "after": "EYHPEHITQTEODV"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "PEHITQT -> ",
+              "before": "EYHPEHITQTEODV",
+              "after": "EYHEODV"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "V -> ",
+              "before": "EYHEODV",
+              "after": "EYHEOD"
+            },
+            {
+              "step": 7,
+              "transition_idx": 6,
+              "transition": "EYH -> ",
+              "before": "EYHEOD",
+              "after": "EOD"
+            },
+            {
+              "step": 8,
+              "transition_idx": 7,
+              "transition": "D -> ",
+              "before": "EOD",
+              "after": "EO"
+            },
+            {
+              "step": 9,
+              "transition_idx": 8,
+              "transition": "EO -> ",
+              "before": "EO",
+              "after": ""
+            }
+          ]
+        },
+        "064": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "N -> ",
+              "before": "TBCNVQNUSIV",
+              "after": "TBCVQNUSIV"
+            },
+            {
+              "step": 2,
+              "transition_idx": 0,
+              "transition": "N -> ",
+              "before": "TBCVQNUSIV",
+              "after": "TBCVQUSIV"
+            },
+            {
+              "step": 3,
+              "transition_idx": 1,
+              "transition": "USIV -> ",
+              "before": "TBCVQUSIV",
+              "after": "TBCVQ"
+            },
+            {
+              "step": 4,
+              "transition_idx": 2,
+              "transition": "TBC -> ",
+              "before": "TBCVQ",
+              "after": "VQ"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "VQ -> ",
+              "before": "VQ",
+              "after": ""
+            }
+          ]
+        },
+        "033": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 6,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "X -> ",
+              "before": "UKDWGRLXEYPYITOZQZNX",
+              "after": "UKDWGRLEYPYITOZQZNX"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "RL -> ",
+              "before": "UKDWGRLEYPYITOZQZNX",
+              "after": "UKDWGEYPYITOZQZNX"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "UK -> ",
+              "before": "UKDWGEYPYITOZQZNX",
+              "after": "DWGEYPYITOZQZNX"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "YITOZQZNX -> ",
+              "before": "DWGEYPYITOZQZNX",
+              "after": "DWGEYP"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "DWG -> ",
+              "before": "DWGEYP",
+              "after": "EYP"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "EYP -> ",
+              "before": "EYP",
+              "after": ""
+            }
+          ]
+        },
+        "048": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 6,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "SDDP -> ",
+              "before": "FGSRBQSDDPUGHOBHU",
+              "after": "FGSRBQUGHOBHU"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "F -> ",
+              "before": "FGSRBQUGHOBHU",
+              "after": "GSRBQUGHOBHU"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "U -> ",
+              "before": "GSRBQUGHOBHU",
+              "after": "GSRBQGHOBHU"
+            },
+            {
+              "step": 4,
+              "transition_idx": 2,
+              "transition": "U -> ",
+              "before": "GSRBQGHOBHU",
+              "after": "GSRBQGHOBH"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "GHOBH -> ",
+              "before": "GSRBQGHOBH",
+              "after": "GSRBQ"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "GSRBQ -> ",
+              "before": "GSRBQ",
+              "after": ""
+            }
+          ]
+        },
+        "009": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 3,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "CQVGJXK -> ",
+              "before": "MCBCQVGJXK",
+              "after": "MCB"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "B -> ",
+              "before": "MCB",
+              "after": "MC"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "MC -> ",
+              "before": "MC",
+              "after": ""
+            }
+          ]
+        },
+        "008": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 3,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "M -> ",
+              "before": "SMUFXVK",
+              "after": "SUFXVK"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "UFXVK -> ",
+              "before": "SUFXVK",
+              "after": "S"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "S -> ",
+              "before": "S",
+              "after": ""
+            }
+          ]
+        },
+        "049": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 7,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "SPO -> ",
+              "before": "DGANGTSKGCPQDGGNSPO",
+              "after": "DGANGTSKGCPQDGGN"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "GGN -> ",
+              "before": "DGANGTSKGCPQDGGN",
+              "after": "DGANGTSKGCPQD"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "KG -> ",
+              "before": "DGANGTSKGCPQD",
+              "after": "DGANGTSCPQD"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "GTS -> ",
+              "before": "DGANGTSCPQD",
+              "after": "DGANCPQD"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "D -> ",
+              "before": "DGANCPQD",
+              "after": "GANCPQD"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "CPQD -> ",
+              "before": "GANCPQD",
+              "after": "GAN"
+            },
+            {
+              "step": 7,
+              "transition_idx": 6,
+              "transition": "GAN -> ",
+              "before": "GAN",
+              "after": ""
+            }
+          ]
+        },
+        "032": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 2,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "FAHFU -> ",
+              "before": "LKKFAHFU",
+              "after": "LKK"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "LKK -> ",
+              "before": "LKK",
+              "after": ""
+            }
+          ]
+        },
+        "065": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "YA -> ",
+              "before": "EZUUYAPUXQQZ",
+              "after": "EZUUPUXQQZ"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "UXQQ -> ",
+              "before": "EZUUPUXQQZ",
+              "after": "EZUUPZ"
+            },
+            {
+              "step": 3,
+              "transition_idx": 3,
+              "transition": "P -> ",
+              "before": "EZUUPZ",
+              "after": "EZUUZ"
+            },
+            {
+              "step": 4,
+              "transition_idx": 4,
+              "transition": "EZUU -> ",
+              "before": "EZUUZ",
+              "after": "Z"
+            },
+            {
+              "step": 5,
+              "transition_idx": 2,
+              "transition": "Z -> ",
+              "before": "Z",
+              "after": ""
+            }
+          ]
+        },
+        "073": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 7,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 1,
+              "transition": "XDJ -> ",
+              "before": "OPIDHMNSDAHMYQDUMJXDJYUOFMJGH",
+              "after": "OPIDHMNSDAHMYQDUMJYUOFMJGH"
+            },
+            {
+              "step": 2,
+              "transition_idx": 2,
+              "transition": "IDHMN -> ",
+              "before": "OPIDHMNSDAHMYQDUMJYUOFMJGH",
+              "after": "OPSDAHMYQDUMJYUOFMJGH"
+            },
+            {
+              "step": 3,
+              "transition_idx": 3,
+              "transition": "OP -> ",
+              "before": "OPSDAHMYQDUMJYUOFMJGH",
+              "after": "SDAHMYQDUMJYUOFMJGH"
+            },
+            {
+              "step": 4,
+              "transition_idx": 4,
+              "transition": "YQDUMJ -> ",
+              "before": "SDAHMYQDUMJYUOFMJGH",
+              "after": "SDAHMYUOFMJGH"
+            },
+            {
+              "step": 5,
+              "transition_idx": 5,
+              "transition": "SDAHM -> ",
+              "before": "SDAHMYUOFMJGH",
+              "after": "YUOFMJGH"
+            },
+            {
+              "step": 6,
+              "transition_idx": 0,
+              "transition": "H -> ",
+              "before": "YUOFMJGH",
+              "after": "YUOFMJG"
+            },
+            {
+              "step": 7,
+              "transition_idx": 6,
+              "transition": "YUOFMJG -> ",
+              "before": "YUOFMJG",
+              "after": ""
+            }
+          ]
+        },
+        "024": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 2,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "AGW -> ",
+              "before": "AGWUPRUSIH",
+              "after": "UPRUSIH"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "UPRUSIH -> ",
+              "before": "UPRUSIH",
+              "after": ""
+            }
+          ]
+        },
+        "053": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 7,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "TTXJ -> ",
+              "before": "KIZGDVFPTTXJBAWLIY",
+              "after": "KIZGDVFPBAWLIY"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "W -> ",
+              "before": "KIZGDVFPBAWLIY",
+              "after": "KIZGDVFPBALIY"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "BA -> ",
+              "before": "KIZGDVFPBALIY",
+              "after": "KIZGDVFPLIY"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "VFP -> ",
+              "before": "KIZGDVFPLIY",
+              "after": "KIZGDLIY"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "KIZGD -> ",
+              "before": "KIZGDLIY",
+              "after": "LIY"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "Y -> ",
+              "before": "LIY",
+              "after": "LI"
+            },
+            {
+              "step": 7,
+              "transition_idx": 6,
+              "transition": "LI -> ",
+              "before": "LI",
+              "after": ""
+            }
+          ]
+        },
+        "004": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 3,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "VTMLR -> ",
+              "before": "IJTAVTMLR",
+              "after": "IJTA"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "JTA -> ",
+              "before": "IJTA",
+              "after": "I"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "I -> ",
+              "before": "I",
+              "after": ""
+            }
+          ]
+        },
+        "012": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 3,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "JDB -> ",
+              "before": "AMJDBEQBAN",
+              "after": "AMEQBAN"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "EQBAN -> ",
+              "before": "AMEQBAN",
+              "after": "AM"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "AM -> ",
+              "before": "AM",
+              "after": ""
+            }
+          ]
+        },
+        "045": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "DG -> ",
+              "before": "DGUUIKLWMAHK",
+              "after": "UUIKLWMAHK"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "UUIK -> ",
+              "before": "UUIKLWMAHK",
+              "after": "LWMAHK"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "WMAHK -> ",
+              "before": "LWMAHK",
+              "after": "L"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "L -> ",
+              "before": "L",
+              "after": ""
+            }
+          ]
+        },
+        "086": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 6,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "ZJG -> ",
+              "before": "UXHHYLNUHRZJGHD",
+              "after": "UXHHYLNUHRHD"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "D -> ",
+              "before": "UXHHYLNUHRHD",
+              "after": "UXHHYLNUHRH"
+            },
+            {
+              "step": 3,
+              "transition_idx": 3,
+              "transition": "L -> ",
+              "before": "UXHHYLNUHRH",
+              "after": "UXHHYNUHRH"
+            },
+            {
+              "step": 4,
+              "transition_idx": 4,
+              "transition": "UXHHY -> ",
+              "before": "UXHHYNUHRH",
+              "after": "NUHRH"
+            },
+            {
+              "step": 5,
+              "transition_idx": 5,
+              "transition": "NUHR -> ",
+              "before": "NUHRH",
+              "after": "H"
+            },
+            {
+              "step": 6,
+              "transition_idx": 2,
+              "transition": "H -> ",
+              "before": "H",
+              "after": ""
+            }
+          ]
+        },
+        "069": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 6,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "TKY -> ",
+              "before": "MBVOVTYEXVZZXWPVNJLTKYC",
+              "after": "MBVOVTYEXVZZXWPVNJLC"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "C -> ",
+              "before": "MBVOVTYEXVZZXWPVNJLC",
+              "after": "MBVOVTYEXVZZXWPVNJL"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "XWPVNJL -> ",
+              "before": "MBVOVTYEXVZZXWPVNJL",
+              "after": "MBVOVTYEXVZZ"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "MBVOVT -> ",
+              "before": "MBVOVTYEXVZZ",
+              "after": "YEXVZZ"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "YEXVZ -> ",
+              "before": "YEXVZZ",
+              "after": "Z"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "Z -> ",
+              "before": "Z",
+              "after": ""
+            }
+          ]
+        },
+        "090": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 8,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "KBG -> ",
+              "before": "KBGOYNKNQLQCYYHOIKNMCIJW",
+              "after": "OYNKNQLQCYYHOIKNMCIJW"
+            },
+            {
+              "step": 2,
+              "transition_idx": 2,
+              "transition": "OYNK -> ",
+              "before": "OYNKNQLQCYYHOIKNMCIJW",
+              "after": "NQLQCYYHOIKNMCIJW"
+            },
+            {
+              "step": 3,
+              "transition_idx": 3,
+              "transition": "IJ -> ",
+              "before": "NQLQCYYHOIKNMCIJW",
+              "after": "NQLQCYYHOIKNMCW"
+            },
+            {
+              "step": 4,
+              "transition_idx": 4,
+              "transition": "HOIKNM -> ",
+              "before": "NQLQCYYHOIKNMCW",
+              "after": "NQLQCYYCW"
+            },
+            {
+              "step": 5,
+              "transition_idx": 5,
+              "transition": "W -> ",
+              "before": "NQLQCYYCW",
+              "after": "NQLQCYYC"
+            },
+            {
+              "step": 6,
+              "transition_idx": 6,
+              "transition": "NQL -> ",
+              "before": "NQLQCYYC",
+              "after": "QCYYC"
+            },
+            {
+              "step": 7,
+              "transition_idx": 7,
+              "transition": "QCYY -> ",
+              "before": "QCYYC",
+              "after": "C"
+            },
+            {
+              "step": 8,
+              "transition_idx": 1,
+              "transition": "C -> ",
+              "before": "C",
+              "after": ""
+            }
+          ]
+        },
+        "028": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "KOF -> ",
+              "before": "ARSKOFOFPL",
+              "after": "ARSOFPL"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "OF -> ",
+              "before": "ARSOFPL",
+              "after": "ARSPL"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "ARS -> ",
+              "before": "ARSPL",
+              "after": "PL"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "PL -> ",
+              "before": "PL",
+              "after": ""
+            }
+          ]
+        }
+      },
+      "complexity_stats": [
+        {
+          "problem_id": "050",
+          "initial_length": 20,
+          "transitions_count": 7,
+          "solution_length": 7
+        },
+        {
+          "problem_id": "007",
+          "initial_length": 10,
+          "transitions_count": 3,
+          "solution_length": 3
+        },
+        {
+          "problem_id": "011",
+          "initial_length": 7,
+          "transitions_count": 3,
+          "solution_length": 3
+        },
+        {
+          "problem_id": "046",
+          "initial_length": 16,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "085",
+          "initial_length": 25,
+          "transitions_count": 7,
+          "solution_length": 7
+        },
+        {
+          "problem_id": "093",
+          "initial_length": 25,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "031",
+          "initial_length": 6,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "066",
+          "initial_length": 16,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "089",
+          "initial_length": 18,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "070",
+          "initial_length": 18,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "027",
+          "initial_length": 8,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "026",
+          "initial_length": 7,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "071",
+          "initial_length": 30,
+          "transitions_count": 7,
+          "solution_length": 7
+        },
+        {
+          "problem_id": "067",
+          "initial_length": 24,
+          "transitions_count": 8,
+          "solution_length": 8
+        },
+        {
+          "problem_id": "088",
+          "initial_length": 24,
+          "transitions_count": 7,
+          "solution_length": 7
+        },
+        {
+          "problem_id": "030",
+          "initial_length": 7,
+          "transitions_count": 2,
+          "solution_length": 2
+        },
+        {
+          "problem_id": "092",
+          "initial_length": 21,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "084",
+          "initial_length": 25,
+          "transitions_count": 6,
+          "solution_length": 6
+        },
+        {
+          "problem_id": "047",
+          "initial_length": 19,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "010",
+          "initial_length": 7,
+          "transitions_count": 3,
+          "solution_length": 3
+        },
+        {
+          "problem_id": "006",
+          "initial_length": 5,
+          "transitions_count": 2,
+          "solution_length": 2
+        },
+        {
+          "problem_id": "051",
+          "initial_length": 17,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "037",
+          "initial_length": 14,
+          "transitions_count": 6,
+          "solution_length": 6
+        },
+        {
+          "problem_id": "060",
+          "initial_length": 14,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "076",
+          "initial_length": 29,
+          "transitions_count": 8,
+          "solution_length": 8
+        },
+        {
+          "problem_id": "099",
+          "initial_length": 17,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "021",
+          "initial_length": 8,
+          "transitions_count": 3,
+          "solution_length": 3
+        },
+        {
+          "problem_id": "056",
+          "initial_length": 13,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "001",
+          "initial_length": 7,
+          "transitions_count": 2,
+          "solution_length": 2
+        },
+        {
+          "problem_id": "017",
+          "initial_length": 6,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "040",
+          "initial_length": 10,
+          "transitions_count": 2,
+          "solution_length": 2
+        },
+        {
+          "problem_id": "083",
+          "initial_length": 21,
+          "transitions_count": 7,
+          "solution_length": 7
+        },
+        {
+          "problem_id": "095",
+          "initial_length": 18,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "094",
+          "initial_length": 22,
+          "transitions_count": 7,
+          "solution_length": 7
+        },
+        {
+          "problem_id": "082",
+          "initial_length": 16,
+          "transitions_count": 6,
+          "solution_length": 6
+        },
+        {
+          "problem_id": "041",
+          "initial_length": 18,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "016",
+          "initial_length": 6,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "000",
+          "initial_length": 6,
+          "transitions_count": 2,
+          "solution_length": 2
+        },
+        {
+          "problem_id": "057",
+          "initial_length": 12,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "020",
+          "initial_length": 9,
+          "transitions_count": 2,
+          "solution_length": 2
+        },
+        {
+          "problem_id": "077",
+          "initial_length": 24,
+          "transitions_count": 9,
+          "solution_length": 9
+        },
+        {
+          "problem_id": "098",
+          "initial_length": 21,
+          "transitions_count": 6,
+          "solution_length": 6
+        },
+        {
+          "problem_id": "061",
+          "initial_length": 20,
+          "transitions_count": 6,
+          "solution_length": 6
+        },
+        {
+          "problem_id": "036",
+          "initial_length": 18,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "023",
+          "initial_length": 10,
+          "transitions_count": 3,
+          "solution_length": 3
+        },
+        {
+          "problem_id": "074",
+          "initial_length": 27,
+          "transitions_count": 7,
+          "solution_length": 7
+        },
+        {
+          "problem_id": "062",
+          "initial_length": 15,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "035",
+          "initial_length": 19,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "019",
+          "initial_length": 7,
+          "transitions_count": 2,
+          "solution_length": 2
+        },
+        {
+          "problem_id": "058",
+          "initial_length": 13,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "097",
+          "initial_length": 19,
+          "transitions_count": 6,
+          "solution_length": 6
+        },
+        {
+          "problem_id": "078",
+          "initial_length": 28,
+          "transitions_count": 7,
+          "solution_length": 7
+        },
+        {
+          "problem_id": "081",
+          "initial_length": 27,
+          "transitions_count": 7,
+          "solution_length": 7
+        },
+        {
+          "problem_id": "039",
+          "initial_length": 10,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "042",
+          "initial_length": 20,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "015",
+          "initial_length": 9,
+          "transitions_count": 3,
+          "solution_length": 3
+        },
+        {
+          "problem_id": "003",
+          "initial_length": 9,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "054",
+          "initial_length": 16,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "055",
+          "initial_length": 11,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "002",
+          "initial_length": 6,
+          "transitions_count": 3,
+          "solution_length": 3
+        },
+        {
+          "problem_id": "014",
+          "initial_length": 10,
+          "transitions_count": 2,
+          "solution_length": 2
+        },
+        {
+          "problem_id": "043",
+          "initial_length": 15,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "038",
+          "initial_length": 16,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "080",
+          "initial_length": 20,
+          "transitions_count": 7,
+          "solution_length": 7
+        },
+        {
+          "problem_id": "096",
+          "initial_length": 28,
+          "transitions_count": 6,
+          "solution_length": 6
+        },
+        {
+          "problem_id": "079",
+          "initial_length": 24,
+          "transitions_count": 8,
+          "solution_length": 8
+        },
+        {
+          "problem_id": "059",
+          "initial_length": 10,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "018",
+          "initial_length": 7,
+          "transitions_count": 3,
+          "solution_length": 3
+        },
+        {
+          "problem_id": "034",
+          "initial_length": 12,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "063",
+          "initial_length": 14,
+          "transitions_count": 7,
+          "solution_length": 7
+        },
+        {
+          "problem_id": "075",
+          "initial_length": 20,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "022",
+          "initial_length": 6,
+          "transitions_count": 3,
+          "solution_length": 3
+        },
+        {
+          "problem_id": "029",
+          "initial_length": 8,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "091",
+          "initial_length": 21,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "087",
+          "initial_length": 20,
+          "transitions_count": 6,
+          "solution_length": 6
+        },
+        {
+          "problem_id": "068",
+          "initial_length": 25,
+          "transitions_count": 9,
+          "solution_length": 9
+        },
+        {
+          "problem_id": "044",
+          "initial_length": 20,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "013",
+          "initial_length": 10,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "005",
+          "initial_length": 5,
+          "transitions_count": 3,
+          "solution_length": 3
+        },
+        {
+          "problem_id": "052",
+          "initial_length": 17,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "025",
+          "initial_length": 10,
+          "transitions_count": 3,
+          "solution_length": 3
+        },
+        {
+          "problem_id": "072",
+          "initial_length": 28,
+          "transitions_count": 9,
+          "solution_length": 9
+        },
+        {
+          "problem_id": "064",
+          "initial_length": 11,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "033",
+          "initial_length": 20,
+          "transitions_count": 6,
+          "solution_length": 6
+        },
+        {
+          "problem_id": "048",
+          "initial_length": 17,
+          "transitions_count": 6,
+          "solution_length": 6
+        },
+        {
+          "problem_id": "009",
+          "initial_length": 10,
+          "transitions_count": 3,
+          "solution_length": 3
+        },
+        {
+          "problem_id": "008",
+          "initial_length": 7,
+          "transitions_count": 3,
+          "solution_length": 3
+        },
+        {
+          "problem_id": "049",
+          "initial_length": 19,
+          "transitions_count": 7,
+          "solution_length": 7
+        },
+        {
+          "problem_id": "032",
+          "initial_length": 8,
+          "transitions_count": 2,
+          "solution_length": 2
+        },
+        {
+          "problem_id": "065",
+          "initial_length": 12,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "073",
+          "initial_length": 29,
+          "transitions_count": 7,
+          "solution_length": 7
+        },
+        {
+          "problem_id": "024",
+          "initial_length": 10,
+          "transitions_count": 2,
+          "solution_length": 2
+        },
+        {
+          "problem_id": "053",
+          "initial_length": 18,
+          "transitions_count": 7,
+          "solution_length": 7
+        },
+        {
+          "problem_id": "004",
+          "initial_length": 9,
+          "transitions_count": 3,
+          "solution_length": 3
+        },
+        {
+          "problem_id": "012",
+          "initial_length": 10,
+          "transitions_count": 3,
+          "solution_length": 3
+        },
+        {
+          "problem_id": "045",
+          "initial_length": 12,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "086",
+          "initial_length": 15,
+          "transitions_count": 6,
+          "solution_length": 6
+        },
+        {
+          "problem_id": "069",
+          "initial_length": 23,
+          "transitions_count": 6,
+          "solution_length": 6
+        },
+        {
+          "problem_id": "090",
+          "initial_length": 24,
+          "transitions_count": 8,
+          "solution_length": 8
+        },
+        {
+          "problem_id": "028",
+          "initial_length": 10,
+          "transitions_count": 4,
+          "solution_length": 4
+        }
+      ]
+    },
+    "zero_shot": {
+      "total_problems": 100,
+      "solved_problems": 25,
+      "unsolved_problems": 66,
+      "unsolved_ids": [
+        "088",
+        "084",
+        "047",
+        "010",
+        "006",
+        "051",
+        "037",
+        "060",
+        "076",
+        "099",
+        "021",
+        "056",
+        "001",
+        "017",
+        "040",
+        "083",
+        "094",
+        "082",
+        "041",
+        "016",
+        "000",
+        "057",
+        "020",
+        "077",
+        "098",
+        "036",
+        "023",
+        "074",
+        "062",
+        "035",
+        "019",
+        "058",
+        "097",
+        "078",
+        "081",
+        "039",
+        "042",
+        "015",
+        "003",
+        "054",
+        "055",
+        "002",
+        "014",
+        "043",
+        "038",
+        "080",
+        "096",
+        "079",
+        "059",
+        "018",
+        "034",
+        "063",
+        "075",
+        "022",
+        "029",
+        "091",
+        "087",
+        "068",
+        "044",
+        "013",
+        "005",
+        "052",
+        "025",
+        "072",
+        "064",
+        "048"
+      ],
+      "success_rate": 0.25,
+      "avg_solution_length": 4.44,
+      "detailed_results": {
+        "050": {
+          "valid": false,
+          "reason": "Failed to reach empty string",
+          "steps": 6,
+          "final_state": "DF",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 1,
+              "transition": "EY -> ",
+              "before": "EYNRIFDMFPYXDFCIJCNV",
+              "after": "NRIFDMFPYXDFCIJCNV"
+            },
+            {
+              "step": 2,
+              "transition_idx": 2,
+              "transition": "NRIF -> ",
+              "before": "NRIFDMFPYXDFCIJCNV",
+              "after": "DMFPYXDFCIJCNV"
+            },
+            {
+              "step": 3,
+              "transition_idx": 5,
+              "transition": "DMFP -> ",
+              "before": "DMFPYXDFCIJCNV",
+              "after": "YXDFCIJCNV"
+            },
+            {
+              "step": 4,
+              "transition_idx": 6,
+              "transition": "CIJ -> ",
+              "before": "YXDFCIJCNV",
+              "after": "YXDFCNV"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "CNV -> ",
+              "before": "YXDFCNV",
+              "after": "YXDF"
+            },
+            {
+              "step": 6,
+              "transition_idx": 0,
+              "transition": "YX -> ",
+              "before": "YXDF",
+              "after": "DF"
+            }
+          ]
+        },
+        "007": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 3,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 2,
+              "transition": "CXC -> ",
+              "before": "CXCQGDTMRZ",
+              "after": "QGDTMRZ"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "QGD -> ",
+              "before": "QGDTMRZ",
+              "after": "TMRZ"
+            },
+            {
+              "step": 3,
+              "transition_idx": 0,
+              "transition": "TMRZ -> ",
+              "before": "TMRZ",
+              "after": ""
+            }
+          ]
+        },
+        "011": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 3,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 2,
+              "transition": "AV -> ",
+              "before": "AVNXCAZ",
+              "after": "NXCAZ"
+            },
+            {
+              "step": 2,
+              "transition_idx": 0,
+              "transition": "N -> ",
+              "before": "NXCAZ",
+              "after": "XCAZ"
+            },
+            {
+              "step": 3,
+              "transition_idx": 1,
+              "transition": "XCAZ -> ",
+              "before": "XCAZ",
+              "after": ""
+            }
+          ]
+        },
+        "046": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 3,
+              "transition": "WSPSB -> ",
+              "before": "WSPSBAGEFECTVCRJ",
+              "after": "AGEFECTVCRJ"
+            },
+            {
+              "step": 2,
+              "transition_idx": 2,
+              "transition": "AGEF -> ",
+              "before": "AGEFECTVCRJ",
+              "after": "ECTVCRJ"
+            },
+            {
+              "step": 3,
+              "transition_idx": 1,
+              "transition": "CTVCRJ -> ",
+              "before": "ECTVCRJ",
+              "after": "E"
+            },
+            {
+              "step": 4,
+              "transition_idx": 0,
+              "transition": "E -> ",
+              "before": "E",
+              "after": ""
+            }
+          ]
+        },
+        "085": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 7,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 6,
+              "transition": "UEL -> ",
+              "before": "UELLNQRIXIDJBPEBZFEGXPTYN",
+              "after": "LNQRIXIDJBPEBZFEGXPTYN"
+            },
+            {
+              "step": 2,
+              "transition_idx": 4,
+              "transition": "RIXI -> ",
+              "before": "LNQRIXIDJBPEBZFEGXPTYN",
+              "after": "LNQDJBPEBZFEGXPTYN"
+            },
+            {
+              "step": 3,
+              "transition_idx": 3,
+              "transition": "LNQ -> ",
+              "before": "LNQDJBPEBZFEGXPTYN",
+              "after": "DJBPEBZFEGXPTYN"
+            },
+            {
+              "step": 4,
+              "transition_idx": 2,
+              "transition": "ZFEGX -> ",
+              "before": "DJBPEBZFEGXPTYN",
+              "after": "DJBPEBPTYN"
+            },
+            {
+              "step": 5,
+              "transition_idx": 1,
+              "transition": "DJBP -> ",
+              "before": "DJBPEBPTYN",
+              "after": "EBPTYN"
+            },
+            {
+              "step": 6,
+              "transition_idx": 5,
+              "transition": "PTYN -> ",
+              "before": "EBPTYN",
+              "after": "EB"
+            },
+            {
+              "step": 7,
+              "transition_idx": 0,
+              "transition": "EB -> ",
+              "before": "EB",
+              "after": ""
+            }
+          ]
+        },
+        "093": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "Q -> ",
+              "before": "QPPYLFXVQUBGTQERXZPQLQMJE",
+              "after": "PPYLFXVQUBGTQERXZPQLQMJE"
+            },
+            {
+              "step": 2,
+              "transition_idx": 4,
+              "transition": "PPYLF -> ",
+              "before": "PPYLFXVQUBGTQERXZPQLQMJE",
+              "after": "XVQUBGTQERXZPQLQMJE"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "XVQUB -> ",
+              "before": "XVQUBGTQERXZPQLQMJE",
+              "after": "GTQERXZPQLQMJE"
+            },
+            {
+              "step": 4,
+              "transition_idx": 1,
+              "transition": "GTQERXZ -> ",
+              "before": "GTQERXZPQLQMJE",
+              "after": "PQLQMJE"
+            },
+            {
+              "step": 5,
+              "transition_idx": 3,
+              "transition": "PQLQMJE -> ",
+              "before": "PQLQMJE",
+              "after": ""
+            }
+          ]
+        },
+        "031": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 1,
+              "transition": "KKS -> ",
+              "before": "KKSGHQ",
+              "after": "GHQ"
+            },
+            {
+              "step": 2,
+              "transition_idx": 0,
+              "transition": "G -> ",
+              "before": "GHQ",
+              "after": "HQ"
+            },
+            {
+              "step": 3,
+              "transition_idx": 3,
+              "transition": "H -> ",
+              "before": "HQ",
+              "after": "Q"
+            },
+            {
+              "step": 4,
+              "transition_idx": 2,
+              "transition": "Q -> ",
+              "before": "Q",
+              "after": ""
+            }
+          ]
+        },
+        "066": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "OJFFF -> ",
+              "before": "OJFFFCPXNPOLZQVU",
+              "after": "CPXNPOLZQVU"
+            },
+            {
+              "step": 2,
+              "transition_idx": 2,
+              "transition": "CP -> ",
+              "before": "CPXNPOLZQVU",
+              "after": "XNPOLZQVU"
+            },
+            {
+              "step": 3,
+              "transition_idx": 3,
+              "transition": "XNPOLZ -> ",
+              "before": "XNPOLZQVU",
+              "after": "QVU"
+            },
+            {
+              "step": 4,
+              "transition_idx": 4,
+              "transition": "QV -> ",
+              "before": "QVU",
+              "after": "U"
+            },
+            {
+              "step": 5,
+              "transition_idx": 1,
+              "transition": "U -> ",
+              "before": "U",
+              "after": ""
+            }
+          ]
+        },
+        "089": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 1,
+              "transition": "CNHTHSX -> ",
+              "before": "CNHTHSXBQOIONJSLXI",
+              "after": "BQOIONJSLXI"
+            },
+            {
+              "step": 2,
+              "transition_idx": 3,
+              "transition": "BQOIONJ -> ",
+              "before": "BQOIONJSLXI",
+              "after": "SLXI"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "SLX -> ",
+              "before": "SLXI",
+              "after": "I"
+            },
+            {
+              "step": 4,
+              "transition_idx": 0,
+              "transition": "I -> ",
+              "before": "I",
+              "after": ""
+            }
+          ]
+        },
+        "070": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "VJBKOXT -> ",
+              "before": "VJBKOXTAMADVKFXQDL",
+              "after": "AMADVKFXQDL"
+            },
+            {
+              "step": 2,
+              "transition_idx": 2,
+              "transition": "AMADV -> ",
+              "before": "AMADVKFXQDL",
+              "after": "KFXQDL"
+            },
+            {
+              "step": 3,
+              "transition_idx": 1,
+              "transition": "KFX -> ",
+              "before": "KFXQDL",
+              "after": "QDL"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "QDL -> ",
+              "before": "QDL",
+              "after": ""
+            }
+          ]
+        },
+        "027": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 1,
+              "transition": "DFF -> ",
+              "before": "DFFUNJAM",
+              "after": "UNJAM"
+            },
+            {
+              "step": 2,
+              "transition_idx": 3,
+              "transition": "U -> ",
+              "before": "UNJAM",
+              "after": "NJAM"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "NJA -> ",
+              "before": "NJAM",
+              "after": "M"
+            },
+            {
+              "step": 4,
+              "transition_idx": 0,
+              "transition": "M -> ",
+              "before": "M",
+              "after": ""
+            }
+          ]
+        },
+        "026": {
+          "valid": false,
+          "reason": "Failed to reach empty string",
+          "steps": 3,
+          "final_state": "V",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "RY -> ",
+              "before": "RYVBAWV",
+              "after": "VBAWV"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "AWV -> ",
+              "before": "VBAWV",
+              "after": "VB"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "B -> ",
+              "before": "VB",
+              "after": "V"
+            }
+          ]
+        },
+        "071": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 7,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 1,
+              "transition": "STKKJD -> ",
+              "before": "STKKJDOUWDSJMWJEGPRGLQJQAKPXMG",
+              "after": "OUWDSJMWJEGPRGLQJQAKPXMG"
+            },
+            {
+              "step": 2,
+              "transition_idx": 2,
+              "transition": "OUW -> ",
+              "before": "OUWDSJMWJEGPRGLQJQAKPXMG",
+              "after": "DSJMWJEGPRGLQJQAKPXMG"
+            },
+            {
+              "step": 3,
+              "transition_idx": 4,
+              "transition": "DSJ -> ",
+              "before": "DSJMWJEGPRGLQJQAKPXMG",
+              "after": "MWJEGPRGLQJQAKPXMG"
+            },
+            {
+              "step": 4,
+              "transition_idx": 5,
+              "transition": "PRGL -> ",
+              "before": "MWJEGPRGLQJQAKPXMG",
+              "after": "MWJEGQJQAKPXMG"
+            },
+            {
+              "step": 5,
+              "transition_idx": 6,
+              "transition": "WJEG -> ",
+              "before": "MWJEGQJQAKPXMG",
+              "after": "MQJQAKPXMG"
+            },
+            {
+              "step": 6,
+              "transition_idx": 3,
+              "transition": "QJQAKPXMG -> ",
+              "before": "MQJQAKPXMG",
+              "after": "M"
+            },
+            {
+              "step": 7,
+              "transition_idx": 0,
+              "transition": "M -> ",
+              "before": "M",
+              "after": ""
+            }
+          ]
+        },
+        "067": {
+          "valid": false,
+          "reason": "Failed to reach empty string",
+          "steps": 8,
+          "final_state": "UHMWZZ",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "BLTM -> ",
+              "before": "BLTMLIKOEHEKUQXRUHMZWZVZ",
+              "after": "LIKOEHEKUQXRUHMZWZVZ"
+            },
+            {
+              "step": 2,
+              "transition_idx": 5,
+              "transition": "LIKOEHE -> ",
+              "before": "LIKOEHEKUQXRUHMZWZVZ",
+              "after": "KUQXRUHMZWZVZ"
+            },
+            {
+              "step": 3,
+              "transition_idx": 7,
+              "transition": "KU -> ",
+              "before": "KUQXRUHMZWZVZ",
+              "after": "QXRUHMZWZVZ"
+            },
+            {
+              "step": 4,
+              "transition_idx": 6,
+              "transition": "V -> ",
+              "before": "QXRUHMZWZVZ",
+              "after": "QXRUHMZWZZ"
+            },
+            {
+              "step": 5,
+              "transition_idx": 2,
+              "transition": "XR -> ",
+              "before": "QXRUHMZWZZ",
+              "after": "QUHMZWZZ"
+            },
+            {
+              "step": 6,
+              "transition_idx": 4,
+              "transition": "Q -> ",
+              "before": "QUHMZWZZ",
+              "after": "UHMZWZZ"
+            },
+            {
+              "step": 7,
+              "transition_idx": 1,
+              "transition": "Z -> ",
+              "before": "UHMZWZZ",
+              "after": "UHMWZZ"
+            },
+            {
+              "step": 8,
+              "transition_idx": 3,
+              "transition": "UHMZWZ -> ",
+              "before": "UHMWZZ",
+              "after": "UHMWZZ"
+            }
+          ]
+        },
+        "030": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 2,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "TK -> ",
+              "before": "TKTOWWN",
+              "after": "TOWWN"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "TOWWN -> ",
+              "before": "TOWWN",
+              "after": ""
+            }
+          ]
+        },
+        "092": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 5,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 3,
+              "transition": "QA -> ",
+              "before": "QAWBMHITHPXERKIEMIESY",
+              "after": "WBMHITHPXERKIEMIESY"
+            },
+            {
+              "step": 2,
+              "transition_idx": 0,
+              "transition": "WBM -> ",
+              "before": "WBMHITHPXERKIEMIESY",
+              "after": "HITHPXERKIEMIESY"
+            },
+            {
+              "step": 3,
+              "transition_idx": 1,
+              "transition": "HITHPX -> ",
+              "before": "HITHPXERKIEMIESY",
+              "after": "ERKIEMIESY"
+            },
+            {
+              "step": 4,
+              "transition_idx": 2,
+              "transition": "ERKIEM -> ",
+              "before": "ERKIEMIESY",
+              "after": "IESY"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "IESY -> ",
+              "before": "IESY",
+              "after": ""
+            }
+          ]
+        },
+        "095": {
+          "valid": false,
+          "reason": "Failed to reach empty string",
+          "steps": 4,
+          "final_state": "O",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "YQA -> ",
+              "before": "YQAATOOLQEYSBDTYRO",
+              "after": "ATOOLQEYSBDTYRO"
+            },
+            {
+              "step": 2,
+              "transition_idx": 4,
+              "transition": "ATOOL -> ",
+              "before": "ATOOLQEYSBDTYRO",
+              "after": "QEYSBDTYRO"
+            },
+            {
+              "step": 3,
+              "transition_idx": 1,
+              "transition": "QEYS -> ",
+              "before": "QEYSBDTYRO",
+              "after": "BDTYRO"
+            },
+            {
+              "step": 4,
+              "transition_idx": 2,
+              "transition": "BDTYR -> ",
+              "before": "BDTYRO",
+              "after": "O"
+            }
+          ]
+        },
+        "061": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 6,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 4,
+              "transition": "JUZL -> ",
+              "before": "JUZLNAVKRANYIMTONHLF",
+              "after": "NAVKRANYIMTONHLF"
+            },
+            {
+              "step": 2,
+              "transition_idx": 5,
+              "transition": "NAVKR -> ",
+              "before": "NAVKRANYIMTONHLF",
+              "after": "ANYIMTONHLF"
+            },
+            {
+              "step": 3,
+              "transition_idx": 1,
+              "transition": "ANY -> ",
+              "before": "ANYIMTONHLF",
+              "after": "IMTONHLF"
+            },
+            {
+              "step": 4,
+              "transition_idx": 2,
+              "transition": "MTONH -> ",
+              "before": "IMTONHLF",
+              "after": "ILF"
+            },
+            {
+              "step": 5,
+              "transition_idx": 3,
+              "transition": "LF -> ",
+              "before": "ILF",
+              "after": "I"
+            },
+            {
+              "step": 6,
+              "transition_idx": 0,
+              "transition": "I -> ",
+              "before": "I",
+              "after": ""
+            }
+          ]
+        },
+        "033": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 6,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 2,
+              "transition": "UK -> ",
+              "before": "UKDWGRLXEYPYITOZQZNX",
+              "after": "DWGRLXEYPYITOZQZNX"
+            },
+            {
+              "step": 2,
+              "transition_idx": 4,
+              "transition": "DWG -> ",
+              "before": "DWGRLXEYPYITOZQZNX",
+              "after": "RLXEYPYITOZQZNX"
+            },
+            {
+              "step": 3,
+              "transition_idx": 5,
+              "transition": "EYP -> ",
+              "before": "RLXEYPYITOZQZNX",
+              "after": "RLXYITOZQZNX"
+            },
+            {
+              "step": 4,
+              "transition_idx": 3,
+              "transition": "YITOZQZNX -> ",
+              "before": "RLXYITOZQZNX",
+              "after": "RLX"
+            },
+            {
+              "step": 5,
+              "transition_idx": 1,
+              "transition": "RL -> ",
+              "before": "RLX",
+              "after": "X"
+            },
+            {
+              "step": 6,
+              "transition_idx": 0,
+              "transition": "X -> ",
+              "before": "X",
+              "after": ""
+            }
+          ]
+        },
+        "009": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 3,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "CQVGJXK -> ",
+              "before": "MCBCQVGJXK",
+              "after": "MCB"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "B -> ",
+              "before": "MCB",
+              "after": "MC"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "MC -> ",
+              "before": "MC",
+              "after": ""
+            }
+          ]
+        },
+        "008": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 3,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 2,
+              "transition": "S -> ",
+              "before": "SMUFXVK",
+              "after": "MUFXVK"
+            },
+            {
+              "step": 2,
+              "transition_idx": 0,
+              "transition": "M -> ",
+              "before": "MUFXVK",
+              "after": "UFXVK"
+            },
+            {
+              "step": 3,
+              "transition_idx": 1,
+              "transition": "UFXVK -> ",
+              "before": "UFXVK",
+              "after": ""
+            }
+          ]
+        },
+        "049": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 7,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "SPO -> ",
+              "before": "DGANGTSKGCPQDGGNSPO",
+              "after": "DGANGTSKGCPQDGGN"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "GGN -> ",
+              "before": "DGANGTSKGCPQDGGN",
+              "after": "DGANGTSKGCPQD"
+            },
+            {
+              "step": 3,
+              "transition_idx": 3,
+              "transition": "GTS -> ",
+              "before": "DGANGTSKGCPQD",
+              "after": "DGANKGCPQD"
+            },
+            {
+              "step": 4,
+              "transition_idx": 5,
+              "transition": "CPQD -> ",
+              "before": "DGANKGCPQD",
+              "after": "DGANKG"
+            },
+            {
+              "step": 5,
+              "transition_idx": 4,
+              "transition": "D -> ",
+              "before": "DGANKG",
+              "after": "GANKG"
+            },
+            {
+              "step": 6,
+              "transition_idx": 2,
+              "transition": "KG -> ",
+              "before": "GANKG",
+              "after": "GAN"
+            },
+            {
+              "step": 7,
+              "transition_idx": 6,
+              "transition": "GAN -> ",
+              "before": "GAN",
+              "after": ""
+            }
+          ]
+        },
+        "032": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 2,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 1,
+              "transition": "LKK -> ",
+              "before": "LKKFAHFU",
+              "after": "FAHFU"
+            },
+            {
+              "step": 2,
+              "transition_idx": 0,
+              "transition": "FAHFU -> ",
+              "before": "FAHFU",
+              "after": ""
+            }
+          ]
+        },
+        "065": {
+          "valid": false,
+          "reason": "Failed to reach empty string",
+          "steps": 4,
+          "final_state": "P",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 4,
+              "transition": "EZUU -> ",
+              "before": "EZUUYAPUXQQZ",
+              "after": "YAPUXQQZ"
+            },
+            {
+              "step": 2,
+              "transition_idx": 0,
+              "transition": "YA -> ",
+              "before": "YAPUXQQZ",
+              "after": "PUXQQZ"
+            },
+            {
+              "step": 3,
+              "transition_idx": 1,
+              "transition": "UXQQ -> ",
+              "before": "PUXQQZ",
+              "after": "PZ"
+            },
+            {
+              "step": 4,
+              "transition_idx": 2,
+              "transition": "Z -> ",
+              "before": "PZ",
+              "after": "P"
+            }
+          ]
+        },
+        "073": {
+          "valid": false,
+          "reason": "Failed to reach empty string",
+          "steps": 6,
+          "final_state": "YQDUMJ",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 3,
+              "transition": "OP -> ",
+              "before": "OPIDHMNSDAHMYQDUMJXDJYUOFMJGH",
+              "after": "IDHMNSDAHMYQDUMJXDJYUOFMJGH"
+            },
+            {
+              "step": 2,
+              "transition_idx": 2,
+              "transition": "IDHMN -> ",
+              "before": "IDHMNSDAHMYQDUMJXDJYUOFMJGH",
+              "after": "SDAHMYQDUMJXDJYUOFMJGH"
+            },
+            {
+              "step": 3,
+              "transition_idx": 5,
+              "transition": "SDAHM -> ",
+              "before": "SDAHMYQDUMJXDJYUOFMJGH",
+              "after": "YQDUMJXDJYUOFMJGH"
+            },
+            {
+              "step": 4,
+              "transition_idx": 1,
+              "transition": "XDJ -> ",
+              "before": "YQDUMJXDJYUOFMJGH",
+              "after": "YQDUMJYUOFMJGH"
+            },
+            {
+              "step": 5,
+              "transition_idx": 6,
+              "transition": "YUOFMJG -> ",
+              "before": "YQDUMJYUOFMJGH",
+              "after": "YQDUMJH"
+            },
+            {
+              "step": 6,
+              "transition_idx": 0,
+              "transition": "H -> ",
+              "before": "YQDUMJH",
+              "after": "YQDUMJ"
+            }
+          ]
+        },
+        "024": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 2,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "AGW -> ",
+              "before": "AGWUPRUSIH",
+              "after": "UPRUSIH"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "UPRUSIH -> ",
+              "before": "UPRUSIH",
+              "after": ""
+            }
+          ]
+        },
+        "053": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 7,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 4,
+              "transition": "KIZGD -> ",
+              "before": "KIZGDVFPTTXJBAWLIY",
+              "after": "VFPTTXJBAWLIY"
+            },
+            {
+              "step": 2,
+              "transition_idx": 3,
+              "transition": "VFP -> ",
+              "before": "VFPTTXJBAWLIY",
+              "after": "TTXJBAWLIY"
+            },
+            {
+              "step": 3,
+              "transition_idx": 6,
+              "transition": "LI -> ",
+              "before": "TTXJBAWLIY",
+              "after": "TTXJBAWY"
+            },
+            {
+              "step": 4,
+              "transition_idx": 2,
+              "transition": "BA -> ",
+              "before": "TTXJBAWY",
+              "after": "TTXJWY"
+            },
+            {
+              "step": 5,
+              "transition_idx": 5,
+              "transition": "Y -> ",
+              "before": "TTXJWY",
+              "after": "TTXJW"
+            },
+            {
+              "step": 6,
+              "transition_idx": 0,
+              "transition": "TTXJ -> ",
+              "before": "TTXJW",
+              "after": "W"
+            },
+            {
+              "step": 7,
+              "transition_idx": 1,
+              "transition": "W -> ",
+              "before": "W",
+              "after": ""
+            }
+          ]
+        },
+        "004": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 3,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 1,
+              "transition": "JTA -> ",
+              "before": "IJTAVTMLR",
+              "after": "IVTMLR"
+            },
+            {
+              "step": 2,
+              "transition_idx": 0,
+              "transition": "VTMLR -> ",
+              "before": "IVTMLR",
+              "after": "I"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "I -> ",
+              "before": "I",
+              "after": ""
+            }
+          ]
+        },
+        "012": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 3,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 2,
+              "transition": "AM -> ",
+              "before": "AMJDBEQBAN",
+              "after": "JDBEQBAN"
+            },
+            {
+              "step": 2,
+              "transition_idx": 0,
+              "transition": "JDB -> ",
+              "before": "JDBEQBAN",
+              "after": "EQBAN"
+            },
+            {
+              "step": 3,
+              "transition_idx": 1,
+              "transition": "EQBAN -> ",
+              "before": "EQBAN",
+              "after": ""
+            }
+          ]
+        },
+        "045": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 4,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "DG -> ",
+              "before": "DGUUIKLWMAHK",
+              "after": "UUIKLWMAHK"
+            },
+            {
+              "step": 2,
+              "transition_idx": 1,
+              "transition": "UUIK -> ",
+              "before": "UUIKLWMAHK",
+              "after": "LWMAHK"
+            },
+            {
+              "step": 3,
+              "transition_idx": 3,
+              "transition": "L -> ",
+              "before": "LWMAHK",
+              "after": "WMAHK"
+            },
+            {
+              "step": 4,
+              "transition_idx": 2,
+              "transition": "WMAHK -> ",
+              "before": "WMAHK",
+              "after": ""
+            }
+          ]
+        },
+        "086": {
+          "valid": false,
+          "reason": "Failed to reach empty string",
+          "steps": 5,
+          "final_state": "NURH",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 4,
+              "transition": "UXHHY -> ",
+              "before": "UXHHYLNUHRZJGHD",
+              "after": "LNUHRZJGHD"
+            },
+            {
+              "step": 2,
+              "transition_idx": 0,
+              "transition": "ZJG -> ",
+              "before": "LNUHRZJGHD",
+              "after": "LNUHRHD"
+            },
+            {
+              "step": 3,
+              "transition_idx": 1,
+              "transition": "D -> ",
+              "before": "LNUHRHD",
+              "after": "LNUHRH"
+            },
+            {
+              "step": 4,
+              "transition_idx": 2,
+              "transition": "H -> ",
+              "before": "LNUHRH",
+              "after": "LNURH"
+            },
+            {
+              "step": 5,
+              "transition_idx": 3,
+              "transition": "L -> ",
+              "before": "LNURH",
+              "after": "NURH"
+            }
+          ]
+        },
+        "069": {
+          "valid": false,
+          "reason": "Failed to reach empty string",
+          "steps": 5,
+          "final_state": "Z",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 3,
+              "transition": "MBVOVT -> ",
+              "before": "MBVOVTYEXVZZXWPVNJLTKYC",
+              "after": "YEXVZZXWPVNJLTKYC"
+            },
+            {
+              "step": 2,
+              "transition_idx": 4,
+              "transition": "YEXVZ -> ",
+              "before": "YEXVZZXWPVNJLTKYC",
+              "after": "ZXWPVNJLTKYC"
+            },
+            {
+              "step": 3,
+              "transition_idx": 2,
+              "transition": "XWPVNJL -> ",
+              "before": "ZXWPVNJLTKYC",
+              "after": "ZTKYC"
+            },
+            {
+              "step": 4,
+              "transition_idx": 0,
+              "transition": "TKY -> ",
+              "before": "ZTKYC",
+              "after": "ZC"
+            },
+            {
+              "step": 5,
+              "transition_idx": 1,
+              "transition": "C -> ",
+              "before": "ZC",
+              "after": "Z"
+            }
+          ]
+        },
+        "090": {
+          "valid": true,
+          "reason": "Success",
+          "steps": 8,
+          "final_state": "",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 0,
+              "transition": "KBG -> ",
+              "before": "KBGOYNKNQLQCYYHOIKNMCIJW",
+              "after": "OYNKNQLQCYYHOIKNMCIJW"
+            },
+            {
+              "step": 2,
+              "transition_idx": 6,
+              "transition": "NQL -> ",
+              "before": "OYNKNQLQCYYHOIKNMCIJW",
+              "after": "OYNKQCYYHOIKNMCIJW"
+            },
+            {
+              "step": 3,
+              "transition_idx": 7,
+              "transition": "QCYY -> ",
+              "before": "OYNKQCYYHOIKNMCIJW",
+              "after": "OYNKHOIKNMCIJW"
+            },
+            {
+              "step": 4,
+              "transition_idx": 4,
+              "transition": "HOIKNM -> ",
+              "before": "OYNKHOIKNMCIJW",
+              "after": "OYNKCIJW"
+            },
+            {
+              "step": 5,
+              "transition_idx": 2,
+              "transition": "OYNK -> ",
+              "before": "OYNKCIJW",
+              "after": "CIJW"
+            },
+            {
+              "step": 6,
+              "transition_idx": 3,
+              "transition": "IJ -> ",
+              "before": "CIJW",
+              "after": "CW"
+            },
+            {
+              "step": 7,
+              "transition_idx": 5,
+              "transition": "W -> ",
+              "before": "CW",
+              "after": "C"
+            },
+            {
+              "step": 8,
+              "transition_idx": 1,
+              "transition": "C -> ",
+              "before": "C",
+              "after": ""
+            }
+          ]
+        },
+        "028": {
+          "valid": false,
+          "reason": "Failed to reach empty string",
+          "steps": 3,
+          "final_state": "OF",
+          "trace": [
+            {
+              "step": 1,
+              "transition_idx": 2,
+              "transition": "ARS -> ",
+              "before": "ARSKOFOFPL",
+              "after": "KOFOFPL"
+            },
+            {
+              "step": 2,
+              "transition_idx": 0,
+              "transition": "KOF -> ",
+              "before": "KOFOFPL",
+              "after": "OFPL"
+            },
+            {
+              "step": 3,
+              "transition_idx": 3,
+              "transition": "PL -> ",
+              "before": "OFPL",
+              "after": "OF"
+            }
+          ]
+        }
+      },
+      "complexity_stats": [
+        {
+          "problem_id": "007",
+          "initial_length": 10,
+          "transitions_count": 3,
+          "solution_length": 3
+        },
+        {
+          "problem_id": "011",
+          "initial_length": 7,
+          "transitions_count": 3,
+          "solution_length": 3
+        },
+        {
+          "problem_id": "046",
+          "initial_length": 16,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "085",
+          "initial_length": 25,
+          "transitions_count": 7,
+          "solution_length": 7
+        },
+        {
+          "problem_id": "093",
+          "initial_length": 25,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "031",
+          "initial_length": 6,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "066",
+          "initial_length": 16,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "089",
+          "initial_length": 18,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "070",
+          "initial_length": 18,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "027",
+          "initial_length": 8,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "071",
+          "initial_length": 30,
+          "transitions_count": 7,
+          "solution_length": 7
+        },
+        {
+          "problem_id": "030",
+          "initial_length": 7,
+          "transitions_count": 2,
+          "solution_length": 2
+        },
+        {
+          "problem_id": "092",
+          "initial_length": 21,
+          "transitions_count": 5,
+          "solution_length": 5
+        },
+        {
+          "problem_id": "061",
+          "initial_length": 20,
+          "transitions_count": 6,
+          "solution_length": 6
+        },
+        {
+          "problem_id": "033",
+          "initial_length": 20,
+          "transitions_count": 6,
+          "solution_length": 6
+        },
+        {
+          "problem_id": "009",
+          "initial_length": 10,
+          "transitions_count": 3,
+          "solution_length": 3
+        },
+        {
+          "problem_id": "008",
+          "initial_length": 7,
+          "transitions_count": 3,
+          "solution_length": 3
+        },
+        {
+          "problem_id": "049",
+          "initial_length": 19,
+          "transitions_count": 7,
+          "solution_length": 7
+        },
+        {
+          "problem_id": "032",
+          "initial_length": 8,
+          "transitions_count": 2,
+          "solution_length": 2
+        },
+        {
+          "problem_id": "024",
+          "initial_length": 10,
+          "transitions_count": 2,
+          "solution_length": 2
+        },
+        {
+          "problem_id": "053",
+          "initial_length": 18,
+          "transitions_count": 7,
+          "solution_length": 7
+        },
+        {
+          "problem_id": "004",
+          "initial_length": 9,
+          "transitions_count": 3,
+          "solution_length": 3
+        },
+        {
+          "problem_id": "012",
+          "initial_length": 10,
+          "transitions_count": 3,
+          "solution_length": 3
+        },
+        {
+          "problem_id": "045",
+          "initial_length": 12,
+          "transitions_count": 4,
+          "solution_length": 4
+        },
+        {
+          "problem_id": "090",
+          "initial_length": 24,
+          "transitions_count": 8,
+          "solution_length": 8
+        }
+      ]
+    },
+    "few_shot": {
+      "total_problems": 100,
+      "solved_problems": 0,
+      "unsolved_problems": 100,
+      "unsolved_ids": [
+        "050",
+        "007",
+        "011",
+        "046",
+        "085",
+        "093",
+        "031",
+        "066",
+        "089",
+        "070",
+        "027",
+        "026",
+        "071",
+        "067",
+        "088",
+        "030",
+        "092",
+        "084",
+        "047",
+        "010",
+        "006",
+        "051",
+        "037",
+        "060",
+        "076",
+        "099",
+        "021",
+        "056",
+        "001",
+        "017",
+        "040",
+        "083",
+        "095",
+        "094",
+        "082",
+        "041",
+        "016",
+        "000",
+        "057",
+        "020",
+        "077",
+        "098",
+        "061",
+        "036",
+        "023",
+        "074",
+        "062",
+        "035",
+        "019",
+        "058",
+        "097",
+        "078",
+        "081",
+        "039",
+        "042",
+        "015",
+        "003",
+        "054",
+        "055",
+        "002",
+        "014",
+        "043",
+        "038",
+        "080",
+        "096",
+        "079",
+        "059",
+        "018",
+        "034",
+        "063",
+        "075",
+        "022",
+        "029",
+        "091",
+        "087",
+        "068",
+        "044",
+        "013",
+        "005",
+        "052",
+        "025",
+        "072",
+        "064",
+        "033",
+        "048",
+        "009",
+        "008",
+        "049",
+        "032",
+        "065",
+        "073",
+        "024",
+        "053",
+        "004",
+        "012",
+        "045",
+        "086",
+        "069",
+        "090",
+        "028"
+      ],
+      "success_rate": 0.0,
+      "avg_solution_length": 0,
+      "detailed_results": {},
+      "complexity_stats": []
+    },
+    "cot": {
+      "total_problems": 100,
+      "solved_problems": 0,
+      "unsolved_problems": 100,
+      "unsolved_ids": [
+        "050",
+        "007",
+        "011",
+        "046",
+        "085",
+        "093",
+        "031",
+        "066",
+        "089",
+        "070",
+        "027",
+        "026",
+        "071",
+        "067",
+        "088",
+        "030",
+        "092",
+        "084",
+        "047",
+        "010",
+        "006",
+        "051",
+        "037",
+        "060",
+        "076",
+        "099",
+        "021",
+        "056",
+        "001",
+        "017",
+        "040",
+        "083",
+        "095",
+        "094",
+        "082",
+        "041",
+        "016",
+        "000",
+        "057",
+        "020",
+        "077",
+        "098",
+        "061",
+        "036",
+        "023",
+        "074",
+        "062",
+        "035",
+        "019",
+        "058",
+        "097",
+        "078",
+        "081",
+        "039",
+        "042",
+        "015",
+        "003",
+        "054",
+        "055",
+        "002",
+        "014",
+        "043",
+        "038",
+        "080",
+        "096",
+        "079",
+        "059",
+        "018",
+        "034",
+        "063",
+        "075",
+        "022",
+        "029",
+        "091",
+        "087",
+        "068",
+        "044",
+        "013",
+        "005",
+        "052",
+        "025",
+        "072",
+        "064",
+        "033",
+        "048",
+        "009",
+        "008",
+        "049",
+        "032",
+        "065",
+        "073",
+        "024",
+        "053",
+        "004",
+        "012",
+        "045",
+        "086",
+        "069",
+        "090",
+        "028"
+      ],
+      "success_rate": 0.0,
+      "avg_solution_length": 0,
+      "detailed_results": {},
+      "complexity_stats": []
+    },
+    "creative": {
+      "total_problems": 100,
+      "solved_problems": 0,
+      "unsolved_problems": 100,
+      "unsolved_ids": [
+        "050",
+        "007",
+        "011",
+        "046",
+        "085",
+        "093",
+        "031",
+        "066",
+        "089",
+        "070",
+        "027",
+        "026",
+        "071",
+        "067",
+        "088",
+        "030",
+        "092",
+        "084",
+        "047",
+        "010",
+        "006",
+        "051",
+        "037",
+        "060",
+        "076",
+        "099",
+        "021",
+        "056",
+        "001",
+        "017",
+        "040",
+        "083",
+        "095",
+        "094",
+        "082",
+        "041",
+        "016",
+        "000",
+        "057",
+        "020",
+        "077",
+        "098",
+        "061",
+        "036",
+        "023",
+        "074",
+        "062",
+        "035",
+        "019",
+        "058",
+        "097",
+        "078",
+        "081",
+        "039",
+        "042",
+        "015",
+        "003",
+        "054",
+        "055",
+        "002",
+        "014",
+        "043",
+        "038",
+        "080",
+        "096",
+        "079",
+        "059",
+        "018",
+        "034",
+        "063",
+        "075",
+        "022",
+        "029",
+        "091",
+        "087",
+        "068",
+        "044",
+        "013",
+        "005",
+        "052",
+        "025",
+        "072",
+        "064",
+        "033",
+        "048",
+        "009",
+        "008",
+        "049",
+        "032",
+        "065",
+        "073",
+        "024",
+        "053",
+        "004",
+        "012",
+        "045",
+        "086",
+        "069",
+        "090",
+        "028"
+      ],
+      "success_rate": 0.0,
+      "avg_solution_length": 0,
+      "detailed_results": {},
+      "complexity_stats": []
+    }
+  }
+}
