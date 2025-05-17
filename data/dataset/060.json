@@ -1,1 +1,1 @@
-{"problem_id":"060","initial_string":"FRKXAKEONMDRUF","transitions":[{"src":"XAK","tgt":""},{"src":"EO","tgt":""},{"src":"NM","tgt":""},{"src":"DRUF","tgt":""},{"src":"FRK","tgt":""}]}
+{"problem_id":"060","initial_string":"Z.CCTMLU5DM11.3","transitions":[{"src":"1","tgt":""},{"src":"Z.","tgt":"PWY"},{"src":"CCTML","tgt":""},{"src":".CC","tgt":"R2"},{"src":"1.3Z","tgt":"H3L"},{"src":"U5DM","tgt":"P"}]}

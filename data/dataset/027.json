@@ -1,1 +1,1 @@
-{"problem_id":"027","initial_string":"DFFUNJAM","transitions":[{"src":"M","tgt":""},{"src":"DFF","tgt":""},{"src":"NJA","tgt":""},{"src":"U","tgt":""}]}
+{"problem_id":"027","initial_string":"XSLDIR","transitions":[{"src":"L","tgt":""},{"src":"XS","tgt":""},{"src":"D","tgt":""}]}

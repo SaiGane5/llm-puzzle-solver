@@ -1,1 +1,1 @@
-{"problem_id":"005","initial_string":"UGZUM","transitions":[{"src":"M","tgt":""},{"src":"U","tgt":""},{"src":"UGZ","tgt":""}]}
+{"problem_id":"005","initial_string":"XLT!AVP","transitions":[{"src":"!AV","tgt":""},{"src":"T!","tgt":""},{"src":"XLT","tgt":""},{"src":"PXL","tgt":""}]}

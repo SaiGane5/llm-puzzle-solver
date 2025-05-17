@@ -1,1 +1,1 @@
-{"problem_id":"042","initial_string":"GRXTILCASNJKPMNIOUGU","transitions":[{"src":"PMNIOUGU","tgt":""},{"src":"ILC","tgt":""},{"src":"GRXT","tgt":""},{"src":"ASNJK","tgt":""}]}
+{"problem_id":"042","initial_string":"M?KV7?DKBX?WN","transitions":[{"src":"?DK","tgt":"KSS8"},{"src":"BX?W","tgt":""},{"src":"M?KV7","tgt":"#6"},{"src":"NM?K","tgt":"P8K"}]}

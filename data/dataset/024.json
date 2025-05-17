@@ -1,1 +1,1 @@
-{"problem_id":"024","initial_string":"AGWUPRUSIH","transitions":[{"src":"AGW","tgt":""},{"src":"UPRUSIH","tgt":""}]}
+{"problem_id":"024","initial_string":".9x.xP15ZO","transitions":[{"src":".9","tgt":""},{"src":"x","tgt":""},{"src":".xP","tgt":""}]}

@@ -1,1 +1,1 @@
-{"problem_id":"056","initial_string":"HAQJBLBUNFVBS","transitions":[{"src":"HA","tgt":""},{"src":"F","tgt":""},{"src":"BLBUN","tgt":""},{"src":"QJ","tgt":""},{"src":"VBS","tgt":""}]}
+{"problem_id":"056","initial_string":"ROG966R17L.UPLM#T2","transitions":[{"src":"6R17","tgt":""},{"src":"17L.U","tgt":""},{"src":"ROG96","tgt":"KNLM0"},{"src":"M","tgt":"X"},{"src":"L.UPL","tgt":""},{"src":"#T2RO","tgt":"9"},{"src":"G966R","tgt":""}]}

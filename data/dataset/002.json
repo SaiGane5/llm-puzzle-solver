@@ -1,1 +1,1 @@
-{"problem_id":"002","initial_string":"UJUFTS","transitions":[{"src":"U","tgt":""},{"src":"FTS","tgt":""},{"src":"JU","tgt":""}]}
+{"problem_id":"002","initial_string":"51C.Zx","transitions":[{"src":"5","tgt":""},{"src":"1C","tgt":""},{"src":"Z","tgt":""},{"src":".","tgt":""}]}

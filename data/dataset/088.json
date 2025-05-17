@@ -1,1 +1,1 @@
-{"problem_id":"088","initial_string":"TIIEHZDWFBOABKFDLGUUCFZX","transitions":[{"src":"GUU","tgt":""},{"src":"A","tgt":""},{"src":"WFBO","tgt":""},{"src":"BKFDL","tgt":""},{"src":"TI","tgt":""},{"src":"CFZX","tgt":""},{"src":"IEHZD","tgt":""}]}
+{"problem_id":"088","initial_string":"8QMRAIP1E7?3B?U8?B!ACR","transitions":[{"src":"QMRAI","tgt":"MAIRQ"},{"src":"7?3B?U","tgt":"7U3?B?"},{"src":"8?B!AC","tgt":""},{"src":"P1E7?3B","tgt":"25Eo#D3"},{"src":"8QMRAI","tgt":"WYS#M"},{"src":"R8Q","tgt":""},{"src":"CR8","tgt":"C8R"},{"src":"P1E","tgt":"N5Z"},{"src":"?U8?B!A","tgt":""}]}

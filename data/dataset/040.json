@@ -1,1 +1,1 @@
-{"problem_id":"040","initial_string":"BMPXPBMIKU","transitions":[{"src":"BMPXP","tgt":""},{"src":"BMIKU","tgt":""}]}
+{"problem_id":"040","initial_string":"ON9MUCSTQ!2","transitions":[{"src":"STQ","tgt":"11"},{"src":"ON9","tgt":"GIW"},{"src":"!","tgt":""},{"src":"2ON9","tgt":""},{"src":"MUC","tgt":"DQO"}]}

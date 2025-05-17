@@ -1,1 +1,1 @@
-{"problem_id":"020","initial_string":"BVVTXQAHL","transitions":[{"src":"BV","tgt":""},{"src":"VTXQAHL","tgt":""}]}
+{"problem_id":"020","initial_string":"DCR.xHSC","transitions":[{"src":".x","tgt":""},{"src":"DCR","tgt":""},{"src":"DCR","tgt":""},{"src":"HSC","tgt":""}]}
