@@ -1,1 +1,0 @@
-{"problem_id":"023","initial_string":"WSUHD","transitions":[{"src":"I","tgt":"GS"},{"src":"W","tgt":"7"},{"src":"7","tgt":"5"},{"src":"UHD","tgt":""},{"src":"5","tgt":"H"},{"src":"S","tgt":""},{"src":"5","tgt":""}]}
