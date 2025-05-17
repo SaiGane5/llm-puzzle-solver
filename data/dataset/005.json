@@ -1,1 +1,1 @@
-{"problem_id":"005","initial_string":"XLT!AVP","transitions":[{"src":"!AV","tgt":""},{"src":"T!","tgt":""},{"src":"XLT","tgt":""},{"src":"PXL","tgt":""}]}
+{"problem_id":"005","initial_string":"LP?OEYG!!","transitions":[{"src":"E!","tgt":"P"},{"src":"789","tgt":".3E"},{"src":"Y!","tgt":"!"},{"src":"FF","tgt":"OZC"},{"src":"LPA","tgt":"O"},{"src":"?","tgt":"A"},{"src":"OOP","tgt":""},{"src":"G!","tgt":""}]}

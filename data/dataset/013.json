@@ -1,1 +1,1 @@
-{"problem_id":"013","initial_string":"CoP60H1","transitions":[{"src":"C","tgt":""},{"src":"oP","tgt":""}]}
+{"problem_id":"013","initial_string":"E7OSS","transitions":[{"src":"E7","tgt":""},{"src":"U","tgt":"U7"},{"src":"OSS","tgt":""},{"src":"!T","tgt":"J4U"}]}

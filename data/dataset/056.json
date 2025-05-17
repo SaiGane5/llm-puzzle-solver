@@ -1,1 +1,1 @@
-{"problem_id":"056","initial_string":"ROG966R17L.UPLM#T2","transitions":[{"src":"6R17","tgt":""},{"src":"17L.U","tgt":""},{"src":"ROG96","tgt":"KNLM0"},{"src":"M","tgt":"X"},{"src":"L.UPL","tgt":""},{"src":"#T2RO","tgt":"9"},{"src":"G966R","tgt":""}]}
+{"problem_id":"056","initial_string":"QHx4?5L9xY?50o","transitions":[{"src":"PL","tgt":""},{"src":"?","tgt":"O"},{"src":"?","tgt":"B"},{"src":"H","tgt":""},{"src":".ZT","tgt":"I#Nx"},{"src":"9xYB","tgt":"PL"},{"src":"x4","tgt":""},{"src":"0o","tgt":""},{"src":"X#","tgt":"7"},{"src":"QO5","tgt":""},{"src":"5L","tgt":""}]}

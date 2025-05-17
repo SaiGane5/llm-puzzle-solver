@@ -4,142 +4,111 @@ import logging
 from pathlib import Path
 from typing import List, Dict
 
-from pydantic import ValidationError
 from schema import Problem, Transition
+from pydantic import ValidationError
 
 
 class PuzzleGenerator:
-    """Generator for SED puzzles of varying difficulty, with optional special characters."""
+    """Generator for SED puzzles of varying difficulty, ensuring solvable puzzles with explicit ? handling."""
 
-    def __init__(
-        self,
-        include_special: bool = True
-    ):
-        """Initialize the puzzle generator.
-
-        include_special: whether to include special symbols in puzzles.
+    def __init__(self, include_special: bool = True, extra_rules: int = 2):
+        """
+        include_special: whether to include special symbols
+        extra_rules: number of spurious transitions to add
         """
         self.include_special = include_special
-        # base pools
+        self.extra_rules = extra_rules
         self.base_chars = list(string.ascii_uppercase + string.digits)
         self.special_chars = ['?', '!', '.', '#', 'o', 'x']
-
         self.difficulty_levels = {
-            "easy": {
-                "string_length": (5, 10),
-                "num_transitions": (2, 4),
-                "transition_complexity": "simple"
-            },
-            "medium": {
-                "string_length": (10, 20),
-                "num_transitions": (4, 7),
-                "transition_complexity": "medium"
-            },
-            "hard": {
-                "string_length": (15, 30),
-                "num_transitions": (7, 10),
-                "transition_complexity": "complex"
-            }
+            "easy": {"string_length": (5, 10), "step_complexity": 3, "max_steps": 4},
+            "medium": {"string_length": (10, 20), "step_complexity": 5, "max_steps": 7},
+            "hard": {"string_length": (15, 30), "step_complexity": 7, "max_steps": 10}
         }
 
     def _char_pool(self) -> List[str]:
         pool = list(self.base_chars)
         if self.include_special:
-            pool += self.special_chars
+            # include all specials except '?' for replacement
+            pool += [c for c in self.special_chars if c != '?']
         return pool
 
     def generate_random_string(self, length: int) -> str:
-        """Generate a random string of specified length from allowed pool."""
-        pool = self._char_pool()
+        pool = list(self.base_chars) + (self.special_chars if self.include_special else [])
         return ''.join(random.choice(pool) for _ in range(length))
 
-    def generate_transitions(
-        self,
-        initial_string: str,
-        difficulty: str
-    ) -> List[Transition]:
-        """Generate a mix of delete, replace, and swap transitions, ensuring at least one deletion."""
+    def generate_transitions(self, initial: str, difficulty: str) -> List[Transition]:
+        """Construct transitions by first replacing all '?' individually, then simulate a solvable path, then add noise."""
         params = self.difficulty_levels[difficulty]
-        num_transitions = random.randint(*params["num_transitions"])
-        complexity = params["transition_complexity"]
-        transitions: List[Transition] = []
-        chars = list(initial_string)
+        complexity = params['step_complexity']
+        max_steps = params['max_steps']
 
-        for _ in range(num_transitions):
-            kind = random.choices(
-                ['delete', 'replace', 'swap'],
-                weights=[1,
-                         1 if complexity != 'simple' else 0,
-                         1 if complexity == 'complex' else 0]
-            )[0]
-            max_chunk = {'simple': 3, 'medium': 5, 'complex': 7}[complexity]
-            chunk_size = random.randint(1, min(max_chunk, len(chars)))
-            src = ''.join(chars[:chunk_size])
-            # rotate chars for variety
-            chars = chars[chunk_size:] + chars[:chunk_size]
+        s = initial
+        solution_rules: List[Transition] = []
 
-            if kind == 'delete':
+        # Handle '?' as standalone replacements
+        qm_replacements: List[Transition] = []
+        while '?' in s:
+            # pick a replacement for '?'
+            pool = self._char_pool()
+            if not pool:
+                break
+            rep = random.choice(pool)
+            qm_replacements.append(Transition(src='?', tgt=rep))
+            # replace first occurrence
+            idx = s.index('?')
+            s = s[:idx] + rep + s[idx+1:]
+        solution_rules.extend(qm_replacements)
+
+        # Now greedily reduce to empty
+        steps = 0
+        while s and steps < max_steps:
+            l = random.randint(1, min(complexity, len(s)))
+            i = random.randrange(0, len(s) - l + 1)
+            src = s[i:i+l]
+            if random.random() < 0.7:
                 tgt = ''
-            elif kind == 'replace':
-                tgt_len = random.randint(1, chunk_size + 2)
-                pool = self._char_pool()
-                tgt = ''.join(random.choice(pool) for _ in range(tgt_len))
             else:
-                tgt = src[::-1] if complexity != 'complex' else ''.join(random.sample(src, len(src)))
+                tgt_len = random.randint(1, max(1, l-1))
+                tgt = ''.join(random.choice(self._char_pool()) for _ in range(tgt_len))
+            solution_rules.append(Transition(src=src, tgt=tgt))
+            s = s[:i] + tgt + s[i+l:]
+            steps += 1
 
-            transitions.append(Transition(src=src, tgt=tgt))
+        if s:
+            solution_rules.append(Transition(src=s, tgt=''))
 
-        # ensure at least one delete rule exists
-        if not any(t.tgt == '' for t in transitions):
-            # pick random chunk from initial_string
-            chunk_size = random.randint(1, len(initial_string))
-            src = initial_string[:chunk_size]
-            transitions.append(Transition(src=src, tgt=''))
+        # Add spurious noise rules
+        noise_rules: List[Transition] = []
+        pool = self._char_pool() + (['?'] if self.include_special else [])
+        for _ in range(self.extra_rules):
+            l = random.randint(1, complexity)
+            src = ''.join(random.choice(pool) for _ in range(l))
+            tgt = ''.join(random.choice(pool) for _ in range(random.randint(1, l+1)))
+            noise_rules.append(Transition(src=src, tgt=tgt))
 
-        random.shuffle(transitions)
-        return transitions
+        all_rules = solution_rules + noise_rules
+        random.shuffle(all_rules)
+        return all_rules
 
-    def generate_puzzle(
-        self,
-        difficulty: str,
-        problem_id: str
-    ) -> Problem:
-        """Generate a single puzzle with valid delete transitions."""
+    def generate_puzzle(self, difficulty: str, problem_id: str) -> Problem:
         params = self.difficulty_levels[difficulty]
         length = random.randint(*params["string_length"])
-        initial_string = self.generate_random_string(length)
-        transitions = self.generate_transitions(initial_string, difficulty)
+        initial = self.generate_random_string(length)
+        transitions = self.generate_transitions(initial, difficulty)
+        return Problem(problem_id=problem_id, initial_string=initial, transitions=transitions)
 
-        # Construct Problem; let ValidationError propagate
-        return Problem(
-            problem_id=problem_id,
-            initial_string=initial_string,
-            transitions=transitions
-        )
-
-    def generate_dataset(
-        self,
-        num_puzzles: int = 100
-    ) -> Dict[str, Problem]:
-        """Generate a dataset with balanced difficulties, skipping invalid puzzles."""
+    def generate_dataset(self, num_puzzles: int = 100) -> Dict[str, Problem]:
         puzzles: Dict[str, Problem] = {}
-        easy = num_puzzles // 3
-        medium = num_puzzles // 3
-        hard = num_puzzles - easy - medium
-        counts = {'easy': easy, 'medium': medium, 'hard': hard}
+        counts = {d: num_puzzles//3 for d in self.difficulty_levels}
+        counts['hard'] += num_puzzles - sum(counts.values())
         pid = 0
-
         for difficulty, total in counts.items():
-            generated = 0
-            while generated < total:
+            for _ in range(total):
                 key = str(pid).zfill(3)
                 try:
-                    puzzle = self.generate_puzzle(difficulty, key)
-                    puzzles[key] = puzzle
-                    generated += 1
+                    puzzles[key] = self.generate_puzzle(difficulty, key)
                 except ValidationError as e:
-                    logging.warning(f"Skipping invalid puzzle {key}: {e}")
-                finally:
-                    pid += 1
-
+                    logging.warning(f"Invalid puzzle {key}: {e}")
+                pid += 1
         return puzzles

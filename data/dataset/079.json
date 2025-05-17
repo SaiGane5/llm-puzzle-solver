@@ -1,1 +1,1 @@
-{"problem_id":"079","initial_string":"ABGRNS.PSNFXVT954KZC","transitions":[{"src":"N","tgt":"#7J"},{"src":"V","tgt":"?"},{"src":"FX","tgt":""},{"src":"KZC","tgt":"CZK"},{"src":"T954","tgt":""},{"src":".PS","tgt":""},{"src":"S","tgt":""},{"src":"ABGRN","tgt":"RGBNA"}]}
+{"problem_id":"079","initial_string":"6GI.SMSC!OTU!XVARo#MOW","transitions":[{"src":".A","tgt":"Q72"},{"src":"XV#","tgt":""},{"src":"X3","tgt":"B#T"},{"src":"6G#!OTU","tgt":""},{"src":"MO","tgt":"J"},{"src":"ARo","tgt":""},{"src":".SMSC","tgt":"#"},{"src":"I","tgt":""},{"src":"!JW","tgt":""}]}
