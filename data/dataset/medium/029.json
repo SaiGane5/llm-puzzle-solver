@@ -1,33 +1,29 @@
 {
   "problem_id": "029",
-  "initial_string": "#C#0#C#3###",
+  "initial_string": "?B?Y???",
   "transitions": [
     {
-      "src": "#",
-      "tgt": "+"
+      "src": "?",
+      "tgt": "*"
     },
     {
-      "src": "#",
-      "tgt": "E"
+      "src": "?",
+      "tgt": "0"
     },
     {
-      "src": "++",
+      "src": "**",
       "tgt": ""
     },
     {
-      "src": "EEE",
+      "src": "000",
       "tgt": ""
     },
     {
-      "src": "3",
+      "src": "B",
       "tgt": ""
     },
     {
-      "src": "C",
-      "tgt": ""
-    },
-    {
-      "src": "0",
+      "src": "Y",
       "tgt": ""
     }
   ]

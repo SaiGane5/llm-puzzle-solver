@@ -1,25 +1,25 @@
 {
   "problem_id": "015",
-  "initial_string": "ECONSTANTE~0CONSTANT0",
+  "initial_string": "DCONSTANTD?BCONSTANTB",
   "transitions": [
     {
-      "src": "ECONSTANTE",
-      "tgt": "-"
+      "src": "DCONSTANTD",
+      "tgt": "Y"
     },
     {
-      "src": "0CONSTANT0",
-      "tgt": "B"
+      "src": "BCONSTANTB",
+      "tgt": "C"
     },
     {
-      "src": "~",
+      "src": "?",
       "tgt": ""
     },
     {
-      "src": "-",
+      "src": "Y",
       "tgt": ""
     },
     {
-      "src": "B",
+      "src": "C",
       "tgt": ""
     }
   ]

@@ -1,25 +1,33 @@
 {
   "problem_id": "022",
-  "initial_string": "YCONSTANTY#2CONSTANT2",
+  "initial_string": "#Y#Y#B#D####",
   "transitions": [
     {
-      "src": "YCONSTANTY",
-      "tgt": "*"
-    },
-    {
-      "src": "2CONSTANT2",
-      "tgt": "D"
+      "src": "#",
+      "tgt": "B"
     },
     {
       "src": "#",
+      "tgt": "2"
+    },
+    {
+      "src": "BBB",
       "tgt": ""
     },
     {
-      "src": "*",
+      "src": "22",
       "tgt": ""
     },
     {
       "src": "D",
+      "tgt": ""
+    },
+    {
+      "src": "B",
+      "tgt": ""
+    },
+    {
+      "src": "Y",
       "tgt": ""
     }
   ]

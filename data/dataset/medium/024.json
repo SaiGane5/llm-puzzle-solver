@@ -1,25 +1,25 @@
 {
   "problem_id": "024",
-  "initial_string": "APARAMETERA?*PARAMETER*",
+  "initial_string": "2INTERFACE2@BINTERFACEB",
   "transitions": [
     {
-      "src": "APARAMETERA",
-      "tgt": "A"
+      "src": "2INTERFACE2",
+      "tgt": "*"
     },
     {
-      "src": "*PARAMETER*",
-      "tgt": "0"
+      "src": "BINTERFACEB",
+      "tgt": "E"
     },
     {
-      "src": "?",
+      "src": "@",
       "tgt": ""
     },
     {
-      "src": "A",
+      "src": "*",
       "tgt": ""
     },
     {
-      "src": "0",
+      "src": "E",
       "tgt": ""
     }
   ]

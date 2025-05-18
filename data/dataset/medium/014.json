@@ -1,37 +1,37 @@
 {
   "problem_id": "014",
-  "initial_string": "%+%C%D%B%%%",
+  "initial_string": "~1~3~X~+~~~",
   "transitions": [
     {
-      "src": "%",
-      "tgt": "D"
+      "src": "~",
+      "tgt": "0"
     },
     {
-      "src": "%",
-      "tgt": "2"
+      "src": "~",
+      "tgt": "X"
     },
     {
-      "src": "DDD",
+      "src": "000",
       "tgt": ""
     },
     {
-      "src": "222",
+      "src": "XXX",
       "tgt": ""
     },
     {
-      "src": "D",
+      "src": "1",
       "tgt": ""
     },
     {
-      "src": "B",
-      "tgt": ""
-    },
-    {
-      "src": "C",
+      "src": "X",
       "tgt": ""
     },
     {
       "src": "+",
+      "tgt": ""
+    },
+    {
+      "src": "3",
       "tgt": ""
     }
   ]

@@ -1,33 +1,25 @@
 {
   "problem_id": "028",
-  "initial_string": "#3#-#Y#3#",
+  "initial_string": "0PARAMETER0#BPARAMETERB",
   "transitions": [
     {
-      "src": "#",
-      "tgt": "3"
+      "src": "0PARAMETER0",
+      "tgt": "0"
+    },
+    {
+      "src": "BPARAMETERB",
+      "tgt": "*"
     },
     {
       "src": "#",
-      "tgt": "D"
-    },
-    {
-      "src": "333",
       "tgt": ""
     },
     {
-      "src": "DD",
+      "src": "0",
       "tgt": ""
     },
     {
-      "src": "3",
-      "tgt": ""
-    },
-    {
-      "src": "Y",
-      "tgt": ""
-    },
-    {
-      "src": "-",
+      "src": "*",
       "tgt": ""
     }
   ]

@@ -1,17 +1,21 @@
 {
   "problem_id": "026",
-  "initial_string": "0STRUCTURE0#CSTRUCTUREC",
+  "initial_string": "!-!Y!C!D!!!!",
   "transitions": [
     {
-      "src": "0STRUCTURE0",
-      "tgt": "D"
+      "src": "!",
+      "tgt": "-"
     },
     {
-      "src": "CSTRUCTUREC",
-      "tgt": "2"
+      "src": "!",
+      "tgt": "0"
     },
     {
-      "src": "#",
+      "src": "---",
+      "tgt": ""
+    },
+    {
+      "src": "00",
       "tgt": ""
     },
     {
@@ -19,7 +23,15 @@
       "tgt": ""
     },
     {
-      "src": "2",
+      "src": "-",
+      "tgt": ""
+    },
+    {
+      "src": "Y",
+      "tgt": ""
+    },
+    {
+      "src": "C",
       "tgt": ""
     }
   ]

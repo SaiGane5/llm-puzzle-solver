@@ -1,21 +1,29 @@
 {
   "problem_id": "001",
-  "initial_string": "!2!Y!A!X!",
+  "initial_string": "#0#Y#E#+",
   "transitions": [
     {
-      "src": "!",
-      "tgt": "B"
+      "src": "#",
+      "tgt": "A"
     },
     {
-      "src": "!",
-      "tgt": "2"
+      "src": "#",
+      "tgt": "E"
     },
     {
-      "src": "BB",
+      "src": "AA",
       "tgt": ""
     },
     {
-      "src": "22",
+      "src": "EE",
+      "tgt": ""
+    },
+    {
+      "src": "0",
+      "tgt": ""
+    },
+    {
+      "src": "E",
       "tgt": ""
     },
     {
@@ -23,15 +31,7 @@
       "tgt": ""
     },
     {
-      "src": "A",
-      "tgt": ""
-    },
-    {
-      "src": "X",
-      "tgt": ""
-    },
-    {
-      "src": "2",
+      "src": "+",
       "tgt": ""
     }
   ]

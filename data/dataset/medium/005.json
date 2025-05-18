@@ -1,25 +1,25 @@
 {
   "problem_id": "005",
-  "initial_string": "BVARIABLEB@0VARIABLE0",
+  "initial_string": "ZSTRUCTUREZ&1STRUCTURE1",
   "transitions": [
     {
-      "src": "BVARIABLEB",
-      "tgt": "2"
+      "src": "ZSTRUCTUREZ",
+      "tgt": "X"
     },
     {
-      "src": "0VARIABLE0",
-      "tgt": "B"
+      "src": "1STRUCTURE1",
+      "tgt": "1"
     },
     {
-      "src": "@",
+      "src": "&",
       "tgt": ""
     },
     {
-      "src": "2",
+      "src": "X",
       "tgt": ""
     },
     {
-      "src": "B",
+      "src": "1",
       "tgt": ""
     }
   ]

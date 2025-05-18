@@ -1,25 +1,25 @@
 {
   "problem_id": "010",
-  "initial_string": "ZALGORITHMZ#AALGORITHMA",
+  "initial_string": "YPROTOCOLY#2PROTOCOL2",
   "transitions": [
     {
-      "src": "ZALGORITHMZ",
-      "tgt": "0"
+      "src": "YPROTOCOLY",
+      "tgt": "E"
     },
     {
-      "src": "AALGORITHMA",
-      "tgt": "D"
+      "src": "2PROTOCOL2",
+      "tgt": "Z"
     },
     {
       "src": "#",
       "tgt": ""
     },
     {
-      "src": "0",
+      "src": "E",
       "tgt": ""
     },
     {
-      "src": "D",
+      "src": "Z",
       "tgt": ""
     }
   ]

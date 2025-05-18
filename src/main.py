@@ -6,7 +6,9 @@ from typing import Dict, Optional
 
 from schema import Problem, Solution
 from utils import read_problem_folder, read_solution_folder, write_problem_folder
-from generator import PuzzleGenerator
+from generator import easy_generator
+
+# from generator import EasySedPuzzleGenerator, MediumSedPuzzleGenerator, HardSedPuzzleGenerator
 from baseline import bfs
 from llm_solver import ZeroShotSolver, FewShotSolver, CoTSolver, CreativeSolver
 from evaluation import PuzzleEvaluator
@@ -18,7 +20,7 @@ def generate_dataset():
     
     logging.info(f"Generating {num_puzzles} puzzles...")
     
-    generator = PuzzleGenerator()
+    generator = easy_generator.EasySedPuzzleGenerator()
     puzzles = generator.generate_dataset(num_puzzles)
     
     # Write puzzles to the specified directory

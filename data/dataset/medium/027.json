@@ -1,29 +1,25 @@
 {
   "problem_id": "027",
-  "initial_string": "@X@A@@",
+  "initial_string": "0FUNCTION0~+FUNCTION+",
   "transitions": [
     {
-      "src": "@",
-      "tgt": "Z"
+      "src": "0FUNCTION0",
+      "tgt": "1"
     },
     {
-      "src": "@",
-      "tgt": "Y"
+      "src": "+FUNCTION+",
+      "tgt": "B"
     },
     {
-      "src": "ZZ",
+      "src": "~",
       "tgt": ""
     },
     {
-      "src": "YY",
+      "src": "1",
       "tgt": ""
     },
     {
-      "src": "A",
-      "tgt": ""
-    },
-    {
-      "src": "X",
+      "src": "B",
       "tgt": ""
     }
   ]

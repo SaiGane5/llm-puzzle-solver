@@ -1,25 +1,37 @@
 {
   "problem_id": "000",
-  "initial_string": "YPROTOCOLY&1PROTOCOL1",
+  "initial_string": "%*%3%B%Y",
   "transitions": [
     {
-      "src": "YPROTOCOLY",
-      "tgt": "0"
+      "src": "%",
+      "tgt": "Z"
     },
     {
-      "src": "1PROTOCOL1",
-      "tgt": "C"
+      "src": "%",
+      "tgt": "3"
     },
     {
-      "src": "&",
+      "src": "ZZ",
       "tgt": ""
     },
     {
-      "src": "0",
+      "src": "33",
       "tgt": ""
     },
     {
-      "src": "C",
+      "src": "*",
+      "tgt": ""
+    },
+    {
+      "src": "B",
+      "tgt": ""
+    },
+    {
+      "src": "Y",
+      "tgt": ""
+    },
+    {
+      "src": "3",
       "tgt": ""
     }
   ]

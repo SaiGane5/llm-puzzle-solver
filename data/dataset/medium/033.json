@@ -1,17 +1,25 @@
 {
   "problem_id": "033",
-  "initial_string": "XVARIABLEX|XVARIABLEX",
+  "initial_string": "0PARAMETER0!YPARAMETERY",
   "transitions": [
     {
-      "src": "XVARIABLEX",
-      "tgt": "E"
+      "src": "0PARAMETER0",
+      "tgt": "Z"
     },
     {
-      "src": "|",
+      "src": "YPARAMETERY",
+      "tgt": "+"
+    },
+    {
+      "src": "!",
       "tgt": ""
     },
     {
-      "src": "E",
+      "src": "Z",
+      "tgt": ""
+    },
+    {
+      "src": "+",
       "tgt": ""
     }
   ]

@@ -1,25 +1,25 @@
 {
   "problem_id": "002",
-  "initial_string": "+PROTOCOL+!*PROTOCOL*",
+  "initial_string": "0CONSTANT0&2CONSTANT2",
   "transitions": [
     {
-      "src": "+PROTOCOL+",
-      "tgt": "D"
+      "src": "0CONSTANT0",
+      "tgt": "C"
     },
     {
-      "src": "*PROTOCOL*",
-      "tgt": "+"
+      "src": "2CONSTANT2",
+      "tgt": "Z"
     },
     {
-      "src": "!",
+      "src": "&",
       "tgt": ""
     },
     {
-      "src": "D",
+      "src": "C",
       "tgt": ""
     },
     {
-      "src": "+",
+      "src": "Z",
       "tgt": ""
     }
   ]

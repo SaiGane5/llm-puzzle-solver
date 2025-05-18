@@ -1,29 +1,21 @@
 {
   "problem_id": "009",
-  "initial_string": "&C&*&+&C&",
+  "initial_string": "CFUNCTIONC#BFUNCTIONB",
   "transitions": [
     {
-      "src": "&",
-      "tgt": "C"
+      "src": "CFUNCTIONC",
+      "tgt": "3"
     },
     {
-      "src": "&",
-      "tgt": "A"
+      "src": "BFUNCTIONB",
+      "tgt": "+"
     },
     {
-      "src": "CC",
+      "src": "#",
       "tgt": ""
     },
     {
-      "src": "AAA",
-      "tgt": ""
-    },
-    {
-      "src": "*",
-      "tgt": ""
-    },
-    {
-      "src": "C",
+      "src": "3",
       "tgt": ""
     },
     {

@@ -1,17 +1,17 @@
 {
   "problem_id": "020",
-  "initial_string": "XALGORITHMX|ZALGORITHMZ",
+  "initial_string": "3VARIABLE3?CVARIABLEC",
   "transitions": [
     {
-      "src": "XALGORITHMX",
+      "src": "3VARIABLE3",
       "tgt": "Y"
     },
     {
-      "src": "ZALGORITHMZ",
-      "tgt": "1"
+      "src": "CVARIABLEC",
+      "tgt": "X"
     },
     {
-      "src": "|",
+      "src": "?",
       "tgt": ""
     },
     {
@@ -19,7 +19,7 @@
       "tgt": ""
     },
     {
-      "src": "1",
+      "src": "X",
       "tgt": ""
     }
   ]

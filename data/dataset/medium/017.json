@@ -1,25 +1,37 @@
 {
   "problem_id": "017",
-  "initial_string": "2FUNCTION2~XFUNCTIONX",
+  "initial_string": "?2?A?B?Y??",
   "transitions": [
     {
-      "src": "2FUNCTION2",
-      "tgt": "0"
+      "src": "?",
+      "tgt": "*"
     },
     {
-      "src": "XFUNCTIONX",
-      "tgt": "Y"
+      "src": "?",
+      "tgt": "Z"
     },
     {
-      "src": "~",
+      "src": "**",
       "tgt": ""
     },
     {
-      "src": "0",
+      "src": "ZZ",
       "tgt": ""
     },
     {
       "src": "Y",
+      "tgt": ""
+    },
+    {
+      "src": "A",
+      "tgt": ""
+    },
+    {
+      "src": "B",
+      "tgt": ""
+    },
+    {
+      "src": "2",
       "tgt": ""
     }
   ]

@@ -1,25 +1,17 @@
 {
   "problem_id": "007",
-  "initial_string": "-INTERFACE-&*INTERFACE*",
+  "initial_string": "+PARAMETER+@+PARAMETER+",
   "transitions": [
     {
-      "src": "-INTERFACE-",
-      "tgt": "3"
+      "src": "+PARAMETER+",
+      "tgt": "E"
     },
     {
-      "src": "*INTERFACE*",
-      "tgt": "*"
-    },
-    {
-      "src": "&",
+      "src": "@",
       "tgt": ""
     },
     {
-      "src": "3",
-      "tgt": ""
-    },
-    {
-      "src": "*",
+      "src": "E",
       "tgt": ""
     }
   ]

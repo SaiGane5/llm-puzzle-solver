@@ -1,25 +1,37 @@
 {
   "problem_id": "018",
-  "initial_string": "ZPARAMETERZ~APARAMETERA",
+  "initial_string": "?A?X?Y?+??",
   "transitions": [
     {
-      "src": "ZPARAMETERZ",
-      "tgt": "C"
+      "src": "?",
+      "tgt": "A"
     },
     {
-      "src": "APARAMETERA",
-      "tgt": "-"
+      "src": "?",
+      "tgt": "D"
     },
     {
-      "src": "~",
+      "src": "AAA",
       "tgt": ""
     },
     {
-      "src": "C",
+      "src": "DDD",
       "tgt": ""
     },
     {
-      "src": "-",
+      "src": "A",
+      "tgt": ""
+    },
+    {
+      "src": "+",
+      "tgt": ""
+    },
+    {
+      "src": "Y",
+      "tgt": ""
+    },
+    {
+      "src": "X",
       "tgt": ""
     }
   ]

@@ -1,25 +1,33 @@
 {
   "problem_id": "023",
-  "initial_string": "ASTRUCTUREA~ZSTRUCTUREZ",
+  "initial_string": "|Y|E|Z||",
   "transitions": [
     {
-      "src": "ASTRUCTUREA",
-      "tgt": "0"
+      "src": "|",
+      "tgt": "3"
     },
     {
-      "src": "ZSTRUCTUREZ",
-      "tgt": "C"
+      "src": "|",
+      "tgt": "2"
     },
     {
-      "src": "~",
+      "src": "33",
       "tgt": ""
     },
     {
-      "src": "0",
+      "src": "222",
       "tgt": ""
     },
     {
-      "src": "C",
+      "src": "Z",
+      "tgt": ""
+    },
+    {
+      "src": "E",
+      "tgt": ""
+    },
+    {
+      "src": "Y",
       "tgt": ""
     }
   ]

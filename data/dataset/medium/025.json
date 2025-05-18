@@ -1,14 +1,14 @@
 {
   "problem_id": "025",
-  "initial_string": "YCONSTANTY&0CONSTANT0",
+  "initial_string": "DPARAMETERD&+PARAMETER+",
   "transitions": [
     {
-      "src": "YCONSTANTY",
+      "src": "DPARAMETERD",
       "tgt": "D"
     },
     {
-      "src": "0CONSTANT0",
-      "tgt": "E"
+      "src": "+PARAMETER+",
+      "tgt": "Z"
     },
     {
       "src": "&",
@@ -19,7 +19,7 @@
       "tgt": ""
     },
     {
-      "src": "E",
+      "src": "Z",
       "tgt": ""
     }
   ]

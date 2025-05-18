@@ -1,33 +1,33 @@
 {
   "problem_id": "008",
-  "initial_string": "#D#Y#X#####",
+  "initial_string": "@+@2@3@@@@",
   "transitions": [
     {
-      "src": "#",
-      "tgt": "D"
+      "src": "@",
+      "tgt": "2"
     },
     {
-      "src": "#",
-      "tgt": "X"
+      "src": "@",
+      "tgt": "3"
     },
     {
-      "src": "DD",
+      "src": "222",
       "tgt": ""
     },
     {
-      "src": "XXX",
+      "src": "333",
       "tgt": ""
     },
     {
-      "src": "D",
+      "src": "3",
       "tgt": ""
     },
     {
-      "src": "Y",
+      "src": "2",
       "tgt": ""
     },
     {
-      "src": "X",
+      "src": "+",
       "tgt": ""
     }
   ]

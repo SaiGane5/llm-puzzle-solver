@@ -1,25 +1,33 @@
 {
   "problem_id": "019",
-  "initial_string": "BALGORITHMB|EALGORITHME",
+  "initial_string": "~X~Z~D~",
   "transitions": [
     {
-      "src": "BALGORITHMB",
-      "tgt": "2"
+      "src": "~",
+      "tgt": "1"
     },
     {
-      "src": "EALGORITHME",
-      "tgt": "0"
+      "src": "~",
+      "tgt": "E"
     },
     {
-      "src": "|",
+      "src": "11",
       "tgt": ""
     },
     {
-      "src": "2",
+      "src": "EE",
       "tgt": ""
     },
     {
-      "src": "0",
+      "src": "Z",
+      "tgt": ""
+    },
+    {
+      "src": "D",
+      "tgt": ""
+    },
+    {
+      "src": "X",
       "tgt": ""
     }
   ]
