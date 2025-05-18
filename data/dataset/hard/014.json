@@ -1,0 +1,46 @@
+{
+  "problem_id": "014",
+  "initial_string": "B&0&0^@B&0&0^",
+  "transitions": [
+    {
+      "src": "^",
+      "tgt": "D"
+    },
+    {
+      "src": "/",
+      "tgt": "D"
+    },
+    {
+      "src": "&",
+      "tgt": "D"
+    },
+    {
+      "src": "DD",
+      "tgt": "F"
+    },
+    {
+      "src": "@",
+      "tgt": ""
+    },
+    {
+      "src": "B",
+      "tgt": ""
+    },
+    {
+      "src": "0",
+      "tgt": ""
+    },
+    {
+      "src": "3",
+      "tgt": ""
+    },
+    {
+      "src": "D",
+      "tgt": ""
+    },
+    {
+      "src": "F",
+      "tgt": ""
+    }
+  ]
+}

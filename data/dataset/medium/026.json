@@ -1,0 +1,26 @@
+{
+  "problem_id": "026",
+  "initial_string": "0STRUCTURE0#CSTRUCTUREC",
+  "transitions": [
+    {
+      "src": "0STRUCTURE0",
+      "tgt": "D"
+    },
+    {
+      "src": "CSTRUCTUREC",
+      "tgt": "2"
+    },
+    {
+      "src": "#",
+      "tgt": ""
+    },
+    {
+      "src": "D",
+      "tgt": ""
+    },
+    {
+      "src": "2",
+      "tgt": ""
+    }
+  ]
+}

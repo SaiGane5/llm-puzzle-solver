@@ -1,0 +1,38 @@
+{
+  "problem_id": "000",
+  "initial_string": "YAB~1~~F~~C~~2~YAB",
+  "transitions": [
+    {
+      "src": "~",
+      "tgt": ""
+    },
+    {
+      "src": "YAB",
+      "tgt": "/"
+    },
+    {
+      "src": "/",
+      "tgt": "}"
+    },
+    {
+      "src": "1",
+      "tgt": ""
+    },
+    {
+      "src": "F",
+      "tgt": ""
+    },
+    {
+      "src": "C",
+      "tgt": ""
+    },
+    {
+      "src": "2",
+      "tgt": ""
+    },
+    {
+      "src": "}",
+      "tgt": ""
+    }
+  ]
+}

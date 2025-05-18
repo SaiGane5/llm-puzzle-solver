@@ -1,0 +1,18 @@
+{
+  "problem_id": "017",
+  "initial_string": "WORLDFRUITHELLO",
+  "transitions": [
+    {
+      "src": "WORLD",
+      "tgt": ""
+    },
+    {
+      "src": "HELLO",
+      "tgt": ""
+    },
+    {
+      "src": "FRUIT",
+      "tgt": ""
+    }
+  ]
+}

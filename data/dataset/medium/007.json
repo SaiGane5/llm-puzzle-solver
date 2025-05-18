@@ -1,0 +1,26 @@
+{
+  "problem_id": "007",
+  "initial_string": "-INTERFACE-&*INTERFACE*",
+  "transitions": [
+    {
+      "src": "-INTERFACE-",
+      "tgt": "3"
+    },
+    {
+      "src": "*INTERFACE*",
+      "tgt": "*"
+    },
+    {
+      "src": "&",
+      "tgt": ""
+    },
+    {
+      "src": "3",
+      "tgt": ""
+    },
+    {
+      "src": "*",
+      "tgt": ""
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "problem_id": "019",
+  "initial_string": "BALGORITHMB|EALGORITHME",
+  "transitions": [
+    {
+      "src": "BALGORITHMB",
+      "tgt": "2"
+    },
+    {
+      "src": "EALGORITHME",
+      "tgt": "0"
+    },
+    {
+      "src": "|",
+      "tgt": ""
+    },
+    {
+      "src": "2",
+      "tgt": ""
+    },
+    {
+      "src": "0",
+      "tgt": ""
+    }
+  ]
+}

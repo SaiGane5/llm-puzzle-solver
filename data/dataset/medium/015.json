@@ -1,0 +1,26 @@
+{
+  "problem_id": "015",
+  "initial_string": "ECONSTANTE~0CONSTANT0",
+  "transitions": [
+    {
+      "src": "ECONSTANTE",
+      "tgt": "-"
+    },
+    {
+      "src": "0CONSTANT0",
+      "tgt": "B"
+    },
+    {
+      "src": "~",
+      "tgt": ""
+    },
+    {
+      "src": "-",
+      "tgt": ""
+    },
+    {
+      "src": "B",
+      "tgt": ""
+    }
+  ]
+}

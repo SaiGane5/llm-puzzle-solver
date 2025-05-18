@@ -1,0 +1,50 @@
+{
+  "problem_id": "016",
+  "initial_string": "%>]+)>[ARCHITECTURE[>)+]>%)[X[)",
+  "transitions": [
+    {
+      "src": "[ARCHITECTURE[",
+      "tgt": "1"
+    },
+    {
+      "src": ")>1>)",
+      "tgt": "G"
+    },
+    {
+      "src": "]+G+]",
+      "tgt": "B"
+    },
+    {
+      "src": "%>B>%",
+      "tgt": "D"
+    },
+    {
+      "src": "[",
+      "tgt": ""
+    },
+    {
+      "src": ")",
+      "tgt": ""
+    },
+    {
+      "src": "X",
+      "tgt": ""
+    },
+    {
+      "src": "1",
+      "tgt": ""
+    },
+    {
+      "src": "G",
+      "tgt": ""
+    },
+    {
+      "src": "B",
+      "tgt": ""
+    },
+    {
+      "src": "D",
+      "tgt": ""
+    }
+  ]
+}

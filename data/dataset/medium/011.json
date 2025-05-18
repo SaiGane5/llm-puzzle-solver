@@ -1,0 +1,26 @@
+{
+  "problem_id": "011",
+  "initial_string": "AINTERFACEA@1INTERFACE1",
+  "transitions": [
+    {
+      "src": "AINTERFACEA",
+      "tgt": "3"
+    },
+    {
+      "src": "1INTERFACE1",
+      "tgt": "Z"
+    },
+    {
+      "src": "@",
+      "tgt": ""
+    },
+    {
+      "src": "3",
+      "tgt": ""
+    },
+    {
+      "src": "Z",
+      "tgt": ""
+    }
+  ]
+}

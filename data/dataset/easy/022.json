@@ -1,0 +1,14 @@
+{
+  "problem_id": "022",
+  "initial_string": "ENDORANGE",
+  "transitions": [
+    {
+      "src": "END",
+      "tgt": ""
+    },
+    {
+      "src": "ORANGE",
+      "tgt": ""
+    }
+  ]
+}

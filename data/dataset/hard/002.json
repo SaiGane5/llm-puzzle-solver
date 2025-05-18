@@ -1,0 +1,22 @@
+{
+  "problem_id": "002",
+  "initial_string": "0-G^2#0-G^2",
+  "transitions": [
+    {
+      "src": "0-G^2",
+      "tgt": "D"
+    },
+    {
+      "src": "D#D",
+      "tgt": "<"
+    },
+    {
+      "src": "<",
+      "tgt": "("
+    },
+    {
+      "src": "(",
+      "tgt": ""
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "problem_id": "034",
+  "initial_string": "~X~C~A~-~~~~",
+  "transitions": [
+    {
+      "src": "~",
+      "tgt": "C"
+    },
+    {
+      "src": "~",
+      "tgt": "+"
+    },
+    {
+      "src": "CCC",
+      "tgt": ""
+    },
+    {
+      "src": "+++",
+      "tgt": ""
+    },
+    {
+      "src": "-",
+      "tgt": ""
+    },
+    {
+      "src": "A",
+      "tgt": ""
+    },
+    {
+      "src": "C",
+      "tgt": ""
+    },
+    {
+      "src": "X",
+      "tgt": ""
+    }
+  ]
+}

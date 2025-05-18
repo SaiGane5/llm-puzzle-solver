@@ -1,0 +1,14 @@
+{
+  "problem_id": "005",
+  "initial_string": "STARTPYTHON",
+  "transitions": [
+    {
+      "src": "START",
+      "tgt": ""
+    },
+    {
+      "src": "PYTHON",
+      "tgt": ""
+    }
+  ]
+}

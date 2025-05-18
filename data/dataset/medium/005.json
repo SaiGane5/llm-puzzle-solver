@@ -1,0 +1,26 @@
+{
+  "problem_id": "005",
+  "initial_string": "BVARIABLEB@0VARIABLE0",
+  "transitions": [
+    {
+      "src": "BVARIABLEB",
+      "tgt": "2"
+    },
+    {
+      "src": "0VARIABLE0",
+      "tgt": "B"
+    },
+    {
+      "src": "@",
+      "tgt": ""
+    },
+    {
+      "src": "2",
+      "tgt": ""
+    },
+    {
+      "src": "B",
+      "tgt": ""
+    }
+  ]
+}

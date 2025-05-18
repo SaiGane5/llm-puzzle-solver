@@ -1,0 +1,34 @@
+{
+  "problem_id": "028",
+  "initial_string": "#3#-#Y#3#",
+  "transitions": [
+    {
+      "src": "#",
+      "tgt": "3"
+    },
+    {
+      "src": "#",
+      "tgt": "D"
+    },
+    {
+      "src": "333",
+      "tgt": ""
+    },
+    {
+      "src": "DD",
+      "tgt": ""
+    },
+    {
+      "src": "3",
+      "tgt": ""
+    },
+    {
+      "src": "Y",
+      "tgt": ""
+    },
+    {
+      "src": "-",
+      "tgt": ""
+    }
+  ]
+}

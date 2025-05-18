@@ -1,0 +1,18 @@
+{
+  "problem_id": "032",
+  "initial_string": "-DATABASE-?-DATABASE-",
+  "transitions": [
+    {
+      "src": "-DATABASE-",
+      "tgt": "E"
+    },
+    {
+      "src": "?",
+      "tgt": ""
+    },
+    {
+      "src": "E",
+      "tgt": ""
+    }
+  ]
+}

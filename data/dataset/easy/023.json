@@ -1,0 +1,18 @@
+{
+  "problem_id": "023",
+  "initial_string": "TESTSTARTHELLO",
+  "transitions": [
+    {
+      "src": "TEST",
+      "tgt": ""
+    },
+    {
+      "src": "HELLO",
+      "tgt": ""
+    },
+    {
+      "src": "START",
+      "tgt": ""
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "problem_id": "004",
+  "initial_string": "EINTERFACEE!CINTERFACEC",
+  "transitions": [
+    {
+      "src": "EINTERFACEE",
+      "tgt": "1"
+    },
+    {
+      "src": "CINTERFACEC",
+      "tgt": "+"
+    },
+    {
+      "src": "!",
+      "tgt": ""
+    },
+    {
+      "src": "1",
+      "tgt": ""
+    },
+    {
+      "src": "+",
+      "tgt": ""
+    }
+  ]
+}

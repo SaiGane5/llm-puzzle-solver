@@ -1,0 +1,38 @@
+{
+  "problem_id": "008",
+  "initial_string": "D10[Z[[F[[B[[G[D10",
+  "transitions": [
+    {
+      "src": "[",
+      "tgt": ""
+    },
+    {
+      "src": "D10",
+      "tgt": "&"
+    },
+    {
+      "src": "&",
+      "tgt": "@"
+    },
+    {
+      "src": "Z",
+      "tgt": ""
+    },
+    {
+      "src": "F",
+      "tgt": ""
+    },
+    {
+      "src": "B",
+      "tgt": ""
+    },
+    {
+      "src": "G",
+      "tgt": ""
+    },
+    {
+      "src": "@",
+      "tgt": ""
+    }
+  ]
+}

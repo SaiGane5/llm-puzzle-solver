@@ -1,0 +1,26 @@
+{
+  "problem_id": "031",
+  "initial_string": "ZINTERFACEZ|XINTERFACEX",
+  "transitions": [
+    {
+      "src": "ZINTERFACEZ",
+      "tgt": "B"
+    },
+    {
+      "src": "XINTERFACEX",
+      "tgt": "E"
+    },
+    {
+      "src": "|",
+      "tgt": ""
+    },
+    {
+      "src": "B",
+      "tgt": ""
+    },
+    {
+      "src": "E",
+      "tgt": ""
+    }
+  ]
+}

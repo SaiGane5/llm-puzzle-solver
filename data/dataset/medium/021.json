@@ -1,0 +1,18 @@
+{
+  "problem_id": "021",
+  "initial_string": "*PARAMETER*~*PARAMETER*",
+  "transitions": [
+    {
+      "src": "*PARAMETER*",
+      "tgt": "A"
+    },
+    {
+      "src": "~",
+      "tgt": ""
+    },
+    {
+      "src": "A",
+      "tgt": ""
+    }
+  ]
+}

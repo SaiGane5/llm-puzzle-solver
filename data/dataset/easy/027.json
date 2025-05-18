@@ -1,0 +1,18 @@
+{
+  "problem_id": "027",
+  "initial_string": "FINISHCLEANCODE",
+  "transitions": [
+    {
+      "src": "FINISH",
+      "tgt": ""
+    },
+    {
+      "src": "CLEAN",
+      "tgt": ""
+    },
+    {
+      "src": "CODE",
+      "tgt": ""
+    }
+  ]
+}

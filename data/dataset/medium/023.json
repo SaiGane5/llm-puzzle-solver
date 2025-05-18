@@ -1,0 +1,26 @@
+{
+  "problem_id": "023",
+  "initial_string": "ASTRUCTUREA~ZSTRUCTUREZ",
+  "transitions": [
+    {
+      "src": "ASTRUCTUREA",
+      "tgt": "0"
+    },
+    {
+      "src": "ZSTRUCTUREZ",
+      "tgt": "C"
+    },
+    {
+      "src": "~",
+      "tgt": ""
+    },
+    {
+      "src": "0",
+      "tgt": ""
+    },
+    {
+      "src": "C",
+      "tgt": ""
+    }
+  ]
+}

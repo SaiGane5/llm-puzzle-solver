@@ -1,0 +1,26 @@
+{
+  "problem_id": "010",
+  "initial_string": "ZALGORITHMZ#AALGORITHMA",
+  "transitions": [
+    {
+      "src": "ZALGORITHMZ",
+      "tgt": "0"
+    },
+    {
+      "src": "AALGORITHMA",
+      "tgt": "D"
+    },
+    {
+      "src": "#",
+      "tgt": ""
+    },
+    {
+      "src": "0",
+      "tgt": ""
+    },
+    {
+      "src": "D",
+      "tgt": ""
+    }
+  ]
+}

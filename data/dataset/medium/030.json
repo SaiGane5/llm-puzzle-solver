@@ -1,0 +1,26 @@
+{
+  "problem_id": "030",
+  "initial_string": "-PARAMETER-@+PARAMETER+",
+  "transitions": [
+    {
+      "src": "-PARAMETER-",
+      "tgt": "B"
+    },
+    {
+      "src": "+PARAMETER+",
+      "tgt": "1"
+    },
+    {
+      "src": "@",
+      "tgt": ""
+    },
+    {
+      "src": "B",
+      "tgt": ""
+    },
+    {
+      "src": "1",
+      "tgt": ""
+    }
+  ]
+}

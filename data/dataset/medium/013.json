@@ -1,0 +1,26 @@
+{
+  "problem_id": "013",
+  "initial_string": "2PARAMETER2#0PARAMETER0",
+  "transitions": [
+    {
+      "src": "2PARAMETER2",
+      "tgt": "E"
+    },
+    {
+      "src": "0PARAMETER0",
+      "tgt": "-"
+    },
+    {
+      "src": "#",
+      "tgt": ""
+    },
+    {
+      "src": "E",
+      "tgt": ""
+    },
+    {
+      "src": "-",
+      "tgt": ""
+    }
+  ]
+}

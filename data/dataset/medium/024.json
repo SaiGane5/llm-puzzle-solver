@@ -1,0 +1,26 @@
+{
+  "problem_id": "024",
+  "initial_string": "APARAMETERA?*PARAMETER*",
+  "transitions": [
+    {
+      "src": "APARAMETERA",
+      "tgt": "A"
+    },
+    {
+      "src": "*PARAMETER*",
+      "tgt": "0"
+    },
+    {
+      "src": "?",
+      "tgt": ""
+    },
+    {
+      "src": "A",
+      "tgt": ""
+    },
+    {
+      "src": "0",
+      "tgt": ""
+    }
+  ]
+}

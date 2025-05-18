@@ -1,0 +1,46 @@
+{
+  "problem_id": "020",
+  "initial_string": "F>A|A>@F>A|A>",
+  "transitions": [
+    {
+      "src": ">",
+      "tgt": "1"
+    },
+    {
+      "src": "-",
+      "tgt": "1"
+    },
+    {
+      "src": "|",
+      "tgt": "1"
+    },
+    {
+      "src": "11",
+      "tgt": "B"
+    },
+    {
+      "src": "@",
+      "tgt": ""
+    },
+    {
+      "src": "F",
+      "tgt": ""
+    },
+    {
+      "src": "A",
+      "tgt": ""
+    },
+    {
+      "src": "B",
+      "tgt": ""
+    },
+    {
+      "src": "1",
+      "tgt": ""
+    },
+    {
+      "src": "B",
+      "tgt": ""
+    }
+  ]
+}

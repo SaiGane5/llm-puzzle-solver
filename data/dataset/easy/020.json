@@ -1,0 +1,18 @@
+{
+  "problem_id": "020",
+  "initial_string": "EASYBASICSTART",
+  "transitions": [
+    {
+      "src": "EASY",
+      "tgt": ""
+    },
+    {
+      "src": "BASIC",
+      "tgt": ""
+    },
+    {
+      "src": "START",
+      "tgt": ""
+    }
+  ]
+}

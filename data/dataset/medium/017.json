@@ -1,0 +1,26 @@
+{
+  "problem_id": "017",
+  "initial_string": "2FUNCTION2~XFUNCTIONX",
+  "transitions": [
+    {
+      "src": "2FUNCTION2",
+      "tgt": "0"
+    },
+    {
+      "src": "XFUNCTIONX",
+      "tgt": "Y"
+    },
+    {
+      "src": "~",
+      "tgt": ""
+    },
+    {
+      "src": "0",
+      "tgt": ""
+    },
+    {
+      "src": "Y",
+      "tgt": ""
+    }
+  ]
+}

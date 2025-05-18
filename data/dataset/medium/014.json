@@ -1,0 +1,38 @@
+{
+  "problem_id": "014",
+  "initial_string": "%+%C%D%B%%%",
+  "transitions": [
+    {
+      "src": "%",
+      "tgt": "D"
+    },
+    {
+      "src": "%",
+      "tgt": "2"
+    },
+    {
+      "src": "DDD",
+      "tgt": ""
+    },
+    {
+      "src": "222",
+      "tgt": ""
+    },
+    {
+      "src": "D",
+      "tgt": ""
+    },
+    {
+      "src": "B",
+      "tgt": ""
+    },
+    {
+      "src": "C",
+      "tgt": ""
+    },
+    {
+      "src": "+",
+      "tgt": ""
+    }
+  ]
+}

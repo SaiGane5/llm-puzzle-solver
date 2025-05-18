@@ -1,0 +1,26 @@
+{
+  "problem_id": "010",
+  "initial_string": "SYNCHRONIZATION(2:A:(B))^SYNCHRONIZATION(2:A:(B))",
+  "transitions": [
+    {
+      "src": "(B)",
+      "tgt": ")"
+    },
+    {
+      "src": "2:A:)",
+      "tgt": "]"
+    },
+    {
+      "src": "SYNCHRONIZATION(])",
+      "tgt": "?"
+    },
+    {
+      "src": "?^?",
+      "tgt": "?"
+    },
+    {
+      "src": "?",
+      "tgt": ""
+    }
+  ]
+}

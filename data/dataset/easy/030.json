@@ -1,0 +1,18 @@
+{
+  "problem_id": "030",
+  "initial_string": "STARTBEGINSIMPLE",
+  "transitions": [
+    {
+      "src": "START",
+      "tgt": ""
+    },
+    {
+      "src": "BEGIN",
+      "tgt": ""
+    },
+    {
+      "src": "SIMPLE",
+      "tgt": ""
+    }
+  ]
+}

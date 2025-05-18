@@ -1,0 +1,22 @@
+{
+  "problem_id": "004",
+  "initial_string": "0+B<Z@0+B<Z",
+  "transitions": [
+    {
+      "src": "0+B<Z",
+      "tgt": "D"
+    },
+    {
+      "src": "D@D",
+      "tgt": "/"
+    },
+    {
+      "src": "/",
+      "tgt": "!"
+    },
+    {
+      "src": "!",
+      "tgt": ""
+    }
+  ]
+}

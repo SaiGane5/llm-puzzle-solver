@@ -1,0 +1,34 @@
+{
+  "problem_id": "026",
+  "initial_string": "E?EH?FE?E?H?F?",
+  "transitions": [
+    {
+      "src": "?",
+      "tgt": "G"
+    },
+    {
+      "src": "GEG",
+      "tgt": ">"
+    },
+    {
+      "src": ">>",
+      "tgt": ""
+    },
+    {
+      "src": "E",
+      "tgt": ""
+    },
+    {
+      "src": "G",
+      "tgt": ""
+    },
+    {
+      "src": "H",
+      "tgt": ""
+    },
+    {
+      "src": "F",
+      "tgt": ""
+    }
+  ]
+}

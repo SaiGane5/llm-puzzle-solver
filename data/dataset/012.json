@@ -1,1 +1,0 @@
-{"problem_id":"012","initial_string":"D2F2Q","transitions":[{"src":"R","tgt":""},{"src":"D2","tgt":""},{"src":"F","tgt":"R"},{"src":"4","tgt":"Y"},{"src":"LE2","tgt":"S!"},{"src":"2Q","tgt":""}]}

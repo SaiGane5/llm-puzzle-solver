@@ -1,0 +1,26 @@
+{
+  "problem_id": "002",
+  "initial_string": "+PROTOCOL+!*PROTOCOL*",
+  "transitions": [
+    {
+      "src": "+PROTOCOL+",
+      "tgt": "D"
+    },
+    {
+      "src": "*PROTOCOL*",
+      "tgt": "+"
+    },
+    {
+      "src": "!",
+      "tgt": ""
+    },
+    {
+      "src": "D",
+      "tgt": ""
+    },
+    {
+      "src": "+",
+      "tgt": ""
+    }
+  ]
+}

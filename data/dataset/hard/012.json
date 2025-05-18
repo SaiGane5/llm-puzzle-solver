@@ -1,0 +1,22 @@
+{
+  "problem_id": "012",
+  "initial_string": "B^F>1[B^F>1",
+  "transitions": [
+    {
+      "src": "B^F>1",
+      "tgt": "0"
+    },
+    {
+      "src": "0[0",
+      "tgt": "<"
+    },
+    {
+      "src": "<",
+      "tgt": "?"
+    },
+    {
+      "src": "?",
+      "tgt": ""
+    }
+  ]
+}

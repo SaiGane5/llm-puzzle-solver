@@ -1,0 +1,18 @@
+{
+  "problem_id": "032",
+  "initial_string": "PYTHONBASICPYTHON",
+  "transitions": [
+    {
+      "src": "PYTHON",
+      "tgt": ""
+    },
+    {
+      "src": "PYTHON",
+      "tgt": ""
+    },
+    {
+      "src": "BASIC",
+      "tgt": ""
+    }
+  ]
+}

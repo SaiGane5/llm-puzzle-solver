@@ -1,0 +1,18 @@
+{
+  "problem_id": "033",
+  "initial_string": "XVARIABLEX|XVARIABLEX",
+  "transitions": [
+    {
+      "src": "XVARIABLEX",
+      "tgt": "E"
+    },
+    {
+      "src": "|",
+      "tgt": ""
+    },
+    {
+      "src": "E",
+      "tgt": ""
+    }
+  ]
+}

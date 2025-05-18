@@ -6,7 +6,7 @@ import logging
 
 import pydantic
 
-def read_problem_folder(path=Path("/Users/imandisaiganesh/Documents/VSCode/IIITHIntern/llm-puzzle-solver/data/dataset")):
+def read_problem_folder(path=Path("data/dataset/hard")):
     """Opens all problems at the folder and reads them using Pydantic"""
     problems = {}
     for file_path in path.iterdir():
@@ -18,7 +18,7 @@ def read_problem_folder(path=Path("/Users/imandisaiganesh/Documents/VSCode/IIITH
             logging.warning(f"Validation error while processing {file_path}! skipping...", exc_info=True)
     return problems
 
-def read_solution_folder(path=Path("/Users/imandisaiganesh/Documents/VSCode/IIITHIntern/llm-puzzle-solver/data/solutions/baseline")):
+def read_solution_folder(path=Path("data/solutions/baseline/hard")):
     """Opens all solutions at the folder and reads them using Pydantic"""
     solutions = {}
     for file_path in path.iterdir():
@@ -30,7 +30,7 @@ def read_solution_folder(path=Path("/Users/imandisaiganesh/Documents/VSCode/IIIT
             logging.warning(f"Validation error while processing {file_path}! skipping... ", exc_info=True)
     return solutions
 
-def write_problem_folder(problems, path=Path("/Users/imandisaiganesh/Documents/VSCode/IIITHIntern/llm-puzzle-solver/data/dataset")):
+def write_problem_folder(problems, path=Path("data/dataset/hard")):
     path.mkdir(exist_ok=True)
 
     for problem_id, problem in problems.items():
@@ -38,7 +38,7 @@ def write_problem_folder(problems, path=Path("/Users/imandisaiganesh/Documents/V
         with open(path / f"{problem_id}.json", 'w') as f:
             f.write(problem.json())
 
-def write_solution_folder(solutions, path=Path("/Users/imandisaiganesh/Documents/VSCode/IIITHIntern/llm-puzzle-solver/data/solutions/baseline")):
+def write_solution_folder(solutions, path=Path("data/solutions/baseline/hard")):
     path.mkdir(exist_ok=True)
 
     for problem_id, solution in solutions.items():

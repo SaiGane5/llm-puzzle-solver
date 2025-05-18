@@ -1,0 +1,30 @@
+{
+  "problem_id": "027",
+  "initial_string": "@X@A@@",
+  "transitions": [
+    {
+      "src": "@",
+      "tgt": "Z"
+    },
+    {
+      "src": "@",
+      "tgt": "Y"
+    },
+    {
+      "src": "ZZ",
+      "tgt": ""
+    },
+    {
+      "src": "YY",
+      "tgt": ""
+    },
+    {
+      "src": "A",
+      "tgt": ""
+    },
+    {
+      "src": "X",
+      "tgt": ""
+    }
+  ]
+}
