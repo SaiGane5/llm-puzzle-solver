@@ -1,0 +1,1 @@
+{"problem_id":"007","initial_string":"QB!0WAA","transitions":[{"src":"N","tgt":"6"},{"src":"#V","tgt":"7"},{"src":"P","tgt":"B"},{"src":"A","tgt":""},{"src":"0W","tgt":"1"},{"src":"61A","tgt":""},{"src":"QB!","tgt":"N"}]}

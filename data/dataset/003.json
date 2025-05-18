@@ -1,0 +1,1 @@
+{"problem_id":"003","initial_string":"UCLNPYS","transitions":[{"src":"5MK","tgt":"W"},{"src":"S","tgt":""},{"src":"PY","tgt":""},{"src":"L","tgt":"?"},{"src":"UC","tgt":""},{"src":"LN","tgt":""}]}
