@@ -10,6 +10,15 @@ from scipy.stats import pearsonr
 
 from schema import Problem, Solution, Transition
 
+import matplotlib.pyplot as plt
+import numpy as np
+from pathlib import Path
+from typing import Dict, Any, Optional
+
+from utils import read_problem_folder, read_solution_folder
+from schema import Problem, Solution, Transition
+
+
 class PuzzleEvaluator:
     """Evaluator for LLM puzzle solving performance."""
     
@@ -229,3 +238,137 @@ class PuzzleEvaluator:
             "comparative": comparative,
             "detailed": evaluations
         }
+    def plot_success_rates(self, comparative_results: Dict[str, Any], save_path: Optional[Path] = None) -> None:
+        """Plot success rates for different solvers."""
+        methods = comparative_results["methods"]
+        success_rates = comparative_results["success_rates"]
+        
+        plt.figure(figsize=(10, 6))
+        plt.bar(methods, [success_rates[m] for m in methods])
+        plt.xlabel('Solvers')
+        plt.ylabel('Success Rate')
+        plt.title('Success Rates Across Solvers')
+        plt.ylim(0, 1)
+        plt.grid(axis='y', linestyle='--', alpha=0.7)
+        
+        if save_path:
+            plt.savefig(save_path / 'success_rates.png', dpi=300, bbox_inches='tight')
+        else:
+            plt.show()
+        plt.close()
+
+    def plot_solution_lengths(self, comparative_results: Dict[str, Any], save_path: Optional[Path] = None) -> None:
+        """Plot solution length statistics for different solvers."""
+        methods = comparative_results["methods"]
+        solution_lengths = comparative_results["solution_lengths"]
+        
+        x = np.arange(len(methods))
+        width = 0.2
+        
+        fig, ax = plt.subplots(figsize=(12, 7))
+        
+        # Plot min, max, avg, median lengths
+        ax.bar(x - width*1.5, [solution_lengths[m]["min"] for m in methods], width, label='Min')
+        ax.bar(x - width/2, [solution_lengths[m]["avg"] for m in methods], width, label='Avg')
+        ax.bar(x + width/2, [solution_lengths[m]["median"] for m in methods], width, label='Median')
+        ax.bar(x + width*1.5, [solution_lengths[m]["max"] for m in methods], width, label='Max')
+        
+        ax.set_xlabel('Solvers')
+        ax.set_ylabel('Solution Length')
+        ax.set_title('Solution Length Statistics')
+        ax.set_xticks(x)
+        ax.set_xticklabels(methods)
+        ax.legend()
+        ax.grid(axis='y', linestyle='--', alpha=0.7)
+        
+        if save_path:
+            plt.savefig(save_path / 'solution_lengths.png', dpi=300, bbox_inches='tight')
+        else:
+            plt.show()
+        plt.close()
+
+    def plot_complexity_correlations(self, comparative_results: Dict[str, Any], save_path: Optional[Path] = None) -> None:
+        """Plot correlations between problem complexity and solver success."""
+        methods = comparative_results["methods"]
+        correlations = comparative_results["complexity_correlations"]
+        
+        x = np.arange(len(methods))
+        width = 0.35
+        
+        fig, ax = plt.subplots(figsize=(10, 6))
+        
+        # Plot correlations
+        ax.bar(x - width/2, [correlations[m]["initial_length"] for m in methods], width, label='Initial Length')
+        ax.bar(x + width/2, [correlations[m]["transitions_count"] for m in methods], width, label='Transitions Count')
+        
+        ax.set_xlabel('Solvers')
+        ax.set_ylabel('Correlation Coefficient')
+        ax.set_title('Correlation Between Problem Complexity and Success')
+        ax.set_xticks(x)
+        ax.set_xticklabels(methods)
+        ax.legend()
+        
+        if save_path:
+            plt.savefig(save_path / 'complexity_correlations.png', dpi=300, bbox_inches='tight')
+        else:
+            plt.show()
+        plt.close()
+
+
+def main():
+    """Main function to execute the PuzzleEvaluator and generate plots."""
+    print("=== Puzzle Solver Evaluation ===")
+    
+    # Get user inputs
+    problems_path = input("Path to problems folder (default: data/dataset/hard): ").strip() or "data/dataset/hard"
+    
+    # Get solution paths for different methods
+    solution_paths = {}
+    method_count = int(input("How many solver methods to evaluate? ").strip() or "2")
+    
+    for i in range(method_count):
+        method_name = input(f"Enter name for solver {i+1}: ").strip()
+        method_path = input(f"Path to {method_name} solutions (default: data/solutions/{method_name}/hard): ").strip() or f"data/solutions/{method_name}/hard"
+        solution_paths[method_name] = method_path
+    
+    output_path = input("Path to save evaluation results (default: data/evaluation): ").strip() or "data/evaluation"
+    
+    # Create output directory
+    output_dir = Path(output_path)
+    output_dir.mkdir(exist_ok=True, parents=True)
+    
+    # Load problems
+    logging.info("Loading problems...")
+    problems = read_problem_folder(Path(problems_path))
+    logging.info(f"Loaded {len(problems)} problems")
+    
+    # Load solutions for each method
+    solutions_by_method = {}
+    for method_name, method_path in solution_paths.items():
+        logging.info(f"Loading solutions for {method_name}...")
+        solutions = read_solution_folder(Path(method_path))
+        logging.info(f"Loaded {len(solutions)} solutions for {method_name}")
+        solutions_by_method[method_name] = solutions
+    
+    # Initialize evaluator
+    evaluator = PuzzleEvaluator()
+    
+    # Perform evaluation
+    logging.info("Evaluating solvers...")
+    results = evaluator.compare_solvers(problems, solutions_by_method)
+    
+    # Generate and save plots
+    logging.info("Generating plots...")
+    evaluator.plot_success_rates(results["comparative"], output_dir)
+    evaluator.plot_solution_lengths(results["comparative"], output_dir)
+    evaluator.plot_complexity_correlations(results["comparative"], output_dir)
+    
+    # Save evaluation results
+    logging.info("Saving evaluation results...")
+    with open(output_dir / 'evaluation_results.json', 'w') as f:
+        json.dump(results, f, indent=2)
+    
+    logging.info("Evaluation completed successfully.")
+
+if __name__ == "__main__":
+    main()

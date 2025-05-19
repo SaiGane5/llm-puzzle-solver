@@ -7,7 +7,7 @@ import re
 from typing import Dict, List, Tuple, Any, Optional
 from pathlib import Path
 from schema import Problem, Solution, Transition
-
+from utils import read_problem_folder, write_solution_folder, validate_solutions
 class LLMSolver:
     """Base class for LLM-based solvers."""
     
@@ -83,20 +83,19 @@ class ZeroShotSolver(LLMSolver):
         puzzle_str = self.format_puzzle(problem)
 
         prompt = f"""
-You are given a "sed puzzle". The goal is to transform the initial string into an empty string by applying a sequence of transitions. Each transition replaces all occurrences of a source pattern with a target pattern.
+You are given a 'sed puzzle'. The goal is to transform the initial string into an empty string by applying a sequence of valid transitions. Each transition replaces all **non-overlapping** occurrences of a source pattern with a target pattern.
 
 {puzzle_str}
 
-Your task:
-- Find the **minimal and correct sequence** of transition indices (from the list above) that, when applied in order, will turn the initial string into an empty string.
-- **Do NOT simply list all indices or guess.**
-- Only include the indices of transitions that are actually used in the solution, in the correct order.
-- Simulate the process step by step and ensure the final string is empty.
-- Output your answer as a Python list of indices, e.g., [0, 2, 1].
-- **Do not output [0, 1, 2] unless that is truly the only correct solution.**
+Guidelines:
+- Select the **minimum number of transitions** required to fully reduce the string to empty.
+- Do **not hallucinate** steps or use transitions not listed.
+- Simulate each step logically—**no guessing**.
+- Output should be a Python list of transition indices in execution order, e.g., [0, 2, 1].
 
 Answer:
 """
+
         try:
             if self.model_name.startswith("gemini"):
                 response = self.client.generate_content(prompt)
@@ -150,21 +149,25 @@ class FewShotSolver(LLMSolver):
             examples_str += f"Solution: {example['solution']}\n"
         
         prompt = f"""
-You are solving a "sed puzzle". The goal is to transform the initial string into an empty string by applying transitions in sequence. Each transition replaces all occurrences of a source pattern with a target pattern.
+You are solving a 'sed puzzle'. Your task is to transform a string into an empty string using transition rules.
 
-Here are some solved examples:{examples_str}
+Below are some **fully-solved examples**, including transition reasoning and final answer:
 
-Now, solve this puzzle:
+{examples_str}
+
+Now solve the following puzzle:
 
 {puzzle_str}
 
 Instructions:
-- Find a sequence of transition indices (from the list above) that, when applied in order, will turn the initial string into an empty string.
-- Only use the provided transitions.
-- Output your answer as a Python list of indices, e.g., [0, 2, 1].
+- Think step by step through the transitions, applying them logically.
+- **Do not reuse transitions unnecessarily**. Favor minimal, valid solutions.
+- Return only the indices of transitions used in order, e.g., [1, 0, 2].
+- The final string **must be empty**.
 
 Answer:
 """
+
         try:
             if self.model_name.startswith("gemini"):
                 response = self.client.generate_content(prompt)
@@ -196,22 +199,26 @@ class CoTSolver(LLMSolver):
         puzzle_str = self.format_puzzle(problem)
         
         prompt = f"""
-You are solving a "sed puzzle". The goal is to transform the initial string into an empty string by applying transitions in sequence. Each transition replaces all occurrences of a source pattern with a target pattern.
+You are solving a 'sed puzzle' using Chain-of-Thought reasoning.
 
 {puzzle_str}
 
-Let's solve this step by step:
-1. Start with the initial string.
-2. At each step, examine the available transitions and choose one that can be applied.
-3. Apply the transition and update the string.
-4. Repeat until the string is empty.
+Process:
+1. Begin with the initial string.
+2. At each step, scan available transitions to see which one can be applied.
+3. Apply the best transition and update the string.
+4. If multiple paths are possible, **prefer the shortest complete path**.
+5. Continue until the string becomes empty.
 
-After reasoning through the steps, output your answer as a Python list of transition indices, e.g., [0, 2, 1].
+Reflect on your reasoning at each step before providing the final answer.
 
-Show your reasoning, then provide the answer in the required format.
+Final Output:
+- Python list of transition indices in order of application, e.g., [1, 2, 0].
+- Ensure only **actually applied** transitions are included.
 
 Answer:
 """
+
         try:
             if self.model_name.startswith("gemini"):
                 response = self.client.generate_content(prompt)
@@ -248,20 +255,24 @@ class CreativeSolver(LLMSolver):
         puzzle_str = self.format_puzzle(problem)
         
         prompt = f"""
-You are solving a "sed puzzle". The goal is to transform the initial string into an empty string by applying transitions in sequence. Each transition replaces all occurrences of a source pattern with a target pattern.
+You are solving a 'sed puzzle'. The objective is to reduce the given string to an empty string using the fewest transitions.
 
 {puzzle_str}
 
 Approach:
-- Analyze which transitions can be applied to the current string.
-- At each step, apply a transition and update the string.
-- If a path doesn't work, backtrack and try another.
-- Show the intermediate strings after each transition.
+- Simulate the application of transitions **step by step**.
+- After each step, print the intermediate string.
+- If you reach a dead end, **backtrack and try an alternate path**.
+- Avoid redundant transitions. Aim for minimal, correct solutions.
 
-After completing your reasoning, output your answer as a Python list of transition indices, e.g., [0, 2, 1].
+Output:
+- A Python list of applied transition indices (e.g., [2, 0, 1]).
+- Only list transitions that are actually used.
+- Ensure the final string is empty.
 
 Answer:
 """
+
         try:
             if self.model_name.startswith("gemini"):
                 response = self.client.generate_content(
@@ -286,45 +297,55 @@ Answer:
             return None
 
 
-if __name__ == "__main__":
-    from utils import read_problem_folder, write_solution_folder, validate_solutions
-
+def main():
+    """Main function to execute the LLM solvers on the dataset."""
+    
     print("=== LLM Puzzle Solver ===")
+    
+    # Get user inputs
     model = input("Enter model name (default: gemini-pro): ").strip() or "gemini-pro"
     api_key = input("Enter API key (leave blank if not needed): ").strip() or None
     solver_type = input("Choose solver [zero-shot, few-shot, cot, creative] (default: zero-shot): ").strip() or "zero-shot"
     problems_path = input("Path to problems folder (default: data/dataset/hard): ").strip() or "data/dataset/hard"
-    solutions_path = input("Path to save solutions (default: data/solutions/baseline/hard): ").strip() or "data/solutions/baseline/hard"
-
+    solutions_path = input("Path to save solutions (default: data/solutions/zero_shot/hard): ").strip() or "data/solutions/zero_shot/hard"
+    
     # Read problems
+    logging.info("Loading problems...")
     problems = read_problem_folder(Path(problems_path))
-
+    logging.info(f"Loaded {len(problems)} problems")
+    
     # Choose solver
     if solver_type == "zero-shot":
         solver = ZeroShotSolver(model, api_key)
     elif solver_type == "few-shot":
-        # You can load few-shot examples here if available
         solver = FewShotSolver(model, api_key, examples=[])
     elif solver_type == "cot":
         solver = CoTSolver(model, api_key)
     elif solver_type == "creative":
         solver = CreativeSolver(model, api_key)
     else:
-        print("Unknown solver type. Exiting.")
-        exit(1)
-
+        logging.error("Unknown solver type. Exiting.")
+        return
+    
     # Solve problems
     solutions = {}
     for problem_id, problem in problems.items():
+        logging.info("=====================================================")
         logging.info(f"Solving problem {problem_id}...")
         solution = solver.solve(problem)
         if solution:
             solutions[problem_id] = solution
+            logging.info(f"Solution found for puzzle {problem_id}")
         else:
-            logging.warning(f"No solution found for problem {problem_id}")
-
+            logging.info(f"No solution found for problem {problem_id}")
+    
     # Write solutions
+    logging.info("Writing solutions...")
     write_solution_folder(solutions, Path(solutions_path))
-
+    
     # Validate solutions
+    logging.info("Validating solutions...")
     validate_solutions(problems, solutions)
+
+if __name__ == "__main__":
+    main()
