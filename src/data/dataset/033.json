@@ -1,0 +1,24 @@
+{
+  "problem_id": "033",
+  "initial_string": "NNLNNLL",
+  "transitions": [
+    {
+      "src": "NL",
+      "tgt": "LN"
+    },
+    {
+      "src": "NL",
+      "tgt": "LN"
+    },
+    {
+      "src": "LLLNNNN",
+      "tgt": ""
+    },
+    {
+      "src": "NN",
+      "tgt": "LL"
+    }
+  ],
+  "puzzle_type": "bubble_sort_simulation",
+  "difficulty": "medium"
+}

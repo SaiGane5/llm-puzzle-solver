@@ -1,0 +1,24 @@
+{
+  "problem_id": "056",
+  "initial_string": "SSS|S|SSS|SSS|S|S",
+  "transitions": [
+    {
+      "src": "SSS",
+      "tgt": "S"
+    },
+    {
+      "src": "|",
+      "tgt": ""
+    },
+    {
+      "src": "SSSS",
+      "tgt": "SSSS"
+    },
+    {
+      "src": "S",
+      "tgt": "|"
+    }
+  ],
+  "puzzle_type": "sequential_dependency",
+  "difficulty": "medium"
+}

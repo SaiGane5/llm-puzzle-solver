@@ -1,0 +1,24 @@
+{
+  "problem_id": "020",
+  "initial_string": "BB*B*B",
+  "transitions": [
+    {
+      "src": "BB",
+      "tgt": "B"
+    },
+    {
+      "src": "*",
+      "tgt": ""
+    },
+    {
+      "src": "BBB",
+      "tgt": "BBB"
+    },
+    {
+      "src": "B",
+      "tgt": "*"
+    }
+  ],
+  "puzzle_type": "sequential_dependency",
+  "difficulty": "medium"
+}

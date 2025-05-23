@@ -1,0 +1,24 @@
+{
+  "problem_id": "050",
+  "initial_string": "IGIIGIG",
+  "transitions": [
+    {
+      "src": "IG",
+      "tgt": "GI"
+    },
+    {
+      "src": "IG",
+      "tgt": "GI"
+    },
+    {
+      "src": "GGGIIII",
+      "tgt": ""
+    },
+    {
+      "src": "IG",
+      "tgt": "IG"
+    }
+  ],
+  "puzzle_type": "bubble_sort_simulation",
+  "difficulty": "medium"
+}

@@ -1,0 +1,24 @@
+{
+  "problem_id": "028",
+  "initial_string": "XDXXDD",
+  "transitions": [
+    {
+      "src": "XD",
+      "tgt": "DX"
+    },
+    {
+      "src": "XD",
+      "tgt": "DX"
+    },
+    {
+      "src": "DDDXXX",
+      "tgt": ""
+    },
+    {
+      "src": "XD",
+      "tgt": "DD"
+    }
+  ],
+  "puzzle_type": "bubble_sort_simulation",
+  "difficulty": "medium"
+}

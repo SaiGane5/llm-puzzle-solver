@@ -320,7 +320,7 @@ def main():
     print("=== Puzzle Solver Evaluation ===")
     
     # Get user inputs
-    problems_path = input("Path to problems folder (default: data/dataset/hard): ").strip() or "data/dataset/hard"
+    problems_path = input("Path to problems folder (default: data/dataset/easy): ").strip() or "data/dataset/easy"
     
     # Get solution paths for different methods
     solution_paths = {}
@@ -328,7 +328,7 @@ def main():
     
     for i in range(method_count):
         method_name = input(f"Enter name for solver {i+1}: ").strip()
-        method_path = input(f"Path to {method_name} solutions (default: data/solutions/{method_name}/hard): ").strip() or f"data/solutions/{method_name}/hard"
+        method_path = input(f"Path to {method_name} solutions (default: data/solutions/{method_name}/easy): ").strip() or f"data/solutions/{method_name}/easy"
         solution_paths[method_name] = method_path
     
     output_path = input("Path to save evaluation results (default: data/evaluation): ").strip() or "data/evaluation"

@@ -1,0 +1,32 @@
+{
+  "problem_id": "013",
+  "initial_string": "{{[({})]}}",
+  "transitions": [
+    {
+      "src": "[[",
+      "tgt": "]]"
+    },
+    {
+      "src": "((",
+      "tgt": "))"
+    },
+    {
+      "src": "[]",
+      "tgt": ""
+    },
+    {
+      "src": "()",
+      "tgt": ""
+    },
+    {
+      "src": "{}",
+      "tgt": ""
+    },
+    {
+      "src": "[(",
+      "tgt": ")]"
+    }
+  ],
+  "puzzle_type": "bracket_matching",
+  "difficulty": "easy"
+}

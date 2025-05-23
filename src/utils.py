@@ -6,7 +6,7 @@ import logging
 
 import pydantic
 
-def read_problem_folder(path=Path("data/dataset/hard")):
+def read_problem_folder(path=Path("data/dataset/")):
     """Opens all problems at the folder and reads them using Pydantic"""
     problems = {}
     for file_path in path.iterdir():
@@ -18,7 +18,7 @@ def read_problem_folder(path=Path("data/dataset/hard")):
             logging.warning(f"Validation error while processing {file_path}! skipping...", exc_info=True)
     return problems
 
-def read_solution_folder(path=Path("data/solutions/baseline/hard")):
+def read_solution_folder(path=Path("data/solutions/baseline/")):
     """Opens all solutions at the folder and reads them using Pydantic"""
     solutions = {}
     for file_path in path.iterdir():
@@ -30,22 +30,40 @@ def read_solution_folder(path=Path("data/solutions/baseline/hard")):
             logging.warning(f"Validation error while processing {file_path}! skipping... ", exc_info=True)
     return solutions
 
-def write_problem_folder(problems, path=Path("data/dataset/hard")):
-    path.mkdir(exist_ok=True)
+def write_problem_folder(problems, path=Path("data/dataset/")):
+    path.mkdir(parents=True, exist_ok=True)
 
     for problem_id, problem in problems.items():
         logging.info(f"Saving problem {problem_id}...")
         with open(path / f"{problem_id}.json", 'w') as f:
-            f.write(problem.json())
+            # Handle both Pydantic objects and regular dictionaries
+            if hasattr(problem, 'json'):
+                # Pydantic v1 style
+                f.write(problem.json())
+            elif hasattr(problem, 'model_dump_json'):
+                # Pydantic v2 style
+                f.write(problem.model_dump_json())
+            else:
+                # Regular dictionary - use json.dumps
+                json.dump(problem, f, indent=2)
 
-def write_solution_folder(solutions, path=Path("data/solutions/baseline/hard")):
-    path.mkdir(exist_ok=True)
+def write_solution_folder(solutions, path=Path("data/solutions/baseline/")):
+    path.mkdir(parents=True, exist_ok=True)
 
     for problem_id, solution in solutions.items():
         logging.info("=====================================================")
         logging.info(f"Saving solution to problem {problem_id}...")
         with open(path / f"{problem_id}.json", 'w') as f:
-            f.write(solution.json())
+            # Handle both Pydantic objects and regular dictionaries
+            if hasattr(solution, 'json'):
+                # Pydantic v1 style
+                f.write(solution.json())
+            elif hasattr(solution, 'model_dump_json'):
+                # Pydantic v2 style
+                f.write(solution.model_dump_json())
+            else:
+                # Regular dictionary - use json.dumps
+                json.dump(solution, f, indent=2)
 
 def validate_solutions(problems, solutions):
     """

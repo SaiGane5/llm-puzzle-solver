@@ -1,0 +1,24 @@
+{
+  "problem_id": "030",
+  "initial_string": "EEE=E=EEE=E=EE=EE",
+  "transitions": [
+    {
+      "src": "EEE",
+      "tgt": "EE"
+    },
+    {
+      "src": "=",
+      "tgt": ""
+    },
+    {
+      "src": "EEEEE",
+      "tgt": "EEEEE"
+    },
+    {
+      "src": "E",
+      "tgt": "="
+    }
+  ],
+  "puzzle_type": "sequential_dependency",
+  "difficulty": "medium"
+}

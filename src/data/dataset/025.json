@@ -1,0 +1,24 @@
+{
+  "problem_id": "025",
+  "initial_string": "ODDODD",
+  "transitions": [
+    {
+      "src": "OD",
+      "tgt": "DO"
+    },
+    {
+      "src": "OD",
+      "tgt": "DO"
+    },
+    {
+      "src": "DDDDOO",
+      "tgt": ""
+    },
+    {
+      "src": "OD",
+      "tgt": "DD"
+    }
+  ],
+  "puzzle_type": "bubble_sort_simulation",
+  "difficulty": "medium"
+}

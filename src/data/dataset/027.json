@@ -1,0 +1,24 @@
+{
+  "problem_id": "027",
+  "initial_string": "YYYOO",
+  "transitions": [
+    {
+      "src": "YO",
+      "tgt": "OY"
+    },
+    {
+      "src": "YO",
+      "tgt": "OY"
+    },
+    {
+      "src": "OOYYY",
+      "tgt": ""
+    },
+    {
+      "src": "YY",
+      "tgt": "OO"
+    }
+  ],
+  "puzzle_type": "bubble_sort_simulation",
+  "difficulty": "medium"
+}

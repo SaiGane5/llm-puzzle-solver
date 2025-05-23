@@ -3,6 +3,7 @@ import os
 import json
 import time
 import logging
+import time
 import re
 from typing import Dict, List, Tuple, Any, Optional
 from pathlib import Path
@@ -99,6 +100,7 @@ Answer:
         try:
             if self.model_name.startswith("gemini"):
                 response = self.client.generate_content(prompt)
+                time.sleep(6)
                 solution_indices = self.parse_solution(response.text)
             else:
                 # Mock implementation for testing
@@ -303,11 +305,11 @@ def main():
     print("=== LLM Puzzle Solver ===")
     
     # Get user inputs
-    model = input("Enter model name (default: gemini-pro): ").strip() or "gemini-pro"
-    api_key = input("Enter API key (leave blank if not needed): ").strip() or None
+    model = input("Enter model name (default: gemini-1.5-flash): ").strip() or "gemini-2.0-flash"
+    api_key = input("Enter API key (leave blank if not needed): ").strip() or "AIzaSyBVCjp6cbCEuzWaJB81XHT2afHvX_6bAVI"
     solver_type = input("Choose solver [zero-shot, few-shot, cot, creative] (default: zero-shot): ").strip() or "zero-shot"
-    problems_path = input("Path to problems folder (default: data/dataset/hard): ").strip() or "data/dataset/hard"
-    solutions_path = input("Path to save solutions (default: data/solutions/zero_shot/hard): ").strip() or "data/solutions/zero_shot/hard"
+    problems_path = input("Path to problems folder (default: data/dataset/easy): ").strip() or "data/dataset/easy"
+    solutions_path = input("Path to save solutions (default: data/solutions/zero_shot/easy): ").strip() or "data/solutions/zero_shot/easy"
     
     # Read problems
     logging.info("Loading problems...")

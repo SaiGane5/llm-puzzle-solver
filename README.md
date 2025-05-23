@@ -1,107 +1,135 @@
-# SED Puzzle Solver Codebase Documentation
+# Optimal Sed-Puzzle Generator
 
-This codebase implements a comprehensive framework for generating, solving, and evaluating "sed puzzles" - string transformation puzzles where the goal is to transform an initial string to an empty string by applying a sequence of replacement rules.
+This repository provides a curated generator for **sed-puzzle** problems (string rewriting puzzles) designed to test a variety of reasoning skills. Each puzzle is guaranteed to be **solvable** by a baseline BFS solver within a short time limit, with no fallbacks. The dataset is balanced across three difficulty levels:
 
-## Core Components
+* **Easy (20%)**: Bracket matching
+* **Medium (40%)**: Bubble sort simulation, Sequential dependencies
+* **Hard (40%)**: Tower of Hanoi simulation, Symbolic logic, Single-rule elimination
 
-### Data Models (schema.py)
+## Puzzle Types & Examples
 
-The fundamental data structures are defined using Pydantic models:
+### 1. Bracket Matching
 
-- **Transition**: Represents a string replacement rule with source and target patterns
-- **Problem**: Contains a problem ID, initial string, and list of available transitions
-- **Solution**: Consists of a problem ID and ordered list of transition indices to apply
+**Description**: Remove matching bracket pairs until the string is empty. Tests stack-like (LIFO) pattern recognition.
 
-These models include validation logic to ensure data integrity, such as checking that no transition is empty and every problem has at least one transition with an empty target.
+* **Generator**: `generate_bracket_matching` (Line  ... )
+* **Example**:
 
-### Puzzle Generator (generator.py)
+  * Initial: `([{}])`
+  * Transitions:
 
-The `PuzzleGenerator` class creates solvable puzzles with varying difficulty levels:
+    1. `[[` → `]]` (decoy)
+    2. `()` → \`\`  (exit)
+    3. `([` → `] )` (padding)
+    4. `])` → `([` (padding)
+* **Edge Cases**: Mixed nested types; BFS may fail if depth > 4 or unusual nesting.
+* **Reference**: [Bracket Matching on GeeksforGeeks](https://www.geeksforgeeks.org/check-for-balanced-parentheses-in-an-expression/)
 
-```python
-generator = PuzzleGenerator(include_special=True, extra_rules=2)
-puzzles = generator.generate_dataset(num_puzzles=100)
-```
+### 2. Bubble Sort Simulation
 
-Features:
-- Configurable difficulty levels (easy, medium, hard)
-- Special character handling, including '?' wildcards
-- Generation of both solution-critical and noise transitions
-- Ensures all generated puzzles are solvable
+**Description**: Simulate bubble sort through local swaps and eliminate when sorted.
 
-### Solvers
+* **Generator**: `generate_bubble_sort_simulation` (Line ...)
+* **Example**:
 
-#### Baseline Solver (baseline.py)
+  * Initial: `BBAA`
+  * Transitions:
 
-Implements a breadth-first search algorithm to find optimal solutions:
+    1. `BA` → `AB`
+    2. `BB` → `AA` (decoy)
+    3. `AABB` → \`\` (exit)
+    4. `AB` → `BA` (extra)
+* **Edge Cases**: Random shuffles; potential long BFS if sequence length > 8.
+* **Reference**: [Bubble Sort on Wikipedia](https://en.wikipedia.org/wiki/Bubble_sort)
 
-```python
-solution = bfs(problem, time_limit=5)
-```
+### 3. Sequential Dependencies
 
-The solver:
-- Explores all possible transition applications
-- Tracks parent states to reconstruct solution paths
-- Terminates when an empty string is reached or time limit is exceeded
+**Description**: Remove segments in a specific order (dependencies) to empty the string.
 
-#### LLM-Based Solvers (llm_solver.py)
+* **Generator**: `generate_sequential_dependency` (Line ...)
+* **Example**:
 
-Multiple LLM-based approaches for solving puzzles:
+  * Initial: `X#XX#X`
+  * Transitions:
 
-1. **ZeroShotSolver**: Basic prompting without examples
-2. **FewShotSolver**: Uses example puzzles and solutions to guide the LLM
-3. **CoTSolver**: Chain of Thought prompting for step-by-step reasoning
-4. **CreativeSolver**: Advanced approach with temperature adjustment and longer outputs
+    1. `X` → `XX` (decoy)
+    2. `#` → \`\`  (exit)
+    3. `XX` → `XX` (decoy)
+    4. `#X` → `X#` (decoy)
+* **Edge Cases**: Varying part lengths; BFS timeouts if too many segments.
+* **Reference**: [Topological Sort (Dependency Resolution)](https://en.wikipedia.org/wiki/Topological_sorting)
 
-Currently supports Gemini models with extensibility for other LLM providers.
+### 4. Tower of Hanoi Simulation
 
-### Evaluation Framework (evaluation.py)
+**Description**: Simulate moving disks between pegs represented as strings.
 
-The `PuzzleEvaluator` class provides tools to assess solver performance:
+* **Generator**: `generate_tower_of_hanoi_simulation` (Line ...)
+* **Example**:
 
-```python
-evaluator = PuzzleEvaluator()
-results = evaluator.compare_solvers(problems, solutions_by_method)
-```
+  * Initial: `321| | ` (3 disks on peg A)
+  * Transitions:
 
-Capabilities:
-- Validates solutions by applying transitions sequentially
-- Calculates performance metrics (success rate, solution length)
-- Compares multiple solvers on the same problem set
-- Generates detailed performance reports
+    1. `1|` → `|1`
+    2. `2|` → `|2`
+    3. `3|` → `|3`
+    4. `||321` → \`\` (exit)
+    5. `3` → \`\` (padding)
+    6. `|` → \`\` (padding)
+* **Edge Cases**: Up to 4 disks; BFS may struggle with deeper recursion.
+* **Reference**: [Tower of Hanoi on Wikipedia](https://en.wikipedia.org/wiki/Tower_of_Hanoi)
 
-### Utilities (utils.py)
+### 5. Symbolic Logic
 
-Helper functions for file operations and solution validation:
+**Description**: Apply propositional logic steps (e.g., modus ponens) via string rules.
 
-- Reading/writing problems and solutions from disk
-- Validating solutions by checking if they result in an empty string
-- Logging utilities for debugging and monitoring
+* **Generator**: `generate_symbolic_logic_puzzle` (Line ...)
+* **Example**:
 
-## Command-Line Interface (main.py)
+  * Initial: `A->B->C&A`
+  * Transitions:
 
-The framework provides a comprehensive CLI with three main commands:
+    1. `A->B` → `B` (partial)
+    2. `A->B->C&A` → `C` (exit)
+    3. `C` → \`\`
+    4. `A` → `~A`
+    5. `B` → `C` (decoy)
+* **Edge Cases**: Chains of length 3; unusual operator placement.
+* **Reference**: [Modus Ponens on Stanford Encyclopedia](https://plato.stanford.edu/entries/modus-ponens/)
 
-### Generate Dataset
-```
-python main.py generate --num_puzzles 100 --output_dir data/dataset
-```
+### 6. Single-Rule Elimination
 
-### Solve Puzzles
-```
-python main.py solve --puzzle_dir data/dataset --output_dir data/solutions --method creative --model gemini-1.5-flash
-```
+**Description**: Only one rule removes the entire string; others expand it, requiring strategic choice.
 
-Available methods: baseline, zero_shot, few_shot, cot, creative
+* **Generator**: `generate_single_rule_elimination` (Line ...)
+* **Example**:
 
-### Evaluate Solutions
-```
-python main.py evaluate --puzzle_dir data/dataset --solution_dir data/solutions --output_dir data/evaluation --methods baseline zero_shot cot
-```
+  * Initial: `AB`
+  * Transitions:
 
-## Data Flow
+    1. `A` → `AA` (trap)
+    2. `B` → `BB` (trap)
+    3. `AB` → \`\`  (exit)
+    4. `BA` → `AB` (decoy)
+    5. `ABA` → `B` (extra)
+* **Edge Cases**: Immediate choice needed; BFS identifies the correct exit.
+* **Reference**: [Markov Algorithm on Wikipedia](https://en.wikipedia.org/wiki/Markov_algorithm)
 
-1. Puzzles are generated with `generator.py` and stored as JSON files
-2. Solvers attempt to find solutions using different approaches
-3. Solutions are validated and compared using the evaluation framework
-4. Results are saved for analysis and comparison
+## Usage
+
+1. **Install** dependencies: `pip install -r requirements.txt`
+2. **Generate** puzzles:
+
+   ```bash
+   python dataset_generator.py
+   ```
+3. **Results** in `data/dataset/`, one JSON per puzzle.
+
+## Caveats & Known Limitations
+
+* BFS time limit set to **1 second** may still exceed on complex edge cases.
+* Generators use randomness; extreme cases (max depth/shuffling) may rarely hang.
+* No fallback, so some rare generator configurations may loop briefly before success.
+
+## License
+
+MIT License

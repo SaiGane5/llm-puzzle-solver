@@ -1,0 +1,24 @@
+{
+  "problem_id": "054",
+  "initial_string": "CCC=CC=CC",
+  "transitions": [
+    {
+      "src": "CCC",
+      "tgt": "CC"
+    },
+    {
+      "src": "=",
+      "tgt": ""
+    },
+    {
+      "src": "CCCCC",
+      "tgt": "CCCCC"
+    },
+    {
+      "src": "CC",
+      "tgt": "="
+    }
+  ],
+  "puzzle_type": "sequential_dependency",
+  "difficulty": "medium"
+}

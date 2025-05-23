@@ -1,0 +1,24 @@
+{
+  "problem_id": "041",
+  "initial_string": "NNN-N-N",
+  "transitions": [
+    {
+      "src": "NNN",
+      "tgt": "N"
+    },
+    {
+      "src": "-",
+      "tgt": ""
+    },
+    {
+      "src": "NNNN",
+      "tgt": "NNNN"
+    },
+    {
+      "src": "N",
+      "tgt": "-"
+    }
+  ],
+  "puzzle_type": "sequential_dependency",
+  "difficulty": "medium"
+}

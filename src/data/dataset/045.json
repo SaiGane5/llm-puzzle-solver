@@ -1,0 +1,24 @@
+{
+  "problem_id": "045",
+  "initial_string": "UUGUGG",
+  "transitions": [
+    {
+      "src": "UG",
+      "tgt": "GU"
+    },
+    {
+      "src": "UG",
+      "tgt": "GU"
+    },
+    {
+      "src": "GGGUUU",
+      "tgt": ""
+    },
+    {
+      "src": "UU",
+      "tgt": "GG"
+    }
+  ],
+  "puzzle_type": "bubble_sort_simulation",
+  "difficulty": "medium"
+}

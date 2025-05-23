@@ -1,0 +1,24 @@
+{
+  "problem_id": "037",
+  "initial_string": "HHH+HH+H+H+HH",
+  "transitions": [
+    {
+      "src": "HHH",
+      "tgt": "HH"
+    },
+    {
+      "src": "+",
+      "tgt": ""
+    },
+    {
+      "src": "HHHHH",
+      "tgt": "HHHHH"
+    },
+    {
+      "src": "HH",
+      "tgt": "+"
+    }
+  ],
+  "puzzle_type": "sequential_dependency",
+  "difficulty": "medium"
+}

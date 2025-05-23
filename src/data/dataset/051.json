@@ -1,0 +1,24 @@
+{
+  "problem_id": "051",
+  "initial_string": "GGG+GG+GGG+GG",
+  "transitions": [
+    {
+      "src": "GGG",
+      "tgt": "GG"
+    },
+    {
+      "src": "+",
+      "tgt": ""
+    },
+    {
+      "src": "GGGGG",
+      "tgt": "GGGGG"
+    },
+    {
+      "src": "GG",
+      "tgt": "+"
+    }
+  ],
+  "puzzle_type": "sequential_dependency",
+  "difficulty": "medium"
+}

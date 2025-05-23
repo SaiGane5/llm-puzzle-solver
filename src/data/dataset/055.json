@@ -1,0 +1,24 @@
+{
+  "problem_id": "055",
+  "initial_string": "QQQ%QQ%Q",
+  "transitions": [
+    {
+      "src": "QQQ",
+      "tgt": "Q"
+    },
+    {
+      "src": "%",
+      "tgt": ""
+    },
+    {
+      "src": "QQQQ",
+      "tgt": "QQQQ"
+    },
+    {
+      "src": "QQ",
+      "tgt": "%"
+    }
+  ],
+  "puzzle_type": "sequential_dependency",
+  "difficulty": "medium"
+}

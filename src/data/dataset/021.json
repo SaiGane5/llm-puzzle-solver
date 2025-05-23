@@ -1,0 +1,24 @@
+{
+  "problem_id": "021",
+  "initial_string": "JCCJJCC",
+  "transitions": [
+    {
+      "src": "JC",
+      "tgt": "CJ"
+    },
+    {
+      "src": "JC",
+      "tgt": "CJ"
+    },
+    {
+      "src": "CCCCJJJ",
+      "tgt": ""
+    },
+    {
+      "src": "JC",
+      "tgt": "CC"
+    }
+  ],
+  "puzzle_type": "bubble_sort_simulation",
+  "difficulty": "medium"
+}
